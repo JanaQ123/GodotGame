@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://dk0h71tfspjjh"
+path="res://.godot/imported/explosion.wav-ba1daf60b302321cfe6e0da79afaaffe.sample"
+
+[deps]
+
+source_file="res://Brackey's Assets (from video)/sounds/explosion.wav"
+dest_files=["res://.godot/imported/explosion.wav-ba1daf60b302321cfe6e0da79afaaffe.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

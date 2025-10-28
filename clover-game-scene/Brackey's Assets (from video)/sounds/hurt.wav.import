@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bqieba73i6hiv"
+path="res://.godot/imported/hurt.wav-9ca1ed49db5b7b23e3a7378e5ee07277.sample"
+
+[deps]
+
+source_file="res://Brackey's Assets (from video)/sounds/hurt.wav"
+dest_files=["res://.godot/imported/hurt.wav-9ca1ed49db5b7b23e3a7378e5ee07277.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2
