@@ -213,17 +213,17 @@ _data = {
 [node name="Level3" type="Node2D"]
 
 [node name="SkyGradient" type="Sprite2D" parent="."]
-position = Vector2(575, 328)
-scale = Vector2(2.8087482, 2.85699)
+position = Vector2(608.4635, 328)
+scale = Vector2(2.6215835, 2.795197)
 texture = ExtResource("1_eywy2")
 
 [node name="player" parent="." instance=ExtResource("2_84iim")]
 z_index = 1
-position = Vector2(101.00001, 617)
+position = Vector2(94, 621.00006)
 scale = Vector2(0.021738585, 0.021738585)
 
 [node name="Camera2D" type="Camera2D" parent="player"]
-position = Vector2(276.0069, -230.0058)
+position = Vector2(230.004, -598.0149)
 scale = Vector2(1.006393, 0.9732649)
 zoom = Vector2(5.5, 5.5)
 
