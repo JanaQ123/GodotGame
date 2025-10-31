@@ -18,6 +18,14 @@
 animations = [{
 "frames": [{
 "duration": 1.0,
+"texture": ExtResource("5_u1c27")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
 "texture": ExtResource("1_ivps1")
 }, {
 "duration": 1.0,
@@ -90,8 +98,7 @@ script = ExtResource("1_urp6f")
 position = Vector2(0, 14)
 scale = Vector2(1, 0.9846994)
 sprite_frames = SubResource("SpriteFrames_au0nh")
-animation = &"walk_right"
-frame_progress = 0.7929238
+animation = &"idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-59.999992, 379.99875)
