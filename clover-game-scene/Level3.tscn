@@ -1,8 +1,78 @@
-[gd_scene load_steps=2 format=3 uid="uid://dc5yenxs0wfsq"]
+[gd_scene load_steps=9 format=3 uid="uid://b7g23sfib4o7h"]
 
 [ext_resource type="Texture2D" uid="uid://dvbhe3njpvy4d" path="res://cloudy skies/sky gradient.png" id="1_eywy2"]
+[ext_resource type="PackedScene" uid="uid://dwbepxe4isg4w" path="res://player.tscn" id="2_84iim"]
+[ext_resource type="Texture2D" uid="uid://bf1fevqpk5m26" path="res://cloudy skies/Pixel Clouds/Clouds/images/1/blue/1.png" id="3_u5lf4"]
+[ext_resource type="Texture2D" uid="uid://bc7mb6gn0h346" path="res://cloudy skies/Pixel Clouds/Clouds/images/1/blue/15.png" id="5_ewulq"]
+[ext_resource type="Texture2D" uid="uid://6bbc1hjbokl0" path="res://cloudy skies/Pixel Clouds/Clouds/images/2/blue_2/2.1.png" id="6_6vscs"]
+[ext_resource type="Texture2D" uid="uid://bceowtt8ycvp7" path="res://cloudy skies/Pixel Clouds/Clouds/images/1/blue/3.png" id="7_otr1s"]
+[ext_resource type="Texture2D" uid="uid://dl5xwshpe5j2y" path="res://cloudy skies/Pixel Clouds/Clouds/images/1/blue/8.png" id="8_bptnd"]
+[ext_resource type="Texture2D" uid="uid://3vx57678id7n" path="res://cloudy skies/Pixel Clouds/Clouds/images/1/blue/12.png" id="9_gp5y5"]
 
-[node name="SkyGradient" type="Sprite2D"]
-position = Vector2(575.75, 327)
-scale = Vector2(2.3028169, 2.3381295)
+[node name="Level3" type="Node2D"]
+
+[node name="SkyGradient" type="Sprite2D" parent="."]
+position = Vector2(575, 328)
+scale = Vector2(2.3287482, 2.3687458)
 texture = ExtResource("1_eywy2")
+
+[node name="player" parent="." instance=ExtResource("2_84iim")]
+z_index = 1
+position = Vector2(90, 605)
+scale = Vector2(0.021738585, 0.021738585)
+
+[node name="Camera2D" type="Camera2D" parent="player"]
+position = Vector2(276.0069, -782.0197)
+scale = Vector2(1.006393, 0.9732649)
+zoom = Vector2(5, 5)
+
+[node name="Clouds" type="Node" parent="."]
+
+[node name="1" type="Sprite2D" parent="Clouds"]
+position = Vector2(99, 466)
+scale = Vector2(1.9952714, 1.9952714)
+texture = ExtResource("3_u5lf4")
+
+[node name="15" type="Sprite2D" parent="Clouds"]
+position = Vector2(61.000004, 647)
+scale = Vector2(12.142856, 4.4906425)
+texture = ExtResource("5_ewulq")
+
+[node name="2_1" type="Sprite2D" parent="Clouds"]
+position = Vector2(559, 607)
+scale = Vector2(3.2644575, 2.5444598)
+texture = ExtResource("6_6vscs")
+
+[node name="3" type="Sprite2D" parent="Clouds"]
+position = Vector2(323.00003, 638)
+scale = Vector2(4.3412704, 2.468454)
+texture = ExtResource("3_u5lf4")
+
+[node name="4" type="Sprite2D" parent="Clouds"]
+position = Vector2(395.00003, 636.00006)
+rotation = -3.1415925
+scale = Vector2(4.541654, -2.6240628)
+texture = ExtResource("3_u5lf4")
+
+[node name="5" type="Sprite2D" parent="Clouds"]
+position = Vector2(165, 636.99994)
+scale = Vector2(7.5900097, 4.5495305)
+texture = ExtResource("7_otr1s")
+
+[node name="8" type="Sprite2D" parent="Clouds"]
+position = Vector2(243, 638)
+scale = Vector2(4.22548, 2.6687422)
+texture = ExtResource("8_bptnd")
+
+[node name="12" type="Sprite2D" parent="Clouds"]
+position = Vector2(60.000008, 637)
+rotation = -3.1415925
+scale = Vector2(4.814716, -3.9704204)
+texture = ExtResource("9_gp5y5")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Clouds"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Clouds/StaticBody2D"]
+visible = false
+position = Vector2(-35, 638)
+polygon = PackedVector2Array(25, -1, 47, 0, 83, 0, 102, -18, 148, -18, 166, -9, 179, -18, 207, -21, 225, -10, 235, -8, 248, -18, 273, -23, 294, -16, 321, -13, 333, -22, 358, -21, 369, -12, 409, -15, 438, -25, 459, -24, 473, -22, 480, -30, 496, -35, 511, -30, 519, -24, 535, -24, 549, -38, 574, -45, 586, -57, 598, -72, 622, -85, 648, -79, 655, -72, 665, -55, 673, -41, 682, -29, 720, -17, 759, 6, 756, 23, 434, 23, 25, 27)
