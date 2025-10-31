@@ -1,31 +1,8 @@
-[gd_scene load_steps=6 format=3 uid="uid://dc5yenxs0wfsq"]
+[gd_scene load_steps=2 format=3 uid="uid://dc5yenxs0wfsq"]
 
-[ext_resource type="Texture2D" uid="uid://cvbjr04ejohhk" path="res://cloudy skies/SVG/Pixel Cloudy Skies.svg" id="1_eywy2"]
-[ext_resource type="Texture2D" uid="uid://bf1fevqpk5m26" path="res://cloudy skies/Pixel Clouds/Clouds/images/1/blue/1.png" id="2_qlmxs"]
-[ext_resource type="Texture2D" uid="uid://d3aafthrryxmt" path="res://cloudy skies/Pixel Clouds/Clouds/images/2/blue_2/2.2.png" id="3_545p4"]
-[ext_resource type="Texture2D" uid="uid://cfxlo7gddr0su" path="res://cloudy skies/Pixel Clouds/Clouds/images/2/blue_2/2.9.png" id="4_h8oof"]
-[ext_resource type="Texture2D" uid="uid://dmsqe57qg4cv6" path="res://cloudy skies/Pixel Clouds/Clouds/images/2/blue_2/2.6.png" id="5_nqeel"]
+[ext_resource type="Texture2D" uid="uid://dvbhe3njpvy4d" path="res://cloudy skies/sky gradient.png" id="1_eywy2"]
 
-[node name="PixelCloudySkies" type="Sprite2D"]
-position = Vector2(575.06165, 323.25)
-scale = Vector2(0.96118724, 0.96118724)
+[node name="SkyGradient" type="Sprite2D"]
+position = Vector2(575.75, 327)
+scale = Vector2(2.3028169, 2.3381295)
 texture = ExtResource("1_eywy2")
-
-[node name="1" type="Sprite2D" parent="."]
-position = Vector2(-211.69835, 578.9133)
-scale = Vector2(5.441806, 5.441806)
-texture = ExtResource("2_qlmxs")
-
-[node name="2_2" type="Sprite2D" parent="."]
-position = Vector2(-337.72174, 40.240215)
-scale = Vector2(8.147429, 8.147429)
-texture = ExtResource("3_545p4")
-
-[node name="2_9" type="Sprite2D" parent="."]
-position = Vector2(-149.87886, -31.471498)
-scale = Vector2(2.8436236, 3.1170938)
-texture = ExtResource("4_h8oof")
-
-[node name="2_6" type="Sprite2D" parent="."]
-position = Vector2(-328.82422, 335.78268)
-texture = ExtResource("5_nqeel")
