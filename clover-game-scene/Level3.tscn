@@ -214,7 +214,7 @@ _data = {
 
 [node name="SkyGradient" type="Sprite2D" parent="."]
 position = Vector2(575, 328)
-scale = Vector2(2.3287482, 2.3687458)
+scale = Vector2(2.8087482, 2.85699)
 texture = ExtResource("1_eywy2")
 
 [node name="player" parent="." instance=ExtResource("2_84iim")]
@@ -282,10 +282,10 @@ polygon = PackedVector2Array(-77.99998, 0, -43.999977, -14, 2.2888184e-05, 0, 47
 
 [node name="TileMap" type="TileMap" parent="Cloud Platforms"]
 position = Vector2(1, 0)
-scale = Vector2(0.15, 0.15)
+scale = Vector2(0.14986673, 0.15)
 tile_set = SubResource("TileSet_6vscs")
 format = 2
-layer_0/tile_data = PackedInt32Array(2359301, 0, 36, 1835017, 0, 14, 2228236, 0, 14, 2490380, 1507328, 38, 1703951, 2949120, 37, 1507348, 1441792, 60, 1114132, 1507328, 38, 917531, 2949120, 60, 720917, 2949120, 14, 524302, 0, 14, 458782, 0, 60, 393239, 2949120, 60)
+layer_0/tile_data = PackedInt32Array(2359301, 0, 36, 1835017, 0, 14, 2228236, 0, 14, 2490380, 1507328, 38, 1703951, 2949120, 37, 1507348, 1441792, 60, 1114132, 1507328, 38, 917531, 2949120, 60, 720917, 2949120, 14, 524302, 0, 14, 458782, 0, 60, 393239, 2949120, 60, 524340, 0, 14, 524341, 0, 14, 524342, 0, 14, 524343, 0, 14, 524344, 0, 14)
 
 [node name="AnimatedCloud" parent="Cloud Platforms" instance=ExtResource("11_ewulq")]
 position = Vector2(29, 477.99997)
