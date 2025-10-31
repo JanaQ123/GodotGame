@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://b352prexwf1mk"]
+
+[ext_resource type="Texture2D" uid="uid://c3l2yqyp3x7mv" path="res://cloudy skies/Pixel Clouds/Clouds/images/1/blue/6.png" id="1_2jeuk"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2jeuk"]
+size = Vector2(32.53413, 9.994537)
+
+[node name="AnimatedCloud" type="AnimatableBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0.12211572, 2.0079653)
+rotation = 3.1241393
+scale = Vector2(1.0438244, -0.9989219)
+shape = SubResource("RectangleShape2D_2jeuk")
+one_way_collision = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_2jeuk")
