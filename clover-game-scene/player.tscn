@@ -99,8 +99,8 @@ script = ExtResource("1_urp6f")
 position = Vector2(0, 14)
 scale = Vector2(1, 0.9846994)
 sprite_frames = SubResource("SpriteFrames_au0nh")
-animation = &"walk_forward"
-autoplay = "walk_right"
+animation = &"idle"
+autoplay = "idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-59.999992, 379.99875)

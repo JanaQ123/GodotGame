@@ -1,6 +1,7 @@
-[gd_scene load_steps=4 format=3 uid="uid://ugx26js2mqc4"]
+[gd_scene load_steps=5 format=3 uid="uid://ugx26js2mqc4"]
 
 [ext_resource type="Texture2D" uid="uid://yh2nraso0vt3" path="res://Brackey's Assets (from video)/sprites/world_tileset.png" id="1_3hls8"]
+[ext_resource type="PackedScene" uid="uid://dwbepxe4isg4w" path="res://player.tscn" id="1_hbghi"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_hbghi"]
 texture = ExtResource("1_3hls8")
@@ -136,6 +137,14 @@ texture = ExtResource("1_3hls8")
 sources/0 = SubResource("TileSetAtlasSource_hbghi")
 
 [node name="Level 1" type="Node2D"]
+
+[node name="player" parent="." instance=ExtResource("1_hbghi")]
+scale = Vector2(0.022, 0.022)
+
+[node name="Camera2D" type="Camera2D" parent="player"]
+position = Vector2(-46.000824, -230.00562)
+scale = Vector2(1.006393, 0.9732649)
+zoom = Vector2(5.5, 5.5)
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_hn12h")
