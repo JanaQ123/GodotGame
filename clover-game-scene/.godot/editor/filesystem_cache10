@@ -1,9 +1,9 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1761654089
+::res://::1761996436
 icon.svg::CompressedTexture2D::5544986168560500066::1761653322::1761653948::1::::<><><>0<>0<>63af06cbdc43413ec82404cd12b0abf1<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
-main_game.tscn::PackedScene::7773268033140575855::1761653994::0::1::::<><><>0<>0<><>::
-character_body_2d.tscn::PackedScene::8705751859295019064::1761655427::0::1::::<><><>0<>0<><>::uid://hls0omk88ndc::::res://character/pose1gg.png<>uid://c8lk8fjkbo63e::::res://character/pose17gg.png<>uid://b3ipni2rrfhkq::::res://character/pose2gg.png<>uid://b853b6xbf11hb::::res://character/pose11gg.png<>uid://buh817qjeb54y::::res://character/pose3gg.png<>uid://lhyprt3gwf8v::::res://character/pose9gg.png<>uid://dtk5k2oyrrh1t::::res://character/pose4gg.png<>uid://n87mjlg1dy3u::::res://character/pose10gg.png<>uid://djiurhasigfra::::res://character/pose14gg.png<>uid://dh2g6sgwoslna::::res://character/pose16gg.png<>uid://r8e1lc0g86cf::::res://character/pose6gg.png<>uid://dkls5npmkouqt::::res://character/pose7gg.png
-::res://Brackey's Assets (from video)/::1761653948
+main_game.tscn::PackedScene::7773268033140575855::1761996378::0::1::::<><><>0<>0<><>::
+player.tscn::PackedScene::8705751859295019064::1761996378::0::1::::<><><>0<>0<><>::uid://c8lk8fjkbo63e::::res://character/pose17gg.png<>uid://b853b6xbf11hb::::res://character/pose11gg.png<>uid://lhyprt3gwf8v::::res://character/pose9gg.png<>uid://n87mjlg1dy3u::::res://character/pose10gg.png<>uid://hls0omk88ndc::::res://character/pose1gg.png<>uid://b3ipni2rrfhkq::::res://character/pose2gg.png<>uid://buh817qjeb54y::::res://character/pose3gg.png<>uid://dtk5k2oyrrh1t::::res://character/pose4gg.png<>uid://djiurhasigfra::::res://character/pose14gg.png<>uid://dh2g6sgwoslna::::res://character/pose16gg.png<>uid://r8e1lc0g86cf::::res://character/pose6gg.png<>uid://dkls5npmkouqt::::res://character/pose7gg.png
+::res://Brackey's Assets (from video)/::1761996378
 ::res://Brackey's Assets (from video)/fonts/::1761653948
 PixelOperator8-Bold.ttf::FontFile::3098613115750755984::1761653948::1761653948::1::::<><><>0<>0<>4a98b6dcb2af19ef5d84dc2765e7b2fa<>res://.godot/imported/PixelOperator8-Bold.ttf-33613fbf5a409438d97609eb4b62b3ab.fontdata::
 PixelOperator8.ttf::FontFile::7828481249749978973::1761653948::1761653948::1::::<><><>0<>0<>067594efd3bfd02a7797949ee6f0d092<>res://.godot/imported/PixelOperator8.ttf-a99f5d5a2b4bc10542c9666facf366a4.fontdata::
@@ -42,7 +42,7 @@ pose14gg.png::CompressedTexture2D::7808721732698006854::1761653948::1761653948::
 pose15gg.png::CompressedTexture2D::7947447452517606063::1761653948::1761653948::1::::<><><>0<>0<>777c13c6115085449f68292c20f7b4fa<>res://.godot/imported/pose15gg.png-93bf42573341462494d2646984fe73b7.ctex::
 pose16gg.png::CompressedTexture2D::7706742773180932118::1761653948::1761653948::1::::<><><>0<>0<>4471a025d3ce8ae58e11187404dca51f<>res://.godot/imported/pose16gg.png-aafc5aa57a4e702cc02e46a8bb3756c2.ctex::
 pose17gg.png::CompressedTexture2D::7112447740838722616::1761653948::1761653948::1::::<><><>0<>0<>57eca7a8f947d884a92842ef8e5bb6e1<>res://.godot/imported/pose17gg.png-e14bfe2a444bc29cf5ebd895e2fc8a18.ctex::
-::res://Traps/::1761653948
+::res://Traps/::1761996378
 1.png::CompressedTexture2D::8463741263746835970::1761653948::1761653948::1::::<><><>0<>0<>b7cec66cb8d54e04277a91a6634649cd<>res://.godot/imported/1.png-f3e212f1111bd187aeaa66e3a748ee50.ctex::
 2.png::CompressedTexture2D::2857452532864927522::1761653948::1761653948::1::::<><><>0<>0<>f0ecfb6986a679412b6d749b52e685f3<>res://.godot/imported/2.png-91ba67b897bd437b7bfb12df932a4527.ctex::
 3.png::CompressedTexture2D::8796610524873680949::1761653948::1761653948::1::::<><><>0<>0<>c7094199af63a55cc3ab756f563f89aa<>res://.godot/imported/3.png-a466fcce7d6055f25ee547fb39f00e5f.ctex::
