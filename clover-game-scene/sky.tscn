@@ -1,0 +1,130 @@
+[gd_scene load_steps=15 format=3 uid="uid://byw0vwjqmss16"]
+
+[ext_resource type="Texture2D" uid="uid://6hby8agr7sw7" path="res://clouds/Clouds/Clouds 6/4.png" id="1_3ustv"]
+[ext_resource type="Texture2D" uid="uid://ccnp6lnkaqd6q" path="res://clouds/Clouds/Clouds 2/4.png" id="3_00u2l"]
+[ext_resource type="Texture2D" uid="uid://tlkfkambin8n" path="res://clouds/Clouds/Clouds 4/3.png" id="4_g2g78"]
+[ext_resource type="Texture2D" uid="uid://p7cxf17bxco8" path="res://clouds/Clouds/Clouds 1/4.png" id="6_mxtae"]
+[ext_resource type="Texture2D" uid="uid://bqv8h7b15os78" path="res://clouds/Clouds/Clouds 2/3.png" id="7_hp7ek"]
+[ext_resource type="Texture2D" uid="uid://su5p2nln6l81" path="res://clouds/Clouds/Clouds 1/2.png" id="8_tij5r"]
+[ext_resource type="Texture2D" uid="uid://c0443bqxxkyum" path="res://clouds/Clouds/Clouds 2/sky2.png" id="9_jytix"]
+[ext_resource type="Texture2D" uid="uid://dtu2dfirjoekg" path="res://clouds/Clouds/Clouds 6/3.png" id="10_g2g78"]
+[ext_resource type="Texture2D" uid="uid://c2pmvbmnc618k" path="res://clouds/Clouds/Clouds 2/sky22.png" id="10_vfda5"]
+[ext_resource type="Texture2D" uid="uid://dwjleqr55idmk" path="res://clouds/Clouds/Clouds 2/sky3.png" id="11_0prda"]
+[ext_resource type="Texture2D" uid="uid://0od135po663" path="res://clouds/Clouds/Clouds 7/2.png" id="11_tlsao"]
+[ext_resource type="Texture2D" uid="uid://kx7xvo1xdm8m" path="res://clouds/Clouds/Clouds 2/sky33.png" id="12_mng0x"]
+[ext_resource type="Texture2D" uid="uid://cqfodwo8pgh56" path="res://clouds/Clouds/Clouds 2/1.png" id="12_mxtae"]
+
+[sub_resource type="GDScript" id="GDScript_74ku2"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="9" type="Sprite2D" parent="."]
+z_index = -5
+position = Vector2(1948, -143)
+texture = ExtResource("6_mxtae")
+
+[node name="10" type="Sprite2D" parent="."]
+z_index = -8
+position = Vector2(1924, -130)
+texture = ExtResource("8_tij5r")
+
+[node name="Sky2" type="Sprite2D" parent="."]
+z_index = -7
+position = Vector2(2009, -122)
+texture = ExtResource("9_jytix")
+
+[node name="Sky23" type="Sprite2D" parent="."]
+z_index = -5
+position = Vector2(2487, -122)
+texture = ExtResource("10_vfda5")
+
+[node name="Sky3" type="Sprite2D" parent="."]
+z_index = -5
+position = Vector2(3063, -123)
+texture = ExtResource("11_0prda")
+
+[node name="Sky33" type="Sprite2D" parent="."]
+z_index = -6
+position = Vector2(3613, -123)
+texture = ExtResource("12_mng0x")
+
+[node name="5" type="Sprite2D" parent="."]
+z_index = -4
+position = Vector2(1133, -119)
+texture = ExtResource("3_00u2l")
+
+[node name="4" type="Sprite2D" parent="5"]
+z_index = -1
+position = Vector2(-828, 6)
+texture = ExtResource("1_3ustv")
+script = SubResource("GDScript_74ku2")
+
+[node name="3" type="Sprite2D" parent="5"]
+z_index = -2
+position = Vector2(-828, 24)
+texture = ExtResource("10_g2g78")
+
+[node name="2" type="Sprite2D" parent="5"]
+z_index = -3
+position = Vector2(-828, -37)
+texture = ExtResource("11_tlsao")
+
+[node name="1" type="Sprite2D" parent="5"]
+z_index = -4
+position = Vector2(-829, -4)
+texture = ExtResource("12_mxtae")
+
+[node name="4" type="Sprite2D" parent="5/1"]
+z_index = -1
+position = Vector2(575, 8)
+texture = ExtResource("1_3ustv")
+
+[node name="5" type="Sprite2D" parent="5/1"]
+position = Vector2(569, 7)
+texture = ExtResource("3_00u2l")
+
+[node name="3" type="Sprite2D" parent="5/1"]
+visible = false
+z_index = -2
+position = Vector2(574, -2)
+texture = ExtResource("10_g2g78")
+
+[node name="2" type="Sprite2D" parent="5/1"]
+z_index = -3
+position = Vector2(574, 9)
+texture = ExtResource("11_tlsao")
+
+[node name="1" type="Sprite2D" parent="5/1"]
+z_index = -4
+position = Vector2(573, 0)
+texture = ExtResource("12_mxtae")
+
+[node name="1" type="Sprite2D" parent="5/1/1"]
+z_index = -4
+position = Vector2(573, 0)
+texture = ExtResource("12_mxtae")
+
+[node name="6" type="Sprite2D" parent="."]
+z_index = -5
+position = Vector2(1500, -117)
+texture = ExtResource("4_g2g78")
+
+[node name="7" type="Sprite2D" parent="."]
+z_index = -6
+position = Vector2(1505, -123)
+texture = ExtResource("6_mxtae")
+
+[node name="7" type="Sprite2D" parent="7"]
+z_index = 3
+position = Vector2(979, -20)
+texture = ExtResource("6_mxtae")
+
+[node name="8" type="Sprite2D" parent="."]
+z_index = -6
+position = Vector2(1569, -186)
+scale = Vector2(1.203125, 1.4012345)
+texture = ExtResource("7_hp7ek")
+
+[node name="Sky34" type="Sprite2D" parent="."]
+position = Vector2(4161, -125)
+texture = ExtResource("12_mng0x")
