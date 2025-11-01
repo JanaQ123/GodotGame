@@ -1,6 +1,7 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1761996436
+::res://::1761997932
 icon.svg::CompressedTexture2D::5544986168560500066::1761653322::1761653948::1::::<><><>0<>0<>63af06cbdc43413ec82404cd12b0abf1<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+level_1.tscn::PackedScene::1417609489535570353::1761997854::0::1::::<><><>0<>0<><>::uid://yh2nraso0vt3::::res://Brackey's Assets (from video)/sprites/world_tileset.png
 main_game.tscn::PackedScene::7773268033140575855::1761996378::0::1::::<><><>0<>0<><>::
 player.tscn::PackedScene::8705751859295019064::1761996378::0::1::::<><><>0<>0<><>::uid://c8lk8fjkbo63e::::res://character/pose17gg.png<>uid://b853b6xbf11hb::::res://character/pose11gg.png<>uid://lhyprt3gwf8v::::res://character/pose9gg.png<>uid://n87mjlg1dy3u::::res://character/pose10gg.png<>uid://hls0omk88ndc::::res://character/pose1gg.png<>uid://b3ipni2rrfhkq::::res://character/pose2gg.png<>uid://buh817qjeb54y::::res://character/pose3gg.png<>uid://dtk5k2oyrrh1t::::res://character/pose4gg.png<>uid://djiurhasigfra::::res://character/pose14gg.png<>uid://dh2g6sgwoslna::::res://character/pose16gg.png<>uid://r8e1lc0g86cf::::res://character/pose6gg.png<>uid://dkls5npmkouqt::::res://character/pose7gg.png
 ::res://Brackey's Assets (from video)/::1761996378
@@ -16,7 +17,8 @@ hurt.wav::AudioStreamWAV::3526201908416918841::1761653948::1761653948::1::::<><>
 jump.wav::AudioStreamWAV::590079910656926970::1761653948::1761653948::1::::<><><>0<>0<>fd47f1b2cffd9659e353520b31703de2<>res://.godot/imported/jump.wav-274962aac1c3a130b3922fdb85f7ff8b.sample::
 power_up.wav::AudioStreamWAV::4272656554767922025::1761653948::1761653948::1::::<><><>0<>0<>049dfc6aaa63257502842ff753a39c53<>res://.godot/imported/power_up.wav-bf0d8bfd13799575bedba4ce2340d9e1.sample::
 tap.wav::AudioStreamWAV::3656796827707336175::1761653948::1761653948::1::::<><><>0<>0<>7bed5cd6d817edc8da5c0b4328f53801<>res://.godot/imported/tap.wav-1fb275978d2223dcd9effbae5149677e.sample::
-::res://Brackey's Assets (from video)/sprites/::1761653948
+::res://Brackey's Assets (from video)/sprites/::1761997946
+clover.PNG::CompressedTexture2D::771314200951081564::1761997946::1761997946::1::::<><><>0<>0<>5998148c4247cccc3f174a924ab34ff1<>res://.godot/imported/clover.PNG-57fb5e50a0571e6441c0859ae9699a24.ctex::
 coin.png::CompressedTexture2D::283444386291994303::1761653948::1761653948::1::::<><><>0<>0<>a3d714c677937fc49a04db0357606e2e<>res://.godot/imported/coin.png-3a343f90c1e48d7e68bc5eee81b766a1.ctex::
 fruit.png::CompressedTexture2D::6907822385122400403::1761653948::1761653948::1::::<><><>0<>0<>79b09aab31a4c9cc7a8d8d39f658ce77<>res://.godot/imported/fruit.png-ac8240eff287fd73a65822d0129addd6.ctex::
 knight.png::CompressedTexture2D::1176499605659741118::1761653948::1761653948::1::::<><><>0<>0<>88d3f53c874312f6cb1fd8c124ff9d8f<>res://.godot/imported/knight.png-22dfaeb45b9aa512665a369e9eaeb82c.ctex::
