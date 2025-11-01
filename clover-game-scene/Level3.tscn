@@ -1,0 +1,440 @@
+[gd_scene load_steps=37 format=3 uid="uid://b7g23sfib4o7h"]
+
+[ext_resource type="Texture2D" uid="uid://dvbhe3njpvy4d" path="res://cloudy skies/sky gradient.png" id="1_eywy2"]
+[ext_resource type="PackedScene" uid="uid://dwbepxe4isg4w" path="res://player.tscn" id="2_84iim"]
+[ext_resource type="Texture2D" uid="uid://bf1fevqpk5m26" path="res://cloudy skies/Pixel Clouds/Clouds/images/1/blue/1.png" id="3_u5lf4"]
+[ext_resource type="Texture2D" uid="uid://bc7mb6gn0h346" path="res://cloudy skies/Pixel Clouds/Clouds/images/1/blue/15.png" id="5_ewulq"]
+[ext_resource type="Texture2D" uid="uid://6bbc1hjbokl0" path="res://cloudy skies/Pixel Clouds/Clouds/images/2/blue_2/2.1.png" id="6_6vscs"]
+[ext_resource type="Texture2D" uid="uid://bceowtt8ycvp7" path="res://cloudy skies/Pixel Clouds/Clouds/images/1/blue/3.png" id="7_otr1s"]
+[ext_resource type="Texture2D" uid="uid://dl5xwshpe5j2y" path="res://cloudy skies/Pixel Clouds/Clouds/images/1/blue/8.png" id="8_bptnd"]
+[ext_resource type="Texture2D" uid="uid://b0g7brpyg55xf" path="res://cloudy skies/Pixel Clouds/Clouds/images/1/blue/10.png" id="9_6vscs"]
+[ext_resource type="Texture2D" uid="uid://3vx57678id7n" path="res://cloudy skies/Pixel Clouds/Clouds/images/1/blue/12.png" id="9_gp5y5"]
+[ext_resource type="Texture2D" uid="uid://cyorshfcoe7gl" path="res://cloudy skies/CloudsSpriteSheet.png" id="10_7swbh"]
+[ext_resource type="PackedScene" uid="uid://b352prexwf1mk" path="res://moving_cloud_1.tscn" id="11_ewulq"]
+[ext_resource type="Script" uid="uid://bxdddyju1g73t" path="res://Scripts/FallingPlatform.gd" id="12_qb3ey"]
+[ext_resource type="Texture2D" uid="uid://bcnsht2r7hbjd" path="res://Brackey's Assets (from video)/bird flying/1.png" id="13_kyqi5"]
+[ext_resource type="Texture2D" uid="uid://c4ar1vfm1adnq" path="res://cloudy skies/Pixel Clouds/Clouds/images/1/blue/5 (1).png" id="13_qb3ey"]
+[ext_resource type="Script" uid="uid://dyk4pxm7h23h3" path="res://Scripts/BirdScript.gd" id="13_vje1a"]
+[ext_resource type="Texture2D" uid="uid://crlornw4mfls0" path="res://Brackey's Assets (from video)/bird flying/2.png" id="14_vje1a"]
+[ext_resource type="Texture2D" uid="uid://buutuo268beol" path="res://Brackey's Assets (from video)/bird flying/3.png" id="15_qb3ey"]
+[ext_resource type="Texture2D" uid="uid://oma2kuuptvn6" path="res://Brackey's Assets (from video)/bird flying/4.png" id="16_8d7kt"]
+[ext_resource type="Texture2D" uid="uid://chcgltta4m6xg" path="res://Brackey's Assets (from video)/bird flying/5.png" id="17_20yf3"]
+[ext_resource type="Texture2D" uid="uid://cmphr0i18dyft" path="res://Brackey's Assets (from video)/bird flying/6.png" id="18_ulu3c"]
+[ext_resource type="Texture2D" uid="uid://bsq4gevr2lfum" path="res://Brackey's Assets (from video)/bird flying/7.png" id="19_jr02t"]
+[ext_resource type="Texture2D" uid="uid://du46xtpi4pppa" path="res://cloudy skies/Pixel Clouds/Clouds/images/1/blue/19.png" id="22_8d7kt"]
+[ext_resource type="Script" uid="uid://dmgm1mk3yyulx" path="res://Scripts/Level3Cutscene.gd" id="22_20yf3"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ewulq"]
+texture = ExtResource("10_7swbh")
+0:14/size_in_atlas = Vector2i(23, 9)
+0:14/0 = 0
+0:14/0/physics_layer_0/polygon_0/points = PackedVector2Array(-170.06987, 24.801865, -170.06987, -33.659653, -118.694595, -38.97435, -81.491806, -49.603714, -49.603714, -47.832153, -5.314682, -47.832153, 31.888107, -46.060593, 81.491806, -62.00464, 131.09554, -58.461517, 164.7552, -40.74591, 173.61299, 26.573425, 178.92769, 46.060593, -166.52675, 42.51747)
+23:14/size_in_atlas = Vector2i(22, 9)
+23:14/0 = 0
+23:14/0/physics_layer_0/polygon_0/points = PackedVector2Array(-170.06987, 24.801865, -147.03958, 10.629364, -127.5524, 0, -99.20742, 1.7715607, -70.86244, 10.629364, -42.51747, 12.400925, 8, -8, 72.634, 10.629364, 111.60835, 31.888107, 152.35426, 35.43123, 173.61299, 26.573425, 178.92769, 46.060593, 54.918396, 67.31932, -168.29831, 60.233078)
+45:14/size_in_atlas = Vector2i(22, 9)
+45:14/0 = 0
+45:14/0/physics_layer_0/polygon_0/points = PackedVector2Array(-170.06987, 24.801865, -148.81113, 7.0862427, -134.63864, -12.400925, -97.43586, -15.944046, -74.40556, -28.34497, -40.74591, -19.487167, -8, -8, 8, -8, 72.634, 10.629364, 118.694595, -1.7715607, 155.89738, 3.5431213, 173.61299, 26.573425, 173.61299, 63.7762, 54.918396, 67.31932, -168.29831, 60.233078)
+0:36/size_in_atlas = Vector2i(23, 9)
+0:36/0 = 0
+0:36/0/physics_layer_0/polygon_0/points = PackedVector2Array(-170.06987, 24.801865, -148.81113, 7.0862427, -134.63864, -12.400925, -97.43586, -15.944046, -74.40556, -28.34497, -40.74591, -19.487167, -8, -8, 8, -8, 72.634, 10.629364, 118.694595, -1.7715607, 155.89738, 3.5431213, 173.61299, 26.573425, 173.61299, 63.7762, 54.918396, 67.31932, -168.29831, 60.233078)
+23:38/size_in_atlas = Vector2i(22, 7)
+23:38/0 = 0
+23:38/0/physics_layer_0/polygon_0/points = PackedVector2Array(-170.06987, 24.801865, -177.15611, -1.7715607, -161.21207, -10.629364, -134.63864, -12.400925, -97.43586, -15.944046, -67.31932, -8.857803, -33.659653, -14.172485, 3.5431213, -35.43123, 47.832153, -23.030289, 97.43587, 1.7715607, 118.694595, -1.7715607, 155.89738, 3.5431213, 173.61299, 26.573425, 173.61299, 63.7762, 54.918396, 67.31932, -168.29831, 60.233078)
+45:37/size_in_atlas = Vector2i(22, 8)
+45:37/0 = 0
+45:37/0/physics_layer_0/polygon_0/points = PackedVector2Array(-170.06987, 24.801865, -177.15611, -1.7715607, -161.21207, -10.629364, -134.63864, -12.400925, -97.43586, -15.944046, -67.31932, -8.857803, -33.659653, -14.172485, 3.5431213, -35.43123, 90.349625, -60.233078, 162.98363, -30.116531, 173.61299, -5.314682, 155.89738, 3.5431213, 173.61299, 26.573425, 173.61299, 63.7762, 54.918396, 67.31932, -168.29831, 60.233078)
+0:60/size_in_atlas = Vector2i(22, 7)
+0:60/0 = 0
+0:60/0/physics_layer_0/polygon_0/points = PackedVector2Array(-170.06987, 24.801865, -177.15611, -1.7715607, -161.21207, -10.629364, -134.63864, -12.400925, -97.43586, -15.944046, -67.31932, -8.857803, -33.659653, -14.172485, 8, -8, 77.948685, 10.629364, 132.86708, 10.629364, 173.61299, -5.314682, 155.89738, 3.5431213, 173.61299, 26.573425, 173.61299, 63.7762, 54.918396, 67.31932, -168.29831, 60.233078)
+22:60/size_in_atlas = Vector2i(23, 7)
+22:60/0 = 0
+22:60/0/physics_layer_0/polygon_0/points = PackedVector2Array(-170.06987, 24.801865, -177.15611, -1.7715607, -161.21207, -10.629364, -134.63864, -12.400925, -108.06522, -38.97435, -72.634, -33.659653, -37.202774, -37.20279, 8, -8, 77.948685, 10.629364, 132.86708, 10.629364, 173.61299, -5.314682, 155.89738, 3.5431213, 173.61299, 26.573425, 173.61299, 63.7762, 54.918396, 67.31932, -168.29831, 60.233078)
+45:60/size_in_atlas = Vector2i(22, 7)
+45:60/0 = 0
+45:60/0/physics_layer_0/polygon_0/points = PackedVector2Array(-170.06987, 24.801865, -177.15611, -1.7715607, -161.21207, -10.629364, -134.63864, -12.400925, -104.5221, -8.857803, -79.720245, -7.0862427, -38.97435, -12.400925, 8, -8, 65.54776, -30.116531, 118.694595, -30.116531, 173.61299, -5.314682, 155.89738, 3.5431213, 173.61299, 26.573425, 173.61299, 63.7762, 54.918396, 67.31932, -168.29831, 60.233078)
+
+[sub_resource type="TileSet" id="TileSet_6vscs"]
+tile_size = Vector2i(100, 100)
+physics_layer_0/collision_layer = 1
+sources/0 = SubResource("TileSetAtlasSource_ewulq")
+
+[sub_resource type="Animation" id="Animation_6vscs"]
+resource_name = "CloudMoving"
+length = 2.5
+loop_mode = 2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Cloud Platforms/AnimatedCloud:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 2.4666667),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(50, 475), Vector2(220, 475)]
+}
+
+[sub_resource type="Animation" id="Animation_otr1s"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Cloud Platforms/AnimatedCloud:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(29, 477.99997)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Cloud Platforms/AnimatedCloud2:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(185, 341)]
+}
+
+[sub_resource type="Animation" id="Animation_ewulq"]
+resource_name = "Rotating"
+length = 2.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Cloud Platforms/AnimatedCloud2:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.53333336, 1.0666667, 1.5, 2),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(185, 320), Vector2(150, 300), Vector2(185, 280), Vector2(215, 300), Vector2(185, 320)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_bptnd"]
+_data = {
+&"CloudMoving": SubResource("Animation_6vscs"),
+&"RESET": SubResource("Animation_otr1s"),
+&"Rotating": SubResource("Animation_ewulq")
+}
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8d7kt"]
+size = Vector2(42, 15)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_larcy"]
+size = Vector2(41, 28)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_6xfkj"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("13_kyqi5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_vje1a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_qb3ey")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_8d7kt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_20yf3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_ulu3c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_jr02t")
+}],
+"loop": true,
+"name": &"Flying",
+"speed": 5.0
+}]
+
+[sub_resource type="Animation" id="Animation_6v2wh"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("..:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(387, 135)]
+}
+
+[sub_resource type="Animation" id="Animation_0n564"]
+resource_name = "flying"
+length = 2.5
+loop_mode = 2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("..:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.96666664, 1.11, 2),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(387, 145), Vector2(200, 145), Vector2(200, 145), Vector2(387, 145)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.97, 1.0666666, 2, 2.1333334),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(1, 1), Vector2(-1, 1), Vector2(-1, 1), Vector2(1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_qbl2b"]
+_data = {
+&"RESET": SubResource("Animation_6v2wh"),
+&"flying": SubResource("Animation_0n564")
+}
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_20yf3"]
+size = Vector2(141, 36.5)
+
+[node name="Level3" type="Node2D"]
+
+[node name="SkyGradient" type="Sprite2D" parent="."]
+position = Vector2(608.4635, 328)
+scale = Vector2(2.6215835, 2.795197)
+texture = ExtResource("1_eywy2")
+
+[node name="player" parent="." instance=ExtResource("2_84iim")]
+z_index = 1
+position = Vector2(474.00003, 72)
+scale = Vector2(0.021738585, 0.021738585)
+
+[node name="Camera2D" type="Camera2D" parent="player"]
+position = Vector2(-46.000824, -230.00562)
+scale = Vector2(1.006393, 0.9732649)
+zoom = Vector2(5.5, 5.5)
+
+[node name="CloudsBottom" type="Node" parent="."]
+
+[node name="15" type="Sprite2D" parent="CloudsBottom"]
+position = Vector2(163, 647)
+scale = Vector2(12.142856, 4.4906425)
+texture = ExtResource("5_ewulq")
+
+[node name="2_1" type="Sprite2D" parent="CloudsBottom"]
+position = Vector2(661, 576)
+scale = Vector2(-4.015541, 3.915507)
+texture = ExtResource("6_6vscs")
+
+[node name="3" type="Sprite2D" parent="CloudsBottom"]
+position = Vector2(425, 638)
+scale = Vector2(4.3412704, 2.468454)
+texture = ExtResource("3_u5lf4")
+
+[node name="4" type="Sprite2D" parent="CloudsBottom"]
+position = Vector2(497, 636.00006)
+rotation = -3.1415925
+scale = Vector2(4.541654, -2.6240628)
+texture = ExtResource("3_u5lf4")
+
+[node name="5" type="Sprite2D" parent="CloudsBottom"]
+position = Vector2(267, 636.99994)
+scale = Vector2(7.5900097, 4.5495305)
+texture = ExtResource("7_otr1s")
+
+[node name="8" type="Sprite2D" parent="CloudsBottom"]
+position = Vector2(345, 638)
+scale = Vector2(4.22548, 2.6687422)
+texture = ExtResource("8_bptnd")
+
+[node name="12" type="Sprite2D" parent="CloudsBottom"]
+position = Vector2(162, 637)
+rotation = -3.1415925
+scale = Vector2(4.814716, -3.9704204)
+texture = ExtResource("9_gp5y5")
+
+[node name="10" type="Sprite2D" parent="CloudsBottom"]
+position = Vector2(46, 644.00006)
+scale = Vector2(3.9017487, 4.1475253)
+texture = ExtResource("9_6vscs")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="CloudsBottom"]
+position = Vector2(101.99998, 0)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="CloudsBottom/StaticBody2D"]
+position = Vector2(-35, 638)
+polygon = PackedVector2Array(-77.99998, 0, -43.999977, -14, 2.2888184e-05, 0, 47, 0, 83, 0, 102, -18, 148, -18, 166, -9, 179, -18, 207, -21, 225, -10, 235, -8, 248, -18, 273, -23, 294, -16, 321, -13, 333, -22, 358, -21, 369, -12, 409, -15, 434, -28, 454, -47, 478, -52, 498, -72, 507, -112, 534, -142, 570, -145, 589, -129, 639, -78, 673, -58, 690, -38, 705, -34, 727, -17, 756, -8, 756, 23, 434, 23, -72.99998, 28)
+
+[node name="Cloud Platforms" type="Node2D" parent="."]
+
+[node name="TileMap" type="TileMap" parent="Cloud Platforms"]
+position = Vector2(1, 0)
+scale = Vector2(0.14986673, 0.15)
+tile_set = SubResource("TileSet_6vscs")
+format = 2
+layer_0/tile_data = PackedInt32Array(2359301, 0, 36, 1835017, 0, 14, 2228236, 0, 14, 2490380, 1507328, 38, 1703951, 2949120, 37, 1507348, 1441792, 60, 1114132, 1507328, 38, 917531, 2949120, 60, 720917, 2949120, 14, 524302, 0, 14, 458783, 0, 60, 393238, 2949120, 60)
+
+[node name="AnimatedCloud" parent="Cloud Platforms" instance=ExtResource("11_ewulq")]
+position = Vector2(29, 477.99997)
+scale = Vector2(1.44, 1.44)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Cloud Platforms/AnimatedCloud"]
+root_node = NodePath("../../..")
+libraries = {
+&"": SubResource("AnimationLibrary_bptnd")
+}
+autoplay = "CloudMoving"
+
+[node name="AnimatedCloud2" parent="Cloud Platforms" instance=ExtResource("11_ewulq")]
+position = Vector2(185, 341)
+scale = Vector2(1.44, 1.44)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Cloud Platforms/AnimatedCloud2"]
+root_node = NodePath("../../..")
+libraries = {
+&"": SubResource("AnimationLibrary_bptnd")
+}
+autoplay = "Rotating"
+
+[node name="Falling Cloud 1" type="StaticBody2D" parent="Cloud Platforms"]
+position = Vector2(558, 119)
+script = ExtResource("12_qb3ey")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Cloud Platforms/Falling Cloud 1"]
+position = Vector2(9, -2)
+shape = SubResource("RectangleShape2D_8d7kt")
+
+[node name="Cloud" type="Sprite2D" parent="Cloud Platforms/Falling Cloud 1"]
+position = Vector2(8, -5)
+scale = Vector2(1.2656716, 0.96616906)
+texture = ExtResource("13_qb3ey")
+
+[node name="Area2D" type="Area2D" parent="Cloud Platforms/Falling Cloud 1"]
+position = Vector2(1, -2)
+scale = Vector2(1, 1.36)
+priority = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Cloud Platforms/Falling Cloud 1/Area2D"]
+position = Vector2(8, -1.5)
+shape = SubResource("RectangleShape2D_8d7kt")
+
+[node name="Falling Cloud 2" type="StaticBody2D" parent="Cloud Platforms"]
+position = Vector2(651, 126)
+script = ExtResource("12_qb3ey")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Cloud Platforms/Falling Cloud 2"]
+position = Vector2(9, -2)
+shape = SubResource("RectangleShape2D_8d7kt")
+
+[node name="Cloud" type="Sprite2D" parent="Cloud Platforms/Falling Cloud 2"]
+position = Vector2(8, -5)
+scale = Vector2(1.2656716, 0.96616906)
+texture = ExtResource("13_qb3ey")
+
+[node name="Area2D" type="Area2D" parent="Cloud Platforms/Falling Cloud 2"]
+position = Vector2(1, -2)
+scale = Vector2(1, 1.36)
+priority = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Cloud Platforms/Falling Cloud 2/Area2D"]
+position = Vector2(8, -1.5)
+shape = SubResource("RectangleShape2D_8d7kt")
+
+[node name="Falling Cloud 3" type="StaticBody2D" parent="Cloud Platforms"]
+position = Vector2(743, 124)
+script = ExtResource("12_qb3ey")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Cloud Platforms/Falling Cloud 3"]
+position = Vector2(9, -2)
+shape = SubResource("RectangleShape2D_8d7kt")
+
+[node name="Cloud" type="Sprite2D" parent="Cloud Platforms/Falling Cloud 3"]
+position = Vector2(8, -5)
+scale = Vector2(1.2656716, 0.96616906)
+texture = ExtResource("13_qb3ey")
+
+[node name="Area2D" type="Area2D" parent="Cloud Platforms/Falling Cloud 3"]
+position = Vector2(1, -2)
+scale = Vector2(1, 1.36)
+priority = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Cloud Platforms/Falling Cloud 3/Area2D"]
+position = Vector2(8, -1.5)
+shape = SubResource("RectangleShape2D_8d7kt")
+
+[node name="Bird" type="AnimatableBody2D" parent="."]
+position = Vector2(387, 135)
+collision_layer = 3
+collision_mask = 3
+script = ExtResource("13_vje1a")
+
+[node name="Area2D" type="Area2D" parent="Bird"]
+collision_layer = 3
+collision_mask = 3
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Bird/Area2D"]
+show_behind_parent = true
+z_index = 1
+position = Vector2(0.5, -8)
+shape = SubResource("RectangleShape2D_larcy")
+debug_color = Color(0.9846732, 0, 0.3457982, 0.41960785)
+
+[node name="FlyingBird" type="AnimatedSprite2D" parent="Bird"]
+z_index = 1
+scale = Vector2(-1, 1)
+sprite_frames = SubResource("SpriteFrames_6xfkj")
+animation = &"Flying"
+autoplay = "Flying"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Bird"]
+root_node = NodePath("../FlyingBird")
+libraries = {
+&"": SubResource("AnimationLibrary_qbl2b")
+}
+autoplay = "flying"
+
+[node name="GreyCloud" type="AnimatableBody2D" parent="." node_paths=PackedStringArray("background_node")]
+script = ExtResource("22_20yf3")
+background_node = NodePath("../SkyGradient")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="GreyCloud"]
+position = Vector2(912, 122)
+shape = SubResource("RectangleShape2D_20yf3")
+
+[node name="Cloud1" type="Sprite2D" parent="GreyCloud"]
+position = Vector2(889.8125, 113.02776)
+scale = Vector2(2.878471, 2.878471)
+texture = ExtResource("22_8d7kt")
+
+[node name="Cloud2" type="Sprite2D" parent="GreyCloud"]
+position = Vector2(933.8125, 115.027756)
+scale = Vector2(2.878471, 2.878471)
+texture = ExtResource("22_8d7kt")
+
+[node name="Area2D" type="Area2D" parent="GreyCloud"]
+position = Vector2(910, 116)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="GreyCloud/Area2D"]
+position = Vector2(2, 2.75)
+shape = SubResource("RectangleShape2D_20yf3")
+
+[connection signal="body_entered" from="Bird/Area2D" to="Bird" method="_on_area_2d_body_entered"]
+[connection signal="body_entered" from="GreyCloud/Area2D" to="GreyCloud" method="_on_area_2d_body_entered"]
