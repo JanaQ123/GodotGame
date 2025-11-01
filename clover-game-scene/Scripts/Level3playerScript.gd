@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-const SPEED = 300.0
+const SPEED = 250.0
 const JUMP_VELOCITY = -300.0
 
 @onready var sprite = $AnimatedSprite2D
@@ -43,6 +43,11 @@ func _physics_process(delta: float) -> void:
 		# Optional horizontal control during freefall
 		#velocity.x = direction * SPEED * 0.5  # half speed for floaty feel
 		velocity.y += 700 * delta  # slow-motion gravity
+		if self.global_position.y>1100:
+			can_move=true
+			freefall=false
+			$CollisionShape2D.set_deferred("disabled", false)  
+
 		move_and_slide()
 		return
 
@@ -69,7 +74,7 @@ func _physics_process(delta: float) -> void:
 			velocity += get_gravity() * delta
 			if velocity.y < 0:
 				is_jumping = true
-			elif is_jumping and is_on_floor():
+			else:
 				is_jumping = false
 
 		# Animation
