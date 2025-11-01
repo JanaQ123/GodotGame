@@ -678,7 +678,7 @@ position = Vector2(3634, -121)
 texture = ExtResource("24_h74q7")
 
 [node name="sky" parent="." instance=ExtResource("25_tqa8r")]
-position = Vector2(-11, 15)
+position = Vector2(-28, 13)
 
 [node name="AnimatableBody2D" parent="." instance=ExtResource("26_kgaxw")]
 position = Vector2(1263, -166)
