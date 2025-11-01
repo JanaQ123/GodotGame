@@ -1,0 +1,33 @@
+[gd_scene load_steps=6 format=3 uid="uid://55xudqc3jbea"]
+
+[ext_resource type="Texture2D" uid="uid://c58xjnpkgvjmd" path="res://Brackey's Assets (from video)/sprites/platforms.png" id="1_0pyi2"]
+[ext_resource type="Script" uid="uid://sh3dey3qhjxm" path="res://hazard.gd" id="2_aj7pt"]
+[ext_resource type="Texture2D" uid="uid://yh2nraso0vt3" path="res://Brackey's Assets (from video)/sprites/world_tileset.png" id="3_748mp"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_s8bxr"]
+size = Vector2(32, 8)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_1w2t3"]
+radius = 6.0827627
+
+[node name="platform" type="AnimatableBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_0pyi2")
+region_enabled = true
+region_rect = Rect2(16, 0, 32, 9)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_s8bxr")
+
+[node name="hazard" type="Area2D" parent="."]
+position = Vector2(1, -12)
+script = ExtResource("2_aj7pt")
+
+[node name="Sprite2D2" type="Sprite2D" parent="hazard"]
+texture = ExtResource("3_748mp")
+region_enabled = true
+region_rect = Rect2(112, 80, 16, 16)
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="hazard"]
+shape = SubResource("CircleShape2D_1w2t3")

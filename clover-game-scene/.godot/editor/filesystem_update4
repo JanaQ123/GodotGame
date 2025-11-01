@@ -3,3 +3,8 @@ res://platform.tscn
 res://lucywalk.gd
 res://lucy.tscn
 res://4.gd
+res://rotate.gd
+res://platformnoncol.gd
+res://platformnoncol.tscn
+res://hazard.gd
+res://killzone.gd
