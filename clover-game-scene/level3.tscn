@@ -4,11 +4,11 @@
 [ext_resource type="Texture2D" uid="uid://c58xjnpkgvjmd" path="res://Brackey's Assets (from video)/sprites/platforms.png" id="2_qrujo"]
 [ext_resource type="Texture2D" uid="uid://yh2nraso0vt3" path="res://Brackey's Assets (from video)/sprites/world_tileset.png" id="3_qrujo"]
 [ext_resource type="PackedScene" uid="uid://uw301h814ps0" path="res://platform.tscn" id="4_5lcx6"]
-[ext_resource type="Script" uid="uid://b23mal134t84c" path="res://lotus.gd" id="11_sotx7"]
+[ext_resource type="Script" path="res://lotus.gd" id="11_sotx7"]
 [ext_resource type="PackedScene" uid="uid://cwwt2rsr8quxp" path="res://collaspe.tscn" id="11_ymh28"]
 [ext_resource type="PackedScene" uid="uid://55xudqc3jbea" path="res://platformnoncol.tscn" id="12_7oc4e"]
 [ext_resource type="PackedScene" uid="uid://b32l8svfi808p" path="res://slidingplatform.tscn" id="12_siwpi"]
-[ext_resource type="Script" uid="uid://do8pd18ut7bum" path="res://platformnoncol.gd" id="13_siwpi"]
+[ext_resource type="Script" path="res://platformnoncol.gd" id="13_siwpi"]
 [ext_resource type="PackedScene" uid="uid://bhhikdvbxeox0" path="res://button.tscn" id="18_l2pgs"]
 [ext_resource type="PackedScene" uid="uid://byw0vwjqmss16" path="res://sky.tscn" id="25_tqa8r"]
 [ext_resource type="PackedScene" uid="uid://5ecpkao4jmi3" path="res://lotus.tscn" id="26_kgaxw"]
@@ -775,7 +775,8 @@ _data = {
 
 [node name="level3" type="Node2D"]
 
-[node name="lucy" parent="." instance=ExtResource("1_o2ccw")]
+[node name="lucy" parent="." groups=["player"] instance=ExtResource("1_o2ccw")]
+z_index = 1
 position = Vector2(96, 4.000061)
 scale = Vector2(0.015, 0.015)
 collision_mask = 7

@@ -1,12 +1,5 @@
-res://collaspe.tscn
-res://collaspe.gd
-res://level3.tscn
-res://lucy.tscn
-res://buttonarea.tscn
-res://buttonmove.tscn
-res://buttonarea.gd
-res://buttonmove.gd
-res://area_2d.gd
 res://button.tscn
-res://slidingplatform.tscn
-res://slidingplatform.gd
+res://buttonPress.gd
+res://level3.tscn
+res://buttonmove.tscn
+res://decayingplatform.tscn
