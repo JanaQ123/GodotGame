@@ -90,18 +90,17 @@ func _physics_process(delta: float) -> void:
 		# Gravity
 		if not is_on_floor():
 			velocity += get_gravity() * delta
-<<<<<<< HEAD
 			if velocity.y < 0:
 				is_jumping = true
 			else:
 				is_jumping = false
-=======
+
 			if not powerup:
 				if velocity.y < 0:
 					is_jumping = true
 				elif is_jumping and is_on_floor():
 					is_jumping = false
->>>>>>> level2Debug
+
 
 		# Animation
 		if is_jumping:

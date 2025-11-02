@@ -1,7 +1,7 @@
 [gd_scene load_steps=9 format=3 uid="uid://ugx26js2mqc4"]
 
 [ext_resource type="Texture2D" uid="uid://yh2nraso0vt3" path="res://Brackey's Assets (from video)/sprites/world_tileset.png" id="1_3hls8"]
-[ext_resource type="PackedScene" uid="uid://dwbepxe4isg4w" path="res://scenes/player.tscn" id="1_hbghi"]
+[ext_resource type="PackedScene" uid="uid://dwbepxe4isg4w" path="res://scenes/level3player.tscn" id="1_hbghi"]
 [ext_resource type="PackedScene" uid="uid://croobmd63t5lv" path="res://scenes/killzone.tscn" id="3_rus8k"]
 [ext_resource type="PackedScene" uid="uid://27rjl3boeoex" path="res://scenes/spikes.tscn" id="4_5xbjy"]
 [ext_resource type="PackedScene" uid="uid://bv8ssxv87uw31" path="res://scenes/clover.tscn" id="5_4nkto"]
