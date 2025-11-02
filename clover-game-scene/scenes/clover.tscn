@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://bv8ssxv87uw31"]
+
+[ext_resource type="Texture2D" uid="uid://k8voxvfoe2ps" path="res://Brackey's Assets (from video)/sprites/clover.PNG" id="1_0nhso"]
+[ext_resource type="Script" uid="uid://b8kfsci257xuw" path="res://scenes/clover.gd" id="1_u80bc"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_0nhso"]
+radius = 156.0
+height = 312.0
+
+[node name="clover" type="Area2D"]
+collision_mask = 2
+script = ExtResource("1_u80bc")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_0nhso")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(8, -58)
+shape = SubResource("CapsuleShape2D_0nhso")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
