@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://bxpbtnif3ejj3"]
+
+[ext_resource type="Script" path="res://rotate.gd" id="1_dvd87"]
+[ext_resource type="PackedScene" uid="uid://uw301h814ps0" path="res://platform.tscn" id="2_m41cr"]
+
+[node name="Node2D" type="Node2D"]
+position = Vector2(1828, -152)
+script = ExtResource("1_dvd87")
+
+[node name="rotatingaround" parent="." instance=ExtResource("2_m41cr")]
+position = Vector2(-49, 2)
+
+[node name="rotatingaround2" parent="." instance=ExtResource("2_m41cr")]
+position = Vector2(49, -1)
+
+[node name="rotatingaround3" parent="." instance=ExtResource("2_m41cr")]
+position = Vector2(3, 54)
+
+[node name="rotatingaround4" parent="." instance=ExtResource("2_m41cr")]
+position = Vector2(-1, -48)

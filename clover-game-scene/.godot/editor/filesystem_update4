@@ -1,4 +1,12 @@
+res://collaspe.tscn
+res://collaspe.gd
 res://level3.tscn
-res://sky.tscn
-res://4.gd
 res://lucy.tscn
+res://buttonarea.tscn
+res://buttonmove.tscn
+res://buttonarea.gd
+res://buttonmove.gd
+res://area_2d.gd
+res://button.tscn
+res://slidingplatform.tscn
+res://slidingplatform.gd

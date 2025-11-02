@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://b32l8svfi808p"]
+
+[ext_resource type="Script" uid="uid://doxtatxgux3ow" path="res://slidingplatform.gd" id="1_4y2yg"]
+[ext_resource type="Texture2D" uid="uid://c58xjnpkgvjmd" path="res://Brackey's Assets (from video)/sprites/platforms.png" id="1_7fsnn"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_crr3m"]
+size = Vector2(16, 10)
+
+[node name="slidingplatform" type="AnimatableBody2D"]
+script = ExtResource("1_4y2yg")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_7fsnn")
+region_enabled = true
+region_rect = Rect2(16, 0, 32, 9)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -1)
+shape = SubResource("RectangleShape2D_crr3m")
+one_way_collision = true

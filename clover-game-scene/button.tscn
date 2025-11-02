@@ -1,6 +1,7 @@
-[gd_scene load_steps=13 format=3 uid="uid://bhhikdvbxeox0"]
+[gd_scene load_steps=9 format=3 uid="uid://bhhikdvbxeox0"]
 
 [ext_resource type="Texture2D" uid="uid://c58xjnpkgvjmd" path="res://Brackey's Assets (from video)/sprites/platforms.png" id="1_n4tde"]
+[ext_resource type="Script" uid="uid://ld3dc2d4wl1w" path="res://area_2d.gd" id="2_lt4la"]
 [ext_resource type="Texture2D" uid="uid://dst5t13y2l6li" path="res://Traps/1.png" id="2_vxja4"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_lt4la"]
@@ -10,29 +11,9 @@ size = Vector2(14, 9)
 atlas = ExtResource("2_vxja4")
 region = Rect2(0, 0, 48, 48)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_2kp8h"]
-atlas = ExtResource("2_vxja4")
-region = Rect2(48, 0, 48, 48)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_lj86r"]
-atlas = ExtResource("2_vxja4")
-region = Rect2(96, 0, 48, 48)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_d7rpu"]
-atlas = ExtResource("2_vxja4")
-region = Rect2(144, 0, 48, 48)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_m64rv"]
-atlas = ExtResource("2_vxja4")
-region = Rect2(192, 0, 48, 48)
-
 [sub_resource type="AtlasTexture" id="AtlasTexture_47axv"]
 atlas = ExtResource("2_vxja4")
 region = Rect2(240, 0, 48, 48)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_8sibl"]
-atlas = ExtResource("2_vxja4")
-region = Rect2(288, 0, 48, 48)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_xytk5"]
 animations = [{
@@ -41,22 +22,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_4amfo")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_2kp8h")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_lj86r")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_d7rpu")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_m64rv")
-}, {
-"duration": 1.0,
 "texture": SubResource("AtlasTexture_47axv")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_8sibl")
 }],
 "loop": true,
 "name": &"default",
@@ -66,7 +32,8 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4sa2v"]
 size = Vector2(8, 5)
 
-[node name="button" type="AnimatableBody2D"]
+[node name="button" type="StaticBody2D"]
+collision_mask = 7
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("1_n4tde")
@@ -78,12 +45,13 @@ position = Vector2(0, -0.5)
 shape = SubResource("RectangleShape2D_lt4la")
 
 [node name="Area2D" type="Area2D" parent="."]
+collision_mask = 7
+script = ExtResource("2_lt4la")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Area2D"]
 position = Vector2(0, -12)
 scale = Vector2(0.29716614, 0.3091622)
 sprite_frames = SubResource("SpriteFrames_xytk5")
-frame_progress = 0.95889026
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 position = Vector2(0, -6.5)

@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://byw0vwjqmss16"]
+[gd_scene load_steps=14 format=3 uid="uid://byw0vwjqmss16"]
 
 [ext_resource type="Texture2D" uid="uid://6hby8agr7sw7" path="res://clouds/Clouds/Clouds 6/4.png" id="1_3ustv"]
 [ext_resource type="Texture2D" uid="uid://ccnp6lnkaqd6q" path="res://clouds/Clouds/Clouds 2/4.png" id="3_00u2l"]
@@ -13,8 +13,6 @@
 [ext_resource type="Texture2D" uid="uid://0od135po663" path="res://clouds/Clouds/Clouds 7/2.png" id="11_tlsao"]
 [ext_resource type="Texture2D" uid="uid://kx7xvo1xdm8m" path="res://clouds/Clouds/Clouds 2/sky33.png" id="12_mng0x"]
 [ext_resource type="Texture2D" uid="uid://cqfodwo8pgh56" path="res://clouds/Clouds/Clouds 2/1.png" id="12_mxtae"]
-
-[sub_resource type="GDScript" id="GDScript_74ku2"]
 
 [node name="Node2D" type="Node2D"]
 
@@ -57,7 +55,6 @@ texture = ExtResource("3_00u2l")
 z_index = -1
 position = Vector2(-828, 6)
 texture = ExtResource("1_3ustv")
-script = SubResource("GDScript_74ku2")
 
 [node name="3" type="Sprite2D" parent="5"]
 z_index = -2
