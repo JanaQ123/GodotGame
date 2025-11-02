@@ -1,7 +1,11 @@
 [gd_scene load_steps=45 format=3 uid="uid://badtgob5db5fo"]
 
 [ext_resource type="Texture2D" uid="uid://dvbhe3njpvy4d" path="res://cloudy skies/sky gradient.png" id="1_eywy2"]
+<<<<<<< HEAD:clover-game-scene/Level3.tscn
 [ext_resource type="PackedScene" uid="uid://dwbepxe4isg4w" path="res://level3player.tscn" id="2_84iim"]
+=======
+[ext_resource type="PackedScene" uid="uid://dwbepxe4isg4w" path="res://scenes/player.tscn" id="2_84iim"]
+>>>>>>> level2Debug:clover-game-scene/scenes/Level3.tscn
 [ext_resource type="Texture2D" uid="uid://bf1fevqpk5m26" path="res://cloudy skies/Pixel Clouds/Clouds/images/1/blue/1.png" id="3_u5lf4"]
 [ext_resource type="Texture2D" uid="uid://bc7mb6gn0h346" path="res://cloudy skies/Pixel Clouds/Clouds/images/1/blue/15.png" id="5_ewulq"]
 [ext_resource type="Texture2D" uid="uid://6bbc1hjbokl0" path="res://cloudy skies/Pixel Clouds/Clouds/images/2/blue_2/2.1.png" id="6_6vscs"]
@@ -10,10 +14,14 @@
 [ext_resource type="Texture2D" uid="uid://b0g7brpyg55xf" path="res://cloudy skies/Pixel Clouds/Clouds/images/1/blue/10.png" id="9_6vscs"]
 [ext_resource type="Texture2D" uid="uid://3vx57678id7n" path="res://cloudy skies/Pixel Clouds/Clouds/images/1/blue/12.png" id="9_gp5y5"]
 [ext_resource type="Texture2D" uid="uid://cyorshfcoe7gl" path="res://cloudy skies/CloudsSpriteSheet.png" id="10_7swbh"]
+<<<<<<< HEAD:clover-game-scene/Level3.tscn
 [ext_resource type="Texture2D" uid="uid://c7gbc75iiekeq" path="res://cloudy skies/Pixel Clouds/Clouds/images/1/blue/4.png" id="10_s3sn0"]
 [ext_resource type="Texture2D" uid="uid://chhj45ap6pfl7" path="res://cloudy skies/Pixel Clouds/Clouds/images/1/blue/11.png" id="11_7s766"]
 [ext_resource type="PackedScene" uid="uid://b352prexwf1mk" path="res://moving_cloud_1.tscn" id="11_ewulq"]
 [ext_resource type="Texture2D" uid="uid://cwcv743te4io7" path="res://cloudy skies/Pixel Clouds/Clouds/images/1/blue/7.png" id="12_dev55"]
+=======
+[ext_resource type="PackedScene" uid="uid://b352prexwf1mk" path="res://scenes/moving_cloud_1.tscn" id="11_ewulq"]
+>>>>>>> level2Debug:clover-game-scene/scenes/Level3.tscn
 [ext_resource type="Script" uid="uid://bxdddyju1g73t" path="res://Scripts/FallingPlatform.gd" id="12_qb3ey"]
 [ext_resource type="Texture2D" uid="uid://bcnsht2r7hbjd" path="res://Brackey's Assets (from video)/bird flying/1.png" id="13_kyqi5"]
 [ext_resource type="Texture2D" uid="uid://c4ar1vfm1adnq" path="res://cloudy skies/Pixel Clouds/Clouds/images/1/blue/5 (1).png" id="13_qb3ey"]
