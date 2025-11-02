@@ -1,5 +1,5 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1762094580
+::res://::1762107101
 icon.svg::CompressedTexture2D::5544986168560500066::1761653322::1761653948::1::::<><><>0<>0<>63af06cbdc43413ec82404cd12b0abf1<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
 ::res://Brackey's Assets (from video)/::1762094535
 ::res://Brackey's Assets (from video)/bird flying/::1762094535
@@ -470,31 +470,27 @@ pink_24.png::CompressedTexture2D::4864208616345589098::1762094535::1762094535::1
 ::res://cloudy skies/SVG/::1762094535
 ChatGPT Image Nov 1, 2025, 12_53_22 AM.png::CompressedTexture2D::4819603392244356467::1762094535::1762094535::1::::<><><>0<>0<>eb98a5532ff61c31a1d5012ff1b0e317<>res://.godot/imported/ChatGPT Image Nov 1, 2025, 12_53_22 AM.png-d74d9b490d46ebf7034c8195af492817.ctex::
 Pixel Cloudy Skies.svg::CompressedTexture2D::6249449631047632340::1762094535::1762094535::1::::<><><>0<>0<>0e1f2dd2f6ef1ad5ca9def73b1d6a14b<>res://.godot/imported/Pixel Cloudy Skies.svg-c13a3792f21d5cf086437893dbc51c3d.ctex::
-::res://scenes/::1762094535
-killzone.tscn::PackedScene::5995805457843537275::1762094836::0::1::::<><><>0<>0<><>::uid://dsaaq03m1avrp::::res://scenes/killzoneLevel1.gd
-killzoneLevel1.gd::GDScript::8422691166184636357::1762094535::0::1::::<>Area2D<><>0<>0<><>::
+::res://scenes/::1762107072
+clover.gd::GDScript::4723632149216155098::1762106923::0::1::::<>AnimatableBody2D<><>0<>0<><>::
+clover.tscn::PackedScene::3929637158156728490::1762107041::0::1::::<><><>0<>0<><>::uid://k8voxvfoe2ps::::res://Brackey's Assets (from video)/sprites/clover.PNG<>uid://b8kfsci257xuw::::res://scenes/clover.gd
+killzone.tscn::PackedScene::5995805457843537275::1762094836::0::1::::<><><>0<>0<><>::uid://dsaaq03m1avrp::::res://Scripts/killzoneLevel1.gd
 Level3.tscn::PackedScene::4646540261178829111::1762094535::0::1::::<><><>0<>0<><>::uid://dvbhe3njpvy4d::::res://cloudy skies/sky gradient.png<>uid://dwbepxe4isg4w::::res://scenes/player.tscn<>uid://bf1fevqpk5m26::::res://cloudy skies/Pixel Clouds/Clouds/images/1/blue/1.png<>uid://bc7mb6gn0h346::::res://cloudy skies/Pixel Clouds/Clouds/images/1/blue/15.png<>uid://6bbc1hjbokl0::::res://cloudy skies/Pixel Clouds/Clouds/images/2/blue_2/2.1.png<>uid://bceowtt8ycvp7::::res://cloudy skies/Pixel Clouds/Clouds/images/1/blue/3.png<>uid://dl5xwshpe5j2y::::res://cloudy skies/Pixel Clouds/Clouds/images/1/blue/8.png<>uid://b0g7brpyg55xf::::res://cloudy skies/Pixel Clouds/Clouds/images/1/blue/10.png<>uid://3vx57678id7n::::res://cloudy skies/Pixel Clouds/Clouds/images/1/blue/12.png<>uid://cyorshfcoe7gl::::res://cloudy skies/CloudsSpriteSheet.png<>uid://b352prexwf1mk::::res://scenes/moving_cloud_1.tscn<>uid://bxdddyju1g73t::::res://Scripts/FallingPlatform.gd<>uid://bcnsht2r7hbjd::::res://Brackey's Assets (from video)/bird flying/1.png<>uid://c4ar1vfm1adnq::::res://cloudy skies/Pixel Clouds/Clouds/images/1/blue/5 (1).png<>uid://dyk4pxm7h23h3::::res://Scripts/BirdScript.gd<>uid://crlornw4mfls0::::res://Brackey's Assets (from video)/bird flying/2.png<>uid://buutuo268beol::::res://Brackey's Assets (from video)/bird flying/3.png<>uid://oma2kuuptvn6::::res://Brackey's Assets (from video)/bird flying/4.png<>uid://chcgltta4m6xg::::res://Brackey's Assets (from video)/bird flying/5.png<>uid://cmphr0i18dyft::::res://Brackey's Assets (from video)/bird flying/6.png<>uid://bsq4gevr2lfum::::res://Brackey's Assets (from video)/bird flying/7.png<>uid://du46xtpi4pppa::::res://cloudy skies/Pixel Clouds/Clouds/images/1/blue/19.png<>uid://dmgm1mk3yyulx::::res://Scripts/Level3Cutscene.gd
-level_1.tscn::PackedScene::1417609489535570353::1762094535::0::1::::<><><>0<>0<><>::uid://yh2nraso0vt3::::res://Brackey's Assets (from video)/sprites/world_tileset.png<>uid://dwbepxe4isg4w::::res://scenes/player.tscn<>uid://croobmd63t5lv::::res://scenes/killzone.tscn
+level_1.tscn::PackedScene::1417609489535570353::1762107072::0::1::::<><><>0<>0<><>::uid://yh2nraso0vt3::::res://Brackey's Assets (from video)/sprites/world_tileset.png<>uid://dwbepxe4isg4w::::res://scenes/player.tscn<>uid://croobmd63t5lv::::res://scenes/killzone.tscn<>uid://27rjl3boeoex::::res://scenes/spikes.tscn<>uid://bv8ssxv87uw31::::res://scenes/clover.tscn
 main_game.tscn::PackedScene::7773268033140575855::1762094535::0::1::::<><><>0<>0<><>::
 moving_cloud_1.tscn::PackedScene::4415306684043880306::1762094535::0::1::::<><><>0<>0<><>::uid://c3l2yqyp3x7mv::::res://cloudy skies/Pixel Clouds/Clouds/images/1/blue/6.png
-player.tscn::PackedScene::8705751859295019064::1762094535::0::1::::<><><>0<>0<><>::uid://c8lk8fjkbo63e::::res://character/pose17gg.png<>uid://btgbebxoyso1a::::res://Scripts/Level3playerScript.gd<>uid://b853b6xbf11hb::::res://character/pose11gg.png<>uid://lhyprt3gwf8v::::res://character/pose9gg.png<>uid://n87mjlg1dy3u::::res://character/pose10gg.png<>uid://hls0omk88ndc::::res://character/pose1gg.png<>uid://b3ipni2rrfhkq::::res://character/pose2gg.png<>uid://buh817qjeb54y::::res://character/pose3gg.png<>uid://dtk5k2oyrrh1t::::res://character/pose4gg.png<>uid://djiurhasigfra::::res://character/pose14gg.png<>uid://dh2g6sgwoslna::::res://character/pose16gg.png<>uid://r8e1lc0g86cf::::res://character/pose6gg.png<>uid://dkls5npmkouqt::::res://character/pose7gg.png
-::res://Scripts/::1762094535
+player.tscn::PackedScene::8705751859295019064::1762105180::0::1::::<><><>0<>0<><>::uid://c8lk8fjkbo63e::::res://character/pose17gg.png<>uid://btgbebxoyso1a::::res://Scripts/Level3playerScript.gd<>uid://b853b6xbf11hb::::res://character/pose11gg.png<>uid://lhyprt3gwf8v::::res://character/pose9gg.png<>uid://n87mjlg1dy3u::::res://character/pose10gg.png<>uid://hls0omk88ndc::::res://character/pose1gg.png<>uid://b3ipni2rrfhkq::::res://character/pose2gg.png<>uid://buh817qjeb54y::::res://character/pose3gg.png<>uid://dtk5k2oyrrh1t::::res://character/pose4gg.png<>uid://djiurhasigfra::::res://character/pose14gg.png<>uid://dh2g6sgwoslna::::res://character/pose16gg.png<>uid://r8e1lc0g86cf::::res://character/pose6gg.png<>uid://dkls5npmkouqt::::res://character/pose7gg.png
+spikes.tscn::PackedScene::1962207748454654071::1762105658::0::1::::<><><>0<>0<><>::uid://cyhiw5xribwd5::::res://Traps/4.png<>uid://b8c1yepe10p2d::::res://Scripts/spikes.gd<>uid://croobmd63t5lv::::res://scenes/killzone.tscn
+::res://Scripts/::1762105552
 BirdScript.gd::GDScript::8866226883670567106::1762094535::0::1::::<>AnimatableBody2D<><>0<>0<><>::
 FallingPlatform.gd::GDScript::4007146004397409499::1762094535::0::1::::<>StaticBody2D<><>0<>0<><>::
+killzoneLevel1.gd::GDScript::8422691166184636357::1762103624::0::1::::<>Area2D<><>0<>0<><>::
 Level3Cutscene.gd::GDScript::8014690122848251933::1762094535::0::1::::<>AnimatableBody2D<><>0<>0<><>::
 Level3playerScript.gd::GDScript::3732462928231205308::1762094535::0::1::::<>CharacterBody2D<><>0<>0<><>::
-::res://Traps/::1762094535
+spikes.gd::GDScript::4708403013604888957::1762105552::0::1::::<>Area2D<><>0<>0<><>::
+::res://Traps/::1762095146
 1.png::CompressedTexture2D::8463741263746835970::1761653948::1761653948::1::::<><><>0<>0<>b7cec66cb8d54e04277a91a6634649cd<>res://.godot/imported/1.png-f3e212f1111bd187aeaa66e3a748ee50.ctex::
 2.png::CompressedTexture2D::2857452532864927522::1761653948::1761653948::1::::<><><>0<>0<>f0ecfb6986a679412b6d749b52e685f3<>res://.godot/imported/2.png-91ba67b897bd437b7bfb12df932a4527.ctex::
 3.png::CompressedTexture2D::8796610524873680949::1761653948::1761653948::1::::<><><>0<>0<>c7094199af63a55cc3ab756f563f89aa<>res://.godot/imported/3.png-a466fcce7d6055f25ee547fb39f00e5f.ctex::
 4.png::CompressedTexture2D::6472350894399600836::1761653948::1761653948::1::::<><><>0<>0<>f974b6ac408a871a03d38f071c8cb64d<>res://.godot/imported/4.png-ca2ea1a5f0105bc30e75cafa29b1f3b8.ctex::
 5.png::CompressedTexture2D::2070546043939468495::1761653948::1761653948::1::::<><><>0<>0<>4840fddbec4766aec6e2712b44bef720<>res://.godot/imported/5.png-436dc3a882f0921b55844dff2b7e7134.ctex::
 6.png::CompressedTexture2D::151172700582715822::1761653948::1761653948::1::::<><><>0<>0<>ad9532f82ae8a4a61626321ad001018c<>res://.godot/imported/6.png-f5db6cada7df4baeb04c3ec544b65398.ctex::
-::res://Traps/cloudy skies/::1762094535
-Day Sky Top.png-af1cc43fb1927dc9ce0bf45f2a4960bc.ctex::CompressedTexture2D::4967773240269552159::1762094535::0::1::::<><><>0<>0<><>::
-Day Sky.png-f6ecb9e4882323d59bdc68f7538bcfd2.ctex::CompressedTexture2D::3929681700340832611::1762094535::0::1::::<><><>0<>0<><>::
-icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::CompressedTexture2D::4080455326754030266::1762094535::0::1::::<><><>0<>0<><>::
-Night Sky Top.png-bb3f9fcd9bfc1e7d62917f5b18c60756.ctex::CompressedTexture2D::3110323200122526851::1762094535::0::1::::<><><>0<>0<><>::
-Night Sky.png-c1d99601c3c2c54e8cff5ed217196897.ctex::CompressedTexture2D::1746437842989791652::1762094535::0::1::::<><><>0<>0<><>::
-Red Sky Top.png-1524bc7afe56619ed912ae5a334be7ec.ctex::CompressedTexture2D::3005910750993623328::1762094535::0::1::::<><><>0<>0<><>::
-Red Sky.png-a5d92aa383858c6543ca035be410c039.ctex::CompressedTexture2D::4024145730024209432::1762094535::0::1::::<><><>0<>0<><>::
