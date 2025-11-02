@@ -13,6 +13,10 @@ var knockback_velocity := Vector2.ZERO
 var knockback_time := 0.0
 var can_move=true
 var freefall=false;
+var powerup=false;
+
+func _ready() -> void:
+	$rainbowparent.visible = false   
 
 func take_knockback(direction: Vector2, force: float):
 	knockback_velocity = direction * force
@@ -27,6 +31,16 @@ func free_fall():
 	freefall=true
 	$CollisionShape2D.set_deferred("disabled", true)  # remove support
 	velocity.y += 50
+
+func power_up():
+	powerup=true
+	$rainbowparent.visible = true
+	$rainbowparent/AnimationPlayer.play("rainbowgrow")
+	#if(is_jumping): velocity.y -= 500
+	await get_tree().create_timer(1.5).timeout
+	$rainbowparent.visible = false
+	powerup=false
+
 
 	
 func _physics_process(delta: float) -> void:
@@ -61,16 +75,21 @@ func _physics_process(delta: float) -> void:
 
 		# Jump input
 		if Input.is_action_just_pressed("ui_accept") and is_on_floor():
-			velocity.y = JUMP_VELOCITY
-			is_jumping = true
+			if powerup:
+				velocity.y = JUMP_VELOCITY * 1.8
+
+			else:
+				velocity.y = JUMP_VELOCITY
+				is_jumping = true
 
 		# Gravity
 		if not is_on_floor():
 			velocity += get_gravity() * delta
-			if velocity.y < 0:
-				is_jumping = true
-			elif is_jumping and is_on_floor():
-				is_jumping = false
+			if not powerup:
+				if velocity.y < 0:
+					is_jumping = true
+				elif is_jumping and is_on_floor():
+					is_jumping = false
 
 		# Animation
 		if is_jumping:
