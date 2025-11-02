@@ -1,7 +1,11 @@
-[gd_scene load_steps=12 format=3 uid="uid://27rjl3boeoex"]
+[gd_scene load_steps=14 format=3 uid="uid://27rjl3boeoex"]
 
 [ext_resource type="Texture2D" uid="uid://cyhiw5xribwd5" path="res://Traps/4.png" id="1_5pg7g"]
 [ext_resource type="Script" uid="uid://b8c1yepe10p2d" path="res://Scripts/spikes.gd" id="1_xbcdo"]
+[ext_resource type="PackedScene" uid="uid://croobmd63t5lv" path="res://scenes/killzone.tscn" id="2_bflj7"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_d77p4"]
+size = Vector2(11, 11)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_xbcdo"]
 atlas = ExtResource("1_5pg7g")
@@ -60,25 +64,28 @@ animations = [{
 "speed": 6.0
 }]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_d77p4"]
-size = Vector2(11, 11)
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_bflj7"]
+distance = -40.0
 
-[node name="spikes" type="StaticBody2D"]
+[node name="spikes" type="Area2D"]
 collision_mask = 2
 script = ExtResource("1_xbcdo")
 
-[node name="Area2D" type="Area2D" parent="."]
-collision_mask = 2
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Area2D"]
-sprite_frames = SubResource("SpriteFrames_3hxik")
-autoplay = "default"
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0.5, 2.5)
 shape = SubResource("RectangleShape2D_d77p4")
 
-[node name="Timer" type="Timer" parent="Area2D"]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_3hxik")
+autoplay = "default"
 
-[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
-[connection signal="timeout" from="Area2D/Timer" to="." method="_on_timer_timeout"]
+[node name="killzone" parent="." instance=ExtResource("2_bflj7")]
+position = Vector2(0, -3)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="killzone"]
+scale = Vector2(0.2, 0.25)
+shape = SubResource("WorldBoundaryShape2D_bflj7")
+
+[node name="RayCast2D" type="RayCast2D" parent="."]
+position = Vector2(0, 8)
+target_position = Vector2(0, -9)
