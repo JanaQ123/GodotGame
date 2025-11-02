@@ -1,4 +1,4 @@
-[gd_scene load_steps=44 format=3 uid="uid://badtgob5db5fo"]
+[gd_scene load_steps=45 format=3 uid="uid://badtgob5db5fo"]
 
 [ext_resource type="Texture2D" uid="uid://dvbhe3njpvy4d" path="res://cloudy skies/sky gradient.png" id="1_eywy2"]
 [ext_resource type="PackedScene" uid="uid://dwbepxe4isg4w" path="res://level3player.tscn" id="2_84iim"]
@@ -28,6 +28,7 @@
 [ext_resource type="Script" uid="uid://dmgm1mk3yyulx" path="res://Scripts/Level3Cutscene.gd" id="22_20yf3"]
 [ext_resource type="Texture2D" uid="uid://n4xl3ix6xrei" path="res://Dungeon/Walls.jpg" id="27_dev55"]
 [ext_resource type="Texture2D" uid="uid://bm0bvo1arjn21" path="res://Dungeon/black.jpg" id="28_r45hk"]
+[ext_resource type="Texture2D" uid="uid://na43lpwc4t6d" path="res://cloudy skies/night bg (1).png" id="29_r45hk"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ewulq"]
 texture = ExtResource("10_7swbh")
@@ -251,7 +252,7 @@ texture = ExtResource("1_eywy2")
 
 [node name="level2player" parent="." instance=ExtResource("2_84iim")]
 z_index = 1
-position = Vector2(465.00006, 74)
+position = Vector2(63.000004, 601.00006)
 scale = Vector2(0.021738585, 0.021738585)
 
 [node name="Camera2D" type="Camera2D" parent="level2player"]
@@ -525,166 +526,166 @@ shape = SubResource("RectangleShape2D_20yf3")
 [node name="Room2" type="Node" parent="."]
 
 [node name="r1" type="Sprite2D" parent="Room2"]
-position = Vector2(703.74744, 1395.9135)
+position = Vector2(665.94617, 1581.1124)
 scale = Vector2(0.6275952, 0.4384083)
 texture = ExtResource("27_dev55")
 
 [node name="r2" type="Sprite2D" parent="Room2"]
-position = Vector2(1057.7474, 1396.9136)
+position = Vector2(1019.94617, 1582.1124)
 scale = Vector2(0.6275952, 0.4384083)
 texture = ExtResource("27_dev55")
 
 [node name="r3" type="Sprite2D" parent="Room2"]
-position = Vector2(1409.7474, 1398.9135)
+position = Vector2(1371.9462, 1584.1124)
 scale = Vector2(0.6275952, 0.4384083)
 texture = ExtResource("27_dev55")
 
 [node name="r9" type="Sprite2D" parent="Room2"]
-position = Vector2(1745.7476, 1395.9136)
+position = Vector2(1707.9463, 1581.1124)
 scale = Vector2(0.6275952, 0.4384083)
 texture = ExtResource("27_dev55")
 
 [node name="r10" type="Sprite2D" parent="Room2"]
-position = Vector2(2081.7476, 1401.9135)
+position = Vector2(2043.9463, 1587.1124)
 scale = Vector2(0.6275952, 0.4384083)
 texture = ExtResource("27_dev55")
 
 [node name="r11" type="Sprite2D" parent="Room2"]
-position = Vector2(2500.8735, 1398.9135)
+position = Vector2(2463.0723, 1584.1123)
 scale = Vector2(0.8294224, 0.4384083)
 texture = ExtResource("27_dev55")
 
 [node name="r4" type="Sprite2D" parent="Room2"]
-position = Vector2(762, 1435)
+position = Vector2(724.1987, 1620.1989)
 rotation = 1.5822067
 scale = Vector2(0.6275952, 0.4384083)
 texture = ExtResource("27_dev55")
 
 [node name="r5" type="Sprite2D" parent="Room2"]
-position = Vector2(783, 1145.0001)
+position = Vector2(745.1987, 1330.199)
 rotation = 1.5841851
 scale = Vector2(0.6275952, 0.4384083)
 texture = ExtResource("27_dev55")
 
 [node name="r6" type="Sprite2D" parent="Room2"]
 z_index = -1
-position = Vector2(784, 846.9999)
+position = Vector2(746.1987, 1032.1987)
 rotation = 1.5620989
 scale = Vector2(0.6275952, 0.4384083)
 texture = ExtResource("27_dev55")
 
 [node name="r12" type="Sprite2D" parent="Room2"]
-position = Vector2(1753.3265, 1083.7877)
+position = Vector2(1715.5253, 1268.9866)
 rotation = 1.5841851
 scale = Vector2(0.6275952, 0.4384083)
 texture = ExtResource("27_dev55")
 
 [node name="r13" type="Sprite2D" parent="Room2"]
 z_index = -1
-position = Vector2(1750.3264, 848.4269)
+position = Vector2(1712.5251, 1033.6257)
 rotation = 1.5620989
 scale = Vector2(0.6275952, 0.4384083)
 texture = ExtResource("27_dev55")
 
 [node name="r14" type="Sprite2D" parent="Room2"]
-position = Vector2(1897.3264, 1092.7877)
+position = Vector2(1859.5251, 1277.9866)
 rotation = 1.5841851
 scale = Vector2(0.6275952, 0.4384083)
 texture = ExtResource("27_dev55")
 
 [node name="r15" type="Sprite2D" parent="Room2"]
 z_index = -1
-position = Vector2(1894.3263, 857.4269)
+position = Vector2(1856.525, 1042.6257)
 rotation = 1.5620989
 scale = Vector2(0.6275952, 0.4384083)
 texture = ExtResource("27_dev55")
 
 [node name="r16" type="Sprite2D" parent="Room2"]
-position = Vector2(1178, 1081.0001)
+position = Vector2(1140.1987, 1266.199)
 rotation = 1.5841851
 scale = Vector2(0.6275952, 0.4384083)
 texture = ExtResource("27_dev55")
 
 [node name="r17" type="Sprite2D" parent="Room2"]
 z_index = -1
-position = Vector2(1173.3263, 872.4269)
+position = Vector2(1135.525, 1057.6257)
 rotation = 1.5620989
 scale = Vector2(0.6275952, 0.4384083)
 texture = ExtResource("27_dev55")
 
 [node name="r18" type="Sprite2D" parent="Room2"]
-position = Vector2(1317, 1084)
+position = Vector2(1279.1987, 1269.1987)
 rotation = 1.5841851
 scale = Vector2(0.6275952, 0.4384083)
 texture = ExtResource("27_dev55")
 
 [node name="r19" type="Sprite2D" parent="Room2"]
 z_index = -1
-position = Vector2(1314.3262, 881.4269)
+position = Vector2(1276.5249, 1066.6257)
 rotation = 1.5620989
 scale = Vector2(0.6275952, 0.4384083)
 texture = ExtResource("27_dev55")
 
 [node name="r20" type="Sprite2D" parent="Room2"]
-position = Vector2(1460.0001, 1086)
+position = Vector2(1422.1989, 1271.1987)
 rotation = 1.5841851
 scale = Vector2(0.6275952, 0.4384083)
 texture = ExtResource("27_dev55")
 
 [node name="r21" type="Sprite2D" parent="Room2"]
 z_index = -1
-position = Vector2(1449.3262, 868.4269)
+position = Vector2(1411.5249, 1053.6257)
 rotation = 1.5620989
 scale = Vector2(0.6275952, 0.4384083)
 texture = ExtResource("27_dev55")
 
 [node name="r22" type="Sprite2D" parent="Room2"]
-position = Vector2(2127, 1000.00006)
+position = Vector2(2089.1987, 1185.199)
 rotation = 1.5841851
 scale = Vector2(0.6275952, 0.4384083)
 texture = ExtResource("27_dev55")
 
 [node name="r23" type="Sprite2D" parent="Room2"]
 z_index = -1
-position = Vector2(2116.3262, 837.4269)
+position = Vector2(2078.525, 1022.62573)
 rotation = 1.5620989
 scale = Vector2(0.6275952, 0.4384083)
 texture = ExtResource("27_dev55")
 
 [node name="r24" type="Sprite2D" parent="Room2"]
-position = Vector2(2124.3264, 1455.4271)
+position = Vector2(2086.5251, 1640.626)
 rotation = 1.5841851
 scale = Vector2(0.6275952, 0.4384083)
 texture = ExtResource("27_dev55")
 
 [node name="r25" type="Sprite2D" parent="Room2"]
 z_index = -1
-position = Vector2(2125.3262, 1292.427)
+position = Vector2(2087.525, 1477.6259)
 rotation = 1.5620989
 scale = Vector2(0.6275952, 0.4384083)
 texture = ExtResource("27_dev55")
 
 [node name="r7" type="Sprite2D" parent="Room2"]
-position = Vector2(1590, 1092.3607)
+position = Vector2(1552.1987, 1277.5596)
 rotation = 1.5841851
 scale = Vector2(0.6275952, 0.4384083)
 texture = ExtResource("27_dev55")
 
 [node name="r8" type="Sprite2D" parent="Room2"]
 z_index = -1
-position = Vector2(1589, 694.99994)
+position = Vector2(1551.1987, 880.1987)
 rotation = 1.5620989
 scale = Vector2(0.6275952, 0.4384083)
 texture = ExtResource("27_dev55")
 
 [node name="bg" type="Sprite2D" parent="Room2"]
 z_index = -5
-position = Vector2(997, 1195)
+position = Vector2(941.1987, 1380.1989)
 scale = Vector2(4.6399975, 1.8399975)
 texture = ExtResource("28_r45hk")
 
 [node name="Colliders" type="StaticBody2D" parent="Room2"]
-position = Vector2(915, 1588)
+position = Vector2(877.1987, 1773.1987)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Room2/Colliders"]
 position = Vector2(161, -178)
@@ -695,7 +696,7 @@ position = Vector2(651, -584)
 shape = SubResource("RectangleShape2D_dev55")
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="Room2/Colliders"]
-position = Vector2(-71.00006, -430)
+position = Vector2(-146.19873, -439.19873)
 rotation = -1.5614142
 shape = SubResource("RectangleShape2D_h74q7")
 
@@ -707,6 +708,12 @@ shape = SubResource("RectangleShape2D_h74q7")
 [node name="CollisionShape2D5" type="CollisionShape2D" parent="Room2/Colliders"]
 position = Vector2(1249, -178)
 shape = SubResource("RectangleShape2D_h74q7")
+
+[node name="Landscapenight" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(862.00006, 675)
+scale = Vector2(5.354863, 4.0113406)
+texture = ExtResource("29_r45hk")
 
 [connection signal="body_entered" from="Bird/Area2D" to="Bird" method="_on_area_2d_body_entered"]
 [connection signal="body_entered" from="GreyCloud/Area2D" to="GreyCloud" method="_on_area_2d_body_entered"]
