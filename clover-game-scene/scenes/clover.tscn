@@ -1,17 +1,56 @@
-[gd_scene load_steps=4 format=3 uid="uid://bv8ssxv87uw31"]
+[gd_scene load_steps=7 format=3 uid="uid://bv8ssxv87uw31"]
 
 [ext_resource type="Texture2D" uid="uid://k8voxvfoe2ps" path="res://Brackey's Assets (from video)/sprites/clover.PNG" id="1_0nhso"]
-[ext_resource type="Script" uid="uid://b8kfsci257xuw" path="res://scenes/clover.gd" id="1_u80bc"]
+[ext_resource type="Script" uid="uid://b8kfsci257xuw" path="res://Scripts/clover.gd" id="1_u80bc"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_0nhso"]
 radius = 156.0
 height = 312.0
+
+[sub_resource type="Animation" id="Animation_pa8r4"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(125, -34)]
+}
+
+[sub_resource type="Animation" id="Animation_fcfvj"]
+resource_name = "clover"
+length = 2.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5, 1, 1.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(125, -34), Vector2(125, -32), Vector2(125, -34), Vector2(125, -36)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_15mv3"]
+_data = {
+&"RESET": SubResource("Animation_pa8r4"),
+&"clover": SubResource("Animation_fcfvj")
+}
 
 [node name="clover" type="AnimatableBody2D"]
 collision_mask = 2
 script = ExtResource("1_u80bc")
 
 [node name="Area2D" type="Area2D" parent="."]
+position = Vector2(125, -34)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 light_mask = 3
@@ -21,5 +60,11 @@ shape = SubResource("CapsuleShape2D_0nhso")
 
 [node name="Sprite2D" type="Sprite2D" parent="Area2D"]
 texture = ExtResource("1_0nhso")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Area2D"]
+libraries = {
+&"": SubResource("AnimationLibrary_15mv3")
+}
+autoplay = "clover"
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
