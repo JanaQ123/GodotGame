@@ -16,7 +16,8 @@ var freefall=false;
 var powerup=false;
 var on_wall=false;
 var wall_dir=0;
-
+var jump_buffer_time = 0.15
+var jump_buffer = 0.0
 
 func _ready() -> void:
 	$rainbowparent.visible = false   
@@ -48,6 +49,22 @@ func power_up():
 	
 func _physics_process(delta: float) -> void:
 	# 1. Knockback
+	move_and_slide()
+	
+	
+	# Store jump input briefly
+	if Input.is_action_just_pressed("ui_accept"):
+		jump_buffer = jump_buffer_time
+
+	# Countdown the buffer
+	if jump_buffer > 0:
+		jump_buffer -= delta
+
+	# Jump if buffered input and grounded
+	if jump_buffer > 0 and is_on_floor():
+		velocity.y = JUMP_VELOCITY
+		jump_buffer = 0.0
+
 	if knockback_time > 0:
 		velocity = knockback_velocity
 		knockback_velocity = knockback_velocity.move_toward(Vector2.ZERO, 3000 * delta)
@@ -118,12 +135,15 @@ func _physics_process(delta: float) -> void:
 		else:
 			sprite.play("idle")
 
-		move_and_slide()
 		for i in range(get_slide_collision_count()):
 			var collision = get_slide_collision(i)
 			if collision.get_collider().is_in_group("wall"):
 				on_wall = true
+				wall_dir = -sign(collision.get_normal().x)
 				break
+			else:
+				on_wall = false
+
 
 	# Simple wall interaction
 		#if on_wall:
@@ -131,7 +151,9 @@ func _physics_process(delta: float) -> void:
 
 	# Jump
 		if on_wall:
+			var input_dir = Input.get_axis("ui_left", "ui_right")
 			if Input.is_action_just_pressed("ui_accept"):
 				velocity.x = wall_dir * 300
 				velocity.y = -300
+				wall_dir=-wall_dir
 		
