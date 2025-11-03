@@ -633,27 +633,27 @@ scale = Vector2(0.6275952, 0.4384083)
 texture = ExtResource("27_sk1wh")
 
 [node name="r22" type="Sprite2D" parent="Room2"]
-position = Vector2(2089.1987, 1185.199)
+position = Vector2(2078.1987, 1185.199)
 rotation = 1.5841851
 scale = Vector2(0.6275952, 0.4384083)
 texture = ExtResource("27_sk1wh")
 
 [node name="r23" type="Sprite2D" parent="Room2"]
 z_index = -1
-position = Vector2(2078.525, 1022.62573)
+position = Vector2(2072.5247, 1022.6258)
 rotation = 1.5620989
 scale = Vector2(0.6275952, 0.4384083)
 texture = ExtResource("27_sk1wh")
 
 [node name="r24" type="Sprite2D" parent="Room2"]
-position = Vector2(2086.5251, 1640.626)
+position = Vector2(2075.525, 1640.626)
 rotation = 1.5841851
 scale = Vector2(0.6275952, 0.4384083)
 texture = ExtResource("27_sk1wh")
 
 [node name="r25" type="Sprite2D" parent="Room2"]
 z_index = -1
-position = Vector2(2087.525, 1477.6259)
+position = Vector2(2076.525, 1477.6259)
 rotation = 1.5620989
 scale = Vector2(0.6275952, 0.4384083)
 texture = ExtResource("27_sk1wh")
@@ -694,7 +694,7 @@ rotation = -1.5614142
 shape = SubResource("RectangleShape2D_h74q7")
 
 [node name="CollisionShape2D3" type="CollisionShape2D" parent="Room2/Colliders"]
-position = Vector2(1224.2593, -246.96765)
+position = Vector2(1212.8013, -252.19873)
 rotation = -1.5682411
 shape = SubResource("RectangleShape2D_cpi7p")
 
