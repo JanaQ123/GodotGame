@@ -1,0 +1,27 @@
+[gd_scene load_steps=3 format=3 uid="uid://b8riim2fnxnkf"]
+
+[ext_resource type="Texture2D" uid="uid://hdfpto7cfr1q" path="res://Brackey's Assets (from video)/sprites/pixel rainbow.png" id="1_1w8g4"]
+[ext_resource type="Texture2D" uid="uid://cedja5xceyp0d" path="res://clouds/Clouds/Clouds 2/5 (1).png" id="2_inaun"]
+
+[node name="Area2D" type="StaticBody2D"]
+
+[node name="PixelRainbow" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(289.7497, -78)
+texture = ExtResource("1_1w8g4")
+
+[node name="5(1)" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(472.24994, -36)
+scale = Vector2(0.24609281, 0.22993828)
+texture = ExtResource("2_inaun")
+
+[node name="5(1)2" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(87.24993, -35)
+scale = Vector2(0.24045114, 0.24228396)
+texture = ExtResource("2_inaun")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+position = Vector2(89, -49)
+polygon = PackedVector2Array(15, -17, 36, -39, 79, -69, 118, -87, 165, -96, 202, -99, 232, -94, 269, -88, 301, -76, 324, -62, 351, -44, 368, -25, 392, 0, 403, 15, 409, 27, 412, 32, 415, 49, 407, 49, 383, 49, 373, 48, 357, 13, 337, -9, 304, -27, 274, -49, 246, -54, 204, -57, 147, -56, 111, -44, 84, -25, 66, -12, 49, 0, 35, 13, 25, 37, 23, 50, -17, 49, -13, 23, 0, 0)

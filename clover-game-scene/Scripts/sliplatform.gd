@@ -1,6 +1,6 @@
 extends AnimatableBody2D
 
-@export var move_distance: float = 90.0    # how far left/right from start
+@export var move_distance: float = 70.0    # how far left/right from start
 @export var move_speed: float = 100.0       # speed of oscillation
 @export var return_speed: float = 70.0      # speed when returning to start
 

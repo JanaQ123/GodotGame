@@ -3,3 +3,7 @@ res://Scripts/killzone.gd
 res://scenes/platformnoncol.tscn
 res://Scripts/enemymushroom.gd
 res://scenes/dangerZone.gd
+res://mushrromenemyjymp.tscn
+res://rainbow.tscn
+res://Scripts/sliplatform.gd
+res://scenes/sky.tscn
