@@ -136,7 +136,7 @@ animations = [{
 "speed": 4.0
 }]
 
-[node name="player" type="CharacterBody2D" groups=["player"]]
+[node name="Level3player" type="CharacterBody2D" groups=["player"]]
 rotation = 0.0074459864
 collision_layer = 3
 collision_mask = 3
@@ -145,7 +145,7 @@ metadata/_edit_group_ = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 light_mask = 2
-position = Vector2(-59.999992, 379.99875)
+position = Vector2(-6.1286316, 117.04886)
 rotation = -0.01783861
 shape = SubResource("CapsuleShape2D_ivps1")
 
