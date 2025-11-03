@@ -1,7 +1,7 @@
 [gd_scene load_steps=13 format=3 uid="uid://27rjl3boeoex"]
 
 [ext_resource type="Texture2D" uid="uid://cyhiw5xribwd5" path="res://Traps/4.png" id="1_5pg7g"]
-[ext_resource type="PackedScene" uid="uid://croobmd63t5lv" path="res://scenes/killzone.tscn" id="2_bflj7"]
+[ext_resource type="PackedScene" uid="uid://croobmd63t5lv" path="res://scenes/level1killzone.tscn" id="2_bflj7"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_d77p4"]
 size = Vector2(11, 11)
