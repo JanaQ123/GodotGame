@@ -1,14 +1,18 @@
-[gd_scene load_steps=6 format=3 uid="uid://55xudqc3jbea"]
+[gd_scene load_steps=8 format=3 uid="uid://55xudqc3jbea"]
 
 [ext_resource type="Texture2D" uid="uid://c58xjnpkgvjmd" path="res://Brackey's Assets (from video)/sprites/platforms.png" id="1_0pyi2"]
-[ext_resource type="Script" uid="uid://sh3dey3qhjxm" path="res://hazard.gd" id="2_aj7pt"]
+[ext_resource type="Script" uid="uid://sh3dey3qhjxm" path="res://Scripts/hazard.gd" id="2_aj7pt"]
 [ext_resource type="Texture2D" uid="uid://yh2nraso0vt3" path="res://Brackey's Assets (from video)/sprites/world_tileset.png" id="3_748mp"]
+[ext_resource type="Script" uid="uid://bn23ilco62y42" path="res://scenes/dangerZone.gd" id="4_d1suq"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_s8bxr"]
 size = Vector2(32, 8)
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_1w2t3"]
 radius = 6.0827627
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_88y28"]
+size = Vector2(1.0478443, 6.6619396)
 
 [node name="platform" type="AnimatableBody2D"]
 
@@ -31,3 +35,22 @@ region_rect = Rect2(112, 80, 16, 16)
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="hazard"]
 shape = SubResource("CircleShape2D_1w2t3")
+
+[node name="Node2D" type="Node2D" parent="."]
+
+[node name="DangerZone1" type="Area2D" parent="Node2D"]
+position = Vector2(2, -12.999998)
+scale = Vector2(159.0385, -20.011902)
+collision_layer = 15
+collision_mask = 7
+script = ExtResource("4_d1suq")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/DangerZone1"]
+position = Vector2(-0.0125755705, -0.04997027)
+scale = Vector2(0.12001374, 0.12001374)
+shape = SubResource("RectangleShape2D_88y28")
+
+[node name="Timer" type="Timer" parent="Node2D/DangerZone1"]
+wait_time = 0.655
+
+[connection signal="body_entered" from="Node2D/DangerZone1" to="Node2D/DangerZone1" method="_on_body_entered"]

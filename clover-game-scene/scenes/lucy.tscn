@@ -1,7 +1,7 @@
 [gd_scene load_steps=17 format=3 uid="uid://dwbepxe4isg4w"]
 
 [ext_resource type="Texture2D" uid="uid://c8lk8fjkbo63e" path="res://character/pose17gg.png" id="1_ivps1"]
-[ext_resource type="Script" uid="uid://ds1pdoe4po2u0" path="res://lucywalk.gd" id="1_urp6f"]
+[ext_resource type="Script" uid="uid://ds1pdoe4po2u0" path="res://clouds/Clouds/Clouds 2/lucywalk.gd" id="1_urp6f"]
 [ext_resource type="Texture2D" uid="uid://b853b6xbf11hb" path="res://character/pose11gg.png" id="2_urp6f"]
 [ext_resource type="Texture2D" uid="uid://lhyprt3gwf8v" path="res://character/pose9gg.png" id="3_bwjto"]
 [ext_resource type="Texture2D" uid="uid://n87mjlg1dy3u" path="res://character/pose10gg.png" id="4_606se"]

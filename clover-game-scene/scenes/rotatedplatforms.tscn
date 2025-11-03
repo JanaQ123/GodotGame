@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://bxpbtnif3ejj3"]
 
-[ext_resource type="Script" path="res://rotate.gd" id="1_dvd87"]
-[ext_resource type="PackedScene" uid="uid://uw301h814ps0" path="res://platform.tscn" id="2_m41cr"]
+[ext_resource type="Script" uid="uid://c5jsahn4xcp6m" path="res://Scripts/rotate.gd" id="1_dvd87"]
+[ext_resource type="PackedScene" uid="uid://uw301h814ps0" path="res://scenes/platform.tscn" id="2_m41cr"]
 
 [node name="Node2D" type="Node2D"]
 position = Vector2(1828, -152)

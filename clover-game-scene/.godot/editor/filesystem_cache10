@@ -1,30 +1,7 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1762130869
-button.tscn::PackedScene::2892697017406215375::1762124965::0::1::::<><><>0<>0<><>::uid://c58xjnpkgvjmd::::res://Brackey's Assets (from video)/sprites/platforms.png<>uid://d3syarcoi2kea::::res://buttonPress.gd<>uid://dst5t13y2l6li::::res://Traps/1.png
-buttonmove.tscn::PackedScene::2117702556237234020::1762118075::0::1::::<><><>0<>0<><>::uid://c58xjnpkgvjmd::::res://Brackey's Assets (from video)/sprites/platforms.png
-buttonPress.gd::GDScript::9163166576978101832::1762126194::0::1::::<>AnimatableBody2D<><>0<>0<><>::
-collaspe.gd::GDScript::2668612820227340087::1762115877::0::1::::<>AnimatableBody2D<><>0<>0<><>::
-collaspe.tscn::PackedScene::6363614998830810653::1762115400::0::1::::<><><>0<>0<><>::uid://bl8xjse6j221m::::res://Traps/collapse2.png<>uid://beaxwsy1eht6v::::res://collaspe.gd<>uid://cyswlcgyrjrnh::::res://Brackey's Assets (from video)/sprites/particles.png
-decayingplatform.tscn::PackedScene::4623205245347929433::1762015737::0::1::::<><><>0<>0<><>::uid://4q8udadtlb8b::::res://Traps/5.png
-hazard.gd::GDScript::1279555511404743158::1762007950::0::1::::<>Area2D<><>0<>0<><>::
+::res://::1762182917
 icon.svg::CompressedTexture2D::5544986168560500066::1761950913::1761950913::1::::<><><>0<>0<>63af06cbdc43413ec82404cd12b0abf1<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
-level3.tscn::PackedScene::7484650763930369667::1762130822::0::1::::<><><>0<>0<><>::uid://dwbepxe4isg4w::::res://lucy.tscn<>uid://c58xjnpkgvjmd::::res://Brackey's Assets (from video)/sprites/platforms.png<>uid://yh2nraso0vt3::::res://Brackey's Assets (from video)/sprites/world_tileset.png<>uid://uw301h814ps0::::res://platform.tscn<>uid://dh4oxc4m6baw8::::res://Brackey's Assets (from video)/sprites/Assets.png<>uid://bw5phgn45066n::::res://sliplatform.gd<>uid://cwwt2rsr8quxp::::res://collaspe.tscn<>uid://55xudqc3jbea::::res://platformnoncol.tscn<>uid://hdfpto7cfr1q::::res://Brackey's Assets (from video)/sprites/pixel rainbow.png<>uid://cb4vay7cu2ei8::::res://slidingplatform2.gd<>uid://do8pd18ut7bum::::res://platformnoncol.gd<>uid://bc3uq1q3c6mej::::res://Brackey's Assets (from video)/sprites/pot of gold.png<>uid://cedja5xceyp0d::::res://clouds/Clouds/Clouds 2/5 (1).png<>uid://vjetsoqv3dot::::res://frog.tscn<>uid://bhhikdvbxeox0::::res://button.tscn<>uid://byw0vwjqmss16::::res://sky.tscn<>uid://5ecpkao4jmi3::::res://lotus.tscn
-lotus.gd::GDScript::4340051262180344648::1762130869::0::1::::<>AnimatableBody2D<><>0<>0<><>::
-lotus.tscn::PackedScene::2114071566960036020::1762126577::0::1::::<><><>0<>0<><>::uid://dos3adxj3wu58::::res://Brackey's Assets (from video)/sprites/water lily.png
-lucy.tscn::PackedScene::8705751859295019064::1762118074::0::1::::<><><>0<>0<><>::uid://c8lk8fjkbo63e::::res://character/pose17gg.png<>uid://ds1pdoe4po2u0::::res://lucywalk.gd<>uid://b853b6xbf11hb::::res://character/pose11gg.png<>uid://lhyprt3gwf8v::::res://character/pose9gg.png<>uid://n87mjlg1dy3u::::res://character/pose10gg.png<>uid://hls0omk88ndc::::res://character/pose1gg.png<>uid://b3ipni2rrfhkq::::res://character/pose2gg.png<>uid://buh817qjeb54y::::res://character/pose3gg.png<>uid://dtk5k2oyrrh1t::::res://character/pose4gg.png<>uid://djiurhasigfra::::res://character/pose14gg.png<>uid://dh2g6sgwoslna::::res://character/pose16gg.png<>uid://r8e1lc0g86cf::::res://character/pose6gg.png<>uid://dkls5npmkouqt::::res://character/pose7gg.png
-lucywalk.gd::GDScript::8477251913287026093::1762008100::0::1::::<>CharacterBody2D<><>0<>0<><>::
-main_game.tscn::PackedScene::7773268033140575855::1761950913::0::1::::<><><>0<>0<><>::
-platform.tscn::PackedScene::1450939281951052321::1762126434::0::1::::<><><>0<>0<><>::uid://c58xjnpkgvjmd::::res://Brackey's Assets (from video)/sprites/platforms.png
-platformnoncol.gd::GDScript::8210947857689948712::1762008221::0::1::::<>Node2D<><>0<>0<><>::
-platformnoncol.tscn::PackedScene::2169029030890055764::1762007950::0::1::::<><><>0<>0<><>::uid://c58xjnpkgvjmd::::res://Brackey's Assets (from video)/sprites/platforms.png<>uid://sh3dey3qhjxm::::res://hazard.gd<>uid://yh2nraso0vt3::::res://Brackey's Assets (from video)/sprites/world_tileset.png
-frog.tscn::PackedScene::1492822882044175659::1762130337::0::1::::<><><>0<>0<><>::uid://b7q7jc0vetecn::::res://clouds/Clouds/Clouds 2/BROWNfrog_blinking_strip10.png
-slidingplatform2.gd::GDScript::4904173532852872217::1762127592::0::1::::<>AnimatableBody2D<><>0<>0<><>::
-sliplatform.gd::GDScript::3993430168381733167::1762127539::0::1::::<>AnimatableBody2D<><>0<>0<><>::
-rotate.gd::GDScript::6898179371277876422::1762099860::0::1::::<>Node2D<><>0<>0<><>::
-rotatedplatforms.tscn::PackedScene::4031825096182451698::1762097291::0::1::::<><><>0<>0<><>::res://rotate.gd<>uid://uw301h814ps0::::res://platform.tscn
-sky.tscn::PackedScene::4117925838247032683::1762129988::0::1::::<><><>0<>0<><>::uid://6hby8agr7sw7::::res://clouds/Clouds/Clouds 6/4.png<>uid://ccnp6lnkaqd6q::::res://clouds/Clouds/Clouds 2/4.png<>uid://tlkfkambin8n::::res://clouds/Clouds/Clouds 4/3.png<>uid://p7cxf17bxco8::::res://clouds/Clouds/Clouds 1/4.png<>uid://bqv8h7b15os78::::res://clouds/Clouds/Clouds 2/3.png<>uid://su5p2nln6l81::::res://clouds/Clouds/Clouds 1/2.png<>uid://c0443bqxxkyum::::res://clouds/Clouds/Clouds 2/sky2.png<>uid://dtu2dfirjoekg::::res://clouds/Clouds/Clouds 6/3.png<>uid://c2pmvbmnc618k::::res://clouds/Clouds/Clouds 2/sky22.png<>uid://dwjleqr55idmk::::res://clouds/Clouds/Clouds 2/sky3.png<>uid://0od135po663::::res://clouds/Clouds/Clouds 7/2.png<>uid://kx7xvo1xdm8m::::res://clouds/Clouds/Clouds 2/sky33.png<>uid://cqfodwo8pgh56::::res://clouds/Clouds/Clouds 2/1.png<>uid://cxcu6flnrbbgs::::res://clouds/Clouds/Clouds 5/4.png<>uid://b380kinpyyrro::::res://clouds/Clouds/Clouds 5/5.png
-slidingplatform.gd::GDScript::8190541206992124634::1762120117::0::1::::<>AnimatableBody2D<><>0<>0<><>::
-slidingplatform.tscn::PackedScene::4408174301137304637::1762121209::0::1::::<><><>0<>0<><>::uid://doxtatxgux3ow::::res://slidingplatform.gd<>uid://c58xjnpkgvjmd::::res://Brackey's Assets (from video)/sprites/platforms.png
+mushrromenemyjymp.tscn::PackedScene::7268496183395464167::1762182844::0::1::::<><><>0<>0<><>::uid://dqk6i7wmgni3c::::res://Scripts/enemymushroom.gd<>uid://gg0viitfn3dk::::res://Brackey's Assets (from video)/sprites/Mushroom-Run.png<>uid://c3ukteiuml5co::::res://Traps/Mushroom-Die.png<>uid://c5s36wo1eaon8::::res://scenes/killzone.tscn
 ::res://Brackey's Assets (from video)/::1761950913
 ::res://Brackey's Assets (from video)/fonts/::1761950913
 PixelOperator8-Bold.ttf::FontFile::3098613115750755984::1761950913::1761950913::1::::<><><>0<>0<>4a98b6dcb2af19ef5d84dc2765e7b2fa<>res://.godot/imported/PixelOperator8-Bold.ttf-33613fbf5a409438d97609eb4b62b3ab.fontdata::
@@ -38,7 +15,7 @@ hurt.wav::AudioStreamWAV::3526201908416918841::1761950913::1761950913::1::::<><>
 jump.wav::AudioStreamWAV::590079910656926970::1761950913::1761950913::1::::<><><>0<>0<>fd47f1b2cffd9659e353520b31703de2<>res://.godot/imported/jump.wav-274962aac1c3a130b3922fdb85f7ff8b.sample::
 power_up.wav::AudioStreamWAV::4272656554767922025::1761950913::1761950913::1::::<><><>0<>0<>049dfc6aaa63257502842ff753a39c53<>res://.godot/imported/power_up.wav-bf0d8bfd13799575bedba4ce2340d9e1.sample::
 tap.wav::AudioStreamWAV::3656796827707336175::1761950913::1761950913::1::::<><><>0<>0<>7bed5cd6d817edc8da5c0b4328f53801<>res://.godot/imported/tap.wav-1fb275978d2223dcd9effbae5149677e.sample::
-::res://Brackey's Assets (from video)/sprites/::1762131186
+::res://Brackey's Assets (from video)/sprites/::1762131187
 1.png::CompressedTexture2D::4456627534235204356::1762016234::1762016234::1::::<><><>0<>0<>a91e09f783376de841c1fdb5269d9641<>res://.godot/imported/1.png-7330ccae0b35a2cc4a271f01571e0859.ctex::
 2.png::CompressedTexture2D::451247033751432331::1762016234::1762016234::1::::<><><>0<>0<>34735d962fe70c0392cc1e1fd8270f6b<>res://.godot/imported/2.png-e2f1f706f3bac30b4ddd51b22e636642.ctex::
 3.png::CompressedTexture2D::6705290253022596297::1762016234::1762016234::1::::<><><>0<>0<>9716619232b2bf7d5962b11fe641d0ac<>res://.godot/imported/3.png-fb7c8ba35ebd67be5986e0e1a7c4d352.ctex::
@@ -86,7 +63,7 @@ sky2.png::CompressedTexture2D::5213890866030724868::1762017563::1762017563::1:::
 2.png::CompressedTexture2D::1306536475988651408::1762005708::1762005708::1::::<><><>0<>0<>fa462f6e43f44570e1ae1e24ffcd191c<>res://.godot/imported/2.png-0a45fab89932f077a1d201fdd44c2d43.ctex::
 3.png::CompressedTexture2D::8037596764236849548::1762005708::1762005708::1::::<><><>0<>0<>a669cb15820de01528b82da3ca8d8ba0<>res://.godot/imported/3.png-97d84bc55bb5ac0093a1e8c6b28189cf.ctex::
 4.png::CompressedTexture2D::1119055554183586381::1762005708::1762005708::1::::<><><>0<>0<>29fca7efd6ed8bdfa4894f9c775ff8d9<>res://.godot/imported/4.png-f0a5d02183162cec1c0d810fb8615779.ctex::
-::res://clouds/Clouds/Clouds 2/::1762130178
+::res://clouds/Clouds/Clouds 2/::1762170126
 1.png::CompressedTexture2D::5907041328306088311::1762005708::1762005708::1::::<><><>0<>0<>eddea22fdb20f73dbe63ce24cc5db88d<>res://.godot/imported/1.png-cd1f2a1f4d1e1f48779e519222c0dfdc.ctex::
 2.png::CompressedTexture2D::503747465913317474::1762005708::1762005708::1::::<><><>0<>0<>a233f9a75756290182c23bb875a0f131<>res://.godot/imported/2.png-223edd357b9c53d149da6974e10b4b67.ctex::
 3.png::CompressedTexture2D::3554811959569494393::1762005708::1762005708::1::::<><><>0<>0<>5d1349c42de2a584db729ce8e96d43e0<>res://.godot/imported/3.png-73e65e82d2b8cd538278f0d80966c86d.ctex::
@@ -97,6 +74,7 @@ Day Sky Top.png-af1cc43fb1927dc9ce0bf45f2a4960bc (1).ctex::CompressedTexture2D::
 Day Sky Top.png-af1cc43fb1927dc9ce0bf45f2a4960bc.ctex::CompressedTexture2D::359134598561792358::1762005739::0::1::::<><><>0<>0<><>::
 Day Sky.png-f6ecb9e4882323d59bdc68f7538bcfd2 (1).ctex::CompressedTexture2D::497602748919504980::1762005739::0::1::::<><><>0<>0<><>::
 image.png::CompressedTexture2D::4398049018157905999::1762005708::1762005708::1::::<><><>0<>0<>165019d52c46dfa735e74ccce4f908ee<>res://.godot/imported/image.png-29d53f558199b849644095e03350fff2.ctex::
+lucywalk.gd::GDScript::8477251913287026093::1762008100::0::1::::<>CharacterBody2D<><>0<>0<><>::
 sky2.png::CompressedTexture2D::6589240286540702516::1762017554::1762017554::1::::<><><>0<>0<>ea346372fa2de99860fd81ebcab6ac7c<>res://.godot/imported/sky2.png-c0d1810b3993a2582243ebb6db53b418.ctex::
 sky3.png::CompressedTexture2D::8722671909037352782::1762017736::1762017737::1::::<><><>0<>0<>c7b6e3efdb290e485893b2cf28ccb56d<>res://.godot/imported/sky3.png-7bc554eefe4bb36a8847e8bab709f6f1.ctex::
 sky22.png::CompressedTexture2D::6699671989164759436::1762017621::1762017621::1::::<><><>0<>0<>34fc08e3603cb356c423a09e02841463<>res://.godot/imported/sky22.png-1a5a1a9b8eed1f9cb674527c77f6b84c.ctex::
@@ -136,7 +114,37 @@ sky33.png::CompressedTexture2D::751354267581842662::1762017771::1762017772::1:::
 4.png::CompressedTexture2D::8851945585535110216::1762005708::1762005708::1::::<><><>0<>0<>8a61305f0402a3399921a4742dec4595<>res://.godot/imported/4.png-8866aea8d0765be558dca8e54af634ea.ctex::
 5.png::CompressedTexture2D::210966826170277542::1762005708::1762005708::1::::<><><>0<>0<>68294bd1ea6011e2fca98c420ae5a192<>res://.godot/imported/5.png-076dbb26879f9f7a43370ab7605389f1.ctex::
 6.png::CompressedTexture2D::7745149418725794234::1762005708::1762005708::1::::<><><>0<>0<>2aba5d22e8d4255bbea0ec42d89efe19<>res://.godot/imported/6.png-8a43ccede1949e318c89c1b3f9d12e51.ctex::
-::res://Traps/::1762102593
+::res://scenes/::1762182647
+button.tscn::PackedScene::2892697017406215375::1762170332::0::1::::<><><>0<>0<><>::uid://c58xjnpkgvjmd::::res://Brackey's Assets (from video)/sprites/platforms.png<>uid://d3syarcoi2kea::::res://Scripts/buttonPress.gd<>uid://dst5t13y2l6li::::res://Traps/1.png
+buttonmove.tscn::PackedScene::2117702556237234020::1762177842::0::1::::<><><>0<>0<><>::uid://c58xjnpkgvjmd::::res://Brackey's Assets (from video)/sprites/platforms.png
+collaspe.tscn::PackedScene::6363614998830810653::1762171270::0::1::::<><><>0<>0<><>::uid://beaxwsy1eht6v::::res://Scripts/collaspe.gd<>uid://4q8udadtlb8b::::res://Traps/5.png<>uid://cyswlcgyrjrnh::::res://Brackey's Assets (from video)/sprites/particles.png
+decayingplatform.tscn::PackedScene::4623205245347929433::1762015737::0::1::::<><><>0<>0<><>::uid://4q8udadtlb8b::::res://Traps/5.png
+enemy.tscn::PackedScene::1672417067955728894::1762131404::0::1::::<><><>0<>0<><>::uid://gg0viitfn3dk::::res://Brackey's Assets (from video)/sprites/Mushroom-Run.png
+enemymushroom.tscn::PackedScene::5767176736257867501::1762179971::0::1::::<><><>0<>0<><>::uid://dqk6i7wmgni3c::::res://Scripts/enemymushroom.gd<>uid://gg0viitfn3dk::::res://Brackey's Assets (from video)/sprites/Mushroom-Run.png<>uid://c5s36wo1eaon8::::res://scenes/killzone.tscn<>uid://c3ukteiuml5co::::res://Traps/Mushroom-Die.png
+frog.tscn::PackedScene::1492822882044175659::1762130337::0::1::::<><><>0<>0<><>::uid://b7q7jc0vetecn::::res://clouds/Clouds/Clouds 2/BROWNfrog_blinking_strip10.png
+killzone.tscn::PackedScene::6917422089836410387::1762175080::0::1::::<><><>0<>0<><>::uid://caemj8vw7uukp::::res://Scripts/killzone.gd
+level3.tscn::PackedScene::7484650763930369667::1762182647::0::1::::<><><>0<>0<><>::uid://dwbepxe4isg4w::::res://scenes/lucy.tscn<>uid://c58xjnpkgvjmd::::res://Brackey's Assets (from video)/sprites/platforms.png<>uid://yh2nraso0vt3::::res://Brackey's Assets (from video)/sprites/world_tileset.png<>uid://uw301h814ps0::::res://scenes/platform.tscn<>uid://dh4oxc4m6baw8::::res://Brackey's Assets (from video)/sprites/Assets.png<>uid://bw5phgn45066n::::res://Scripts/sliplatform.gd<>uid://cwwt2rsr8quxp::::res://scenes/collaspe.tscn<>uid://55xudqc3jbea::::res://scenes/platformnoncol.tscn<>uid://hdfpto7cfr1q::::res://Brackey's Assets (from video)/sprites/pixel rainbow.png<>uid://cb4vay7cu2ei8::::res://Scripts/slidingplatform2.gd<>uid://do8pd18ut7bum::::res://Scripts/platformnoncol.gd<>uid://bc3uq1q3c6mej::::res://Brackey's Assets (from video)/sprites/pot of gold.png<>uid://cedja5xceyp0d::::res://clouds/Clouds/Clouds 2/5 (1).png<>uid://vjetsoqv3dot::::res://scenes/frog.tscn<>uid://bhhikdvbxeox0::::res://scenes/button.tscn<>uid://c5s36wo1eaon8::::res://scenes/killzone.tscn<>uid://cofws8lrbp2er::::res://scenes/enemymushroom.tscn<>uid://dbs6cnfeycn8b::::res://mushrromenemyjymp.tscn<>uid://byw0vwjqmss16::::res://scenes/sky.tscn<>uid://5ecpkao4jmi3::::res://scenes/lotus.tscn
+lotus.tscn::PackedScene::2114071566960036020::1762170446::0::1::::<><><>0<>0<><>::uid://dos3adxj3wu58::::res://Brackey's Assets (from video)/sprites/water lily.png
+lucy.tscn::PackedScene::8705751859295019064::1762170126::0::1::::<><><>0<>0<><>::uid://c8lk8fjkbo63e::::res://character/pose17gg.png<>uid://ds1pdoe4po2u0::::res://clouds/Clouds/Clouds 2/lucywalk.gd<>uid://b853b6xbf11hb::::res://character/pose11gg.png<>uid://lhyprt3gwf8v::::res://character/pose9gg.png<>uid://n87mjlg1dy3u::::res://character/pose10gg.png<>uid://hls0omk88ndc::::res://character/pose1gg.png<>uid://b3ipni2rrfhkq::::res://character/pose2gg.png<>uid://buh817qjeb54y::::res://character/pose3gg.png<>uid://dtk5k2oyrrh1t::::res://character/pose4gg.png<>uid://djiurhasigfra::::res://character/pose14gg.png<>uid://dh2g6sgwoslna::::res://character/pose16gg.png<>uid://r8e1lc0g86cf::::res://character/pose6gg.png<>uid://dkls5npmkouqt::::res://character/pose7gg.png
+main_game.tscn::PackedScene::7773268033140575855::1761950913::0::1::::<><><>0<>0<><>::
+platform.tscn::PackedScene::1450939281951052321::1762126434::0::1::::<><><>0<>0<><>::uid://c58xjnpkgvjmd::::res://Brackey's Assets (from video)/sprites/platforms.png
+platformnoncol.tscn::PackedScene::2169029030890055764::1762181620::0::1::::<><><>0<>0<><>::uid://c58xjnpkgvjmd::::res://Brackey's Assets (from video)/sprites/platforms.png<>uid://sh3dey3qhjxm::::res://Scripts/hazard.gd<>uid://yh2nraso0vt3::::res://Brackey's Assets (from video)/sprites/world_tileset.png<>uid://c5s36wo1eaon8::::res://scenes/killzone.tscn
+rotatedplatforms.tscn::PackedScene::4031825096182451698::1762170370::0::1::::<><><>0<>0<><>::uid://c5jsahn4xcp6m::::res://Scripts/rotate.gd<>uid://uw301h814ps0::::res://scenes/platform.tscn
+sky.tscn::PackedScene::4117925838247032683::1762181353::0::1::::<><><>0<>0<><>::uid://6hby8agr7sw7::::res://clouds/Clouds/Clouds 6/4.png<>uid://ccnp6lnkaqd6q::::res://clouds/Clouds/Clouds 2/4.png<>uid://tlkfkambin8n::::res://clouds/Clouds/Clouds 4/3.png<>uid://p7cxf17bxco8::::res://clouds/Clouds/Clouds 1/4.png<>uid://bqv8h7b15os78::::res://clouds/Clouds/Clouds 2/3.png<>uid://su5p2nln6l81::::res://clouds/Clouds/Clouds 1/2.png<>uid://c0443bqxxkyum::::res://clouds/Clouds/Clouds 2/sky2.png<>uid://dtu2dfirjoekg::::res://clouds/Clouds/Clouds 6/3.png<>uid://c2pmvbmnc618k::::res://clouds/Clouds/Clouds 2/sky22.png<>uid://dwjleqr55idmk::::res://clouds/Clouds/Clouds 2/sky3.png<>uid://0od135po663::::res://clouds/Clouds/Clouds 7/2.png<>uid://kx7xvo1xdm8m::::res://clouds/Clouds/Clouds 2/sky33.png<>uid://cqfodwo8pgh56::::res://clouds/Clouds/Clouds 2/1.png<>uid://cxcu6flnrbbgs::::res://clouds/Clouds/Clouds 5/4.png<>uid://b380kinpyyrro::::res://clouds/Clouds/Clouds 5/5.png
+slidingplatform.tscn::PackedScene::4408174301137304637::1762170332::0::1::::<><><>0<>0<><>::uid://doxtatxgux3ow::::res://Scripts/slidingplatform.gd<>uid://c58xjnpkgvjmd::::res://Brackey's Assets (from video)/sprites/platforms.png
+::res://Scripts/::1762179671
+buttonPress.gd::GDScript::9163166576978101832::1762126194::0::1::::<>AnimatableBody2D<><>0<>0<><>::
+collaspe.gd::GDScript::2668612820227340087::1762170581::0::1::::<>AnimatableBody2D<><>0<>0<><>::
+enemymushroom.gd::GDScript::8304825555242084642::1762179671::0::1::::<>Node2D<><>0<>0<><>::
+hazard.gd::GDScript::1279555511404743158::1762007950::0::1::::<>Area2D<><>0<>0<><>::
+killzone.gd::GDScript::4781845321215381971::1762179671::0::1::::<>Area2D<><>0<>0<><>::
+lotus.gd::GDScript::4340051262180344648::1762130869::0::1::::<>AnimatableBody2D<><>0<>0<><>::
+platformnoncol.gd::GDScript::8210947857689948712::1762008221::0::1::::<>Node2D<><>0<>0<><>::
+rotate.gd::GDScript::6898179371277876422::1762099860::0::1::::<>Node2D<><>0<>0<><>::
+slidingplatform2.gd::GDScript::4904173532852872217::1762127592::0::1::::<>AnimatableBody2D<><>0<>0<><>::
+slidingplatform.gd::GDScript::8190541206992124634::1762120117::0::1::::<>AnimatableBody2D<><>0<>0<><>::
+sliplatform.gd::GDScript::3993430168381733167::1762127539::0::1::::<>AnimatableBody2D<><>0<>0<><>::
+::res://Traps/::1762176224
 1.png::CompressedTexture2D::8463741263746835970::1761950913::1761950913::1::::<><><>0<>0<>b7cec66cb8d54e04277a91a6634649cd<>res://.godot/imported/1.png-f3e212f1111bd187aeaa66e3a748ee50.ctex::
 2.png::CompressedTexture2D::2857452532864927522::1761950913::1761950913::1::::<><><>0<>0<>f0ecfb6986a679412b6d749b52e685f3<>res://.godot/imported/2.png-91ba67b897bd437b7bfb12df932a4527.ctex::
 3.png::CompressedTexture2D::8796610524873680949::1761950913::1761950913::1::::<><><>0<>0<>c7094199af63a55cc3ab756f563f89aa<>res://.godot/imported/3.png-a466fcce7d6055f25ee547fb39f00e5f.ctex::
@@ -144,4 +152,6 @@ sky33.png::CompressedTexture2D::751354267581842662::1762017771::1762017772::1:::
 5.png::CompressedTexture2D::2070546043939468495::1761950913::1761950913::1::::<><><>0<>0<>4840fddbec4766aec6e2712b44bef720<>res://.godot/imported/5.png-436dc3a882f0921b55844dff2b7e7134.ctex::
 6.png::CompressedTexture2D::151172700582715822::1761950913::1761950913::1::::<><><>0<>0<>ad9532f82ae8a4a61626321ad001018c<>res://.godot/imported/6.png-f5db6cada7df4baeb04c3ec544b65398.ctex::
 collapse2.png::CompressedTexture2D::3228035945595341364::1762101397::1762101397::1::::<><><>0<>0<>edcb5cd1a9b73c99712e4c52b3040c4a<>res://.godot/imported/collapse2.png-3d0c0270b315cc40f3d250189101f4bc.ctex::
+Mushroom-Die.png::CompressedTexture2D::6780057867721209570::1762176216::1762176216::1::::<><><>0<>0<>091fe644fdf20bf464f0b4200a35bed7<>res://.godot/imported/Mushroom-Die.png-77d60eb338e55eab86af0efef94c81a8.ctex::
+Mushroom-Stun.png::CompressedTexture2D::4726331136493895211::1762176223::1762176224::1::::<><><>0<>0<>a1ceed8945d24b903f0864fd645798c6<>res://.godot/imported/Mushroom-Stun.png-50a4680d9aa921dae29f735a5ccaf43a.ctex::
 particles.png::CompressedTexture2D::58708575168598735::1762102593::1762102593::1::::<><><>0<>0<>9a7050f5f6fc3235ae6e7fce2507b9eb<>res://.godot/imported/particles.png-4d39004a50f85fcd926c58c94a9d9b1c.ctex::

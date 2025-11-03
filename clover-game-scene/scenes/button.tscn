@@ -1,7 +1,7 @@
 [gd_scene load_steps=9 format=3 uid="uid://bhhikdvbxeox0"]
 
 [ext_resource type="Texture2D" uid="uid://c58xjnpkgvjmd" path="res://Brackey's Assets (from video)/sprites/platforms.png" id="1_n4tde"]
-[ext_resource type="Script" uid="uid://d3syarcoi2kea" path="res://buttonPress.gd" id="1_vxja4"]
+[ext_resource type="Script" uid="uid://d3syarcoi2kea" path="res://Scripts/buttonPress.gd" id="1_vxja4"]
 [ext_resource type="Texture2D" uid="uid://dst5t13y2l6li" path="res://Traps/1.png" id="2_vxja4"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_vxja4"]

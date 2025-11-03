@@ -1,9 +1,5 @@
-res://level3.tscn
-res://buttonPress.gd
-res://sliplatform.gd
-res://platform.tscn
-res://lotus.tscn
-res://slidingplatform2.gd
-res://lotus.gd
-res://sky.tscn
-res://enemy.tscn
+res://scenes/level3.tscn
+res://Scripts/killzone.gd
+res://scenes/platformnoncol.tscn
+res://Scripts/enemymushroom.gd
+res://scenes/dangerZone.gd

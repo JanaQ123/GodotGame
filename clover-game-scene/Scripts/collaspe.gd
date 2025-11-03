@@ -3,7 +3,7 @@ extends AnimatableBody2D
 @export var wobble_speed: float = 10.0
 @export var wobble_height: float = 2.0
 @export var fall_speed: float = 250.0
-@export var collapse_delay: float = 0.5
+@export var collapse_delay: float = 1.0
 @export var destroy_delay: float = 1.0
 
 var time := 0.0

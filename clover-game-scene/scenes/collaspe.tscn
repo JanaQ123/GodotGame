@@ -1,7 +1,7 @@
 [gd_scene load_steps=8 format=3 uid="uid://cwwt2rsr8quxp"]
 
-[ext_resource type="Texture2D" uid="uid://bl8xjse6j221m" path="res://Traps/collapse2.png" id="1_0kh0g"]
-[ext_resource type="Script" uid="uid://beaxwsy1eht6v" path="res://collaspe.gd" id="1_pweb2"]
+[ext_resource type="Script" uid="uid://beaxwsy1eht6v" path="res://Scripts/collaspe.gd" id="1_pweb2"]
+[ext_resource type="Texture2D" uid="uid://4q8udadtlb8b" path="res://Traps/5.png" id="2_2dwv3"]
 [ext_resource type="Texture2D" uid="uid://cyswlcgyrjrnh" path="res://Brackey's Assets (from video)/sprites/particles.png" id="3_njt6g"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_njt6g"]
@@ -25,9 +25,11 @@ scale = Vector2(0.31892425, 0.31892425)
 script = ExtResource("1_pweb2")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(1, 1)
-scale = Vector2(0.32140377, 0.32140377)
-texture = ExtResource("1_0kh0g")
+position = Vector2(-1.1920929e-07, -3.135541)
+scale = Vector2(3.6130068, 3.6130068)
+texture = ExtResource("2_2dwv3")
+region_enabled = true
+region_rect = Rect2(8, 20, 32, 8)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(1, -14)
