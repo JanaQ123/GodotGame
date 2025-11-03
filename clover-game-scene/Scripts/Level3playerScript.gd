@@ -14,6 +14,9 @@ var knockback_time := 0.0
 var can_move=true
 var freefall=false;
 var powerup=false;
+var on_wall=false;
+var wall_dir=0;
+
 
 func _ready() -> void:
 	$rainbowparent.visible = false   
@@ -103,11 +106,32 @@ func _physics_process(delta: float) -> void:
 
 
 		# Animation
-		if is_jumping:
-			sprite.play("jump")
+		if not is_on_floor():
+			if velocity.y > 400:
+				sprite.play("falling")
+			else:
+				sprite.play("jump")
+				
+				
 		elif direction != 0:
 			sprite.play("walk_left")
 		else:
 			sprite.play("idle")
 
 		move_and_slide()
+		for i in range(get_slide_collision_count()):
+			var collision = get_slide_collision(i)
+			if collision.get_collider().is_in_group("wall"):
+				on_wall = true
+				break
+
+	# Simple wall interaction
+		#if on_wall:
+			#velocity.y = min(velocity.y, 200)
+
+	# Jump
+		if on_wall:
+			if Input.is_action_just_pressed("ui_accept"):
+				velocity.x = wall_dir * 300
+				velocity.y = -300
+		
