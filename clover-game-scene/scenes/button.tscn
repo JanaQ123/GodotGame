@@ -1,0 +1,74 @@
+[gd_scene load_steps=9 format=3 uid="uid://bhhikdvbxeox0"]
+
+[ext_resource type="Texture2D" uid="uid://c58xjnpkgvjmd" path="res://Brackey's Assets (from video)/sprites/platforms.png" id="1_n4tde"]
+[ext_resource type="Script" uid="uid://d3syarcoi2kea" path="res://Scripts/buttonPress.gd" id="1_vxja4"]
+[ext_resource type="Texture2D" uid="uid://dst5t13y2l6li" path="res://Traps/1.png" id="2_vxja4"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vxja4"]
+atlas = ExtResource("2_vxja4")
+region = Rect2(96, 24, 48, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lt4la"]
+atlas = ExtResource("2_vxja4")
+region = Rect2(240, 24, 48, 24)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_xytk5"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vxja4")
+}],
+"loop": true,
+"name": &"pressed",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lt4la")
+}],
+"loop": true,
+"name": &"unpressed",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lt4la"]
+size = Vector2(10, 11.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4sa2v"]
+size = Vector2(10, 5.5)
+
+[node name="button" type="AnimatableBody2D"]
+collision_layer = 3
+collision_mask = 7
+script = ExtResource("1_vxja4")
+
+[node name="buttonAnimation" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -8.145026)
+scale = Vector2(0.29716614, 0.40458113)
+sprite_frames = SubResource("SpriteFrames_xytk5")
+animation = &"unpressed"
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_n4tde")
+region_enabled = true
+region_rect = Rect2(0, 0, 16, 10)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+light_mask = 3
+visibility_layer = 3
+position = Vector2(0, -3.25)
+shape = SubResource("RectangleShape2D_lt4la")
+
+[node name="Area2D" type="Area2D" parent="."]
+light_mask = 3
+visibility_layer = 3
+collision_mask = 7
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+light_mask = 3
+visibility_layer = 3
+position = Vector2(0, -9.25)
+shape = SubResource("RectangleShape2D_4sa2v")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]

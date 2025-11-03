@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="CloverGameScene"
-run/main_scene="uid://di0ouaw4s8nhf"
+run/main_scene="uid://ugx26js2mqc4"
 config/features=PackedStringArray("4.5", "Forward Plus")
 config/icon="res://icon.svg"
 

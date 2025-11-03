@@ -1,0 +1,10 @@
+res://scenes/CloudLevel3.tscn
+res://scenes/level3player.tscn
+res://Scripts/Level3playerScript.gd
+res://scenes/level3.tscn
+res://scenes/lucy.tscn
+res://clouds/Clouds/Clouds 2/lucywalk.gd
+res://rainbow.tscn
+res://scenes/level1killzone.tscn
+res://scenes/Level2StartCutscene.gd
+res://scenes/level_1.tscn

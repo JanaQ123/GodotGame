@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://5f3is74egjui"]
+
+[ext_resource type="Texture2D" uid="uid://c58xjnpkgvjmd" path="res://Brackey's Assets (from video)/sprites/platforms.png" id="1_crr3m"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_crr3m"]
+size = Vector2(16, 10)
+
+[node name="buttonmove" type="StaticBody2D"]
+collision_layer = 7
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_crr3m")
+region_enabled = true
+region_rect = Rect2(0, 0, 16, 9)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -1)
+shape = SubResource("RectangleShape2D_crr3m")

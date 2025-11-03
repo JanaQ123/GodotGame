@@ -1,0 +1,77 @@
+[gd_scene load_steps=8 format=3 uid="uid://cwwt2rsr8quxp"]
+
+[ext_resource type="Script" uid="uid://beaxwsy1eht6v" path="res://Scripts/collaspe.gd" id="1_pweb2"]
+[ext_resource type="Texture2D" uid="uid://4q8udadtlb8b" path="res://Traps/5.png" id="2_2dwv3"]
+[ext_resource type="Texture2D" uid="uid://cyswlcgyrjrnh" path="res://Brackey's Assets (from video)/sprites/particles.png" id="3_njt6g"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_njt6g"]
+size = Vector2(260.9834, 17.941582)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pweb2"]
+size = Vector2(269.13904, 82.93309)
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_njt6g"]
+particles_animation = true
+particles_anim_h_frames = 3
+particles_anim_v_frames = 1
+particles_anim_loop = false
+
+[sub_resource type="Gradient" id="Gradient_njt6g"]
+offsets = PackedFloat32Array(0.032608695, 0.25316456, 0.56329113)
+colors = PackedColorArray(1, 1, 1, 1, 0.51086956, 0.51086956, 0.51086956, 1, 0, 0, 0, 1)
+
+[node name="collaspe" type="AnimatableBody2D"]
+scale = Vector2(0.31892425, 0.31892425)
+script = ExtResource("1_pweb2")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-1.1920929e-07, -3.135541)
+scale = Vector2(3.6130068, 3.6130068)
+texture = ExtResource("2_2dwv3")
+region_enabled = true
+region_rect = Rect2(8, 20, 32, 8)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(1, -14)
+rotation = -3.1415925
+scale = Vector2(0.4302146, 0.4302146)
+shape = SubResource("RectangleShape2D_njt6g")
+
+[node name="Area2D" type="Area2D" parent="."]
+position = Vector2(1, 1)
+rotation = 3.1415927
+scale = Vector2(0.43021464, 0.43021464)
+collision_layer = 4
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(2.861023e-06, 12.324665)
+scale = Vector2(0.99999994, 0.99999994)
+shape = SubResource("RectangleShape2D_pweb2")
+
+[node name="CPUParticles2D" type="CPUParticles2D" parent="."]
+visibility_layer = 7
+material = SubResource("CanvasItemMaterial_njt6g")
+position = Vector2(1, 1)
+emitting = false
+amount = 4
+texture = ExtResource("3_njt6g")
+lifetime = 2.0
+one_shot = true
+explosiveness = 1.0
+emission_shape = 3
+emission_rect_extents = Vector2(67, 1)
+direction = Vector2(0, -1)
+spread = 99.83
+initial_velocity_min = 200.0
+initial_velocity_max = 200.0
+angular_velocity_min = -60.0
+angular_velocity_max = 75.0
+scale_amount_min = 0.8
+scale_amount_max = 0.8
+color_ramp = SubResource("Gradient_njt6g")
+anim_offset_max = 1.0
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.7
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

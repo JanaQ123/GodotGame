@@ -1,0 +1,75 @@
+[gd_scene load_steps=11 format=3 uid="uid://b64rrri5me4rd"]
+
+[ext_resource type="Texture2D" uid="uid://4q8udadtlb8b" path="res://Traps/5.png" id="1_hei2g"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_avrdu"]
+atlas = ExtResource("1_hei2g")
+region = Rect2(0, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ge5jy"]
+atlas = ExtResource("1_hei2g")
+region = Rect2(48, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2snwf"]
+atlas = ExtResource("1_hei2g")
+region = Rect2(96, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_x46hi"]
+atlas = ExtResource("1_hei2g")
+region = Rect2(144, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1ecfy"]
+atlas = ExtResource("1_hei2g")
+region = Rect2(192, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_h138o"]
+atlas = ExtResource("1_hei2g")
+region = Rect2(240, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dm3dt"]
+atlas = ExtResource("1_hei2g")
+region = Rect2(288, 0, 48, 48)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_i3laj"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_avrdu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ge5jy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2snwf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_x46hi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1ecfy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h138o")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dm3dt")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gy0b2"]
+size = Vector2(29.348572, 10.549619)
+
+[node name="Area2D" type="Area2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(63.5, -41.5)
+scale = Vector2(3.6458333, 2.7291667)
+sprite_frames = SubResource("SpriteFrames_i3laj")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(61.500004, -46)
+scale = Vector2(3.6458333, 2.7291667)
+shape = SubResource("RectangleShape2D_gy0b2")

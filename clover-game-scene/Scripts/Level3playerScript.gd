@@ -19,6 +19,7 @@ var wall_dir=0;
 var jump_buffer_time = 0.15
 var jump_buffer = 0.0
 var last_wall_dir = 0
+var health: int = 100  # Player's health
 
 func _ready() -> void:
 	$rainbowparent.visible = false   
@@ -49,7 +50,18 @@ func power_up():
 	$rainbowparent.visible = false
 	powerup=false
 
+func take_damage(amount: int) -> void:
+	health -= amount
+	print("Player took ", amount, " damage! Health: ", health)
 
+	if health <= 0:
+		die()
+
+
+# 💀 Optional: What happens when health reaches zero
+func die() -> void:
+	print("Player died!")
+	queue_free()
 	
 func _physics_process(delta: float) -> void:
 	# 1. Knockback

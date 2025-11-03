@@ -1,3 +1,7 @@
+<<<<<<< HEAD
 [gd_scene format=3 uid="uid://di0ouaw4s8nhf"]
+=======
+[gd_scene load_steps=0 format=3 uid="uid://di0ouaw4s8nhf"]
+>>>>>>> level-4-
 
 [node name="Main Game" type="Node2D"]
