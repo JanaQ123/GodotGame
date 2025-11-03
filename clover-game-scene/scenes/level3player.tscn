@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=3 uid="uid://dwbepxe4isg4w"]
+[gd_scene load_steps=23 format=3 uid="uid://dwbepxe4isg4w"]
 
 [ext_resource type="Texture2D" uid="uid://c8lk8fjkbo63e" path="res://character/pose17gg.png" id="1_ivps1"]
 [ext_resource type="Script" uid="uid://btgbebxoyso1a" path="res://Scripts/Level3playerScript.gd" id="1_urp6f"]
@@ -15,6 +15,8 @@
 [ext_resource type="Texture2D" uid="uid://r8e1lc0g86cf" path="res://character/pose6gg.png" id="11_7ahtn"]
 [ext_resource type="Texture2D" uid="uid://dkls5npmkouqt" path="res://character/pose7gg.png" id="12_7lmhl"]
 [ext_resource type="Texture2D" uid="uid://dmqr2lmrjacgt" path="res://SVG/rainbowcircle.svg" id="14_f1ej7"]
+[ext_resource type="AudioStream" uid="uid://dlbx8n6gba46i" path="res://Music/CloverSoundEffect.mp3" id="16_tavp5"]
+[ext_resource type="AudioStream" uid="uid://bupd7ad6ca1b8" path="res://Music/jumpSound.mp3" id="17_0i3bh"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ivps1"]
 radius = 279.99997
@@ -169,3 +171,11 @@ scale = Vector2(0.8014129, 0.7909222)
 sprite_frames = SubResource("SpriteFrames_au0nh")
 animation = &"falling"
 autoplay = "idle"
+
+[node name="clover collect" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("16_tavp5")
+volume_db = 24.0
+
+[node name="JumpSound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("17_0i3bh")
+volume_db = 10.0

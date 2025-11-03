@@ -1,7 +1,8 @@
-[gd_scene load_steps=13 format=3 uid="uid://27rjl3boeoex"]
+[gd_scene load_steps=14 format=3 uid="uid://27rjl3boeoex"]
 
 [ext_resource type="Texture2D" uid="uid://cyhiw5xribwd5" path="res://Traps/4.png" id="1_5pg7g"]
 [ext_resource type="PackedScene" uid="uid://croobmd63t5lv" path="res://scenes/level1killzone.tscn" id="2_bflj7"]
+[ext_resource type="AudioStream" uid="uid://csib1aha25wy3" path="res://Music/game-over-417465.mp3" id="3_bflj7"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_d77p4"]
 size = Vector2(11, 11)
@@ -83,3 +84,7 @@ position = Vector2(0, -3)
 [node name="CollisionShape2D" type="CollisionShape2D" parent="killzone"]
 scale = Vector2(0.2, 0.25)
 shape = SubResource("WorldBoundaryShape2D_bflj7")
+
+[node name="gameOverSound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_bflj7")
+volume_db = 5.0

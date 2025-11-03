@@ -5,8 +5,11 @@ var sprite2;
 var sprite3;
 @export var background_node: Sprite2D
 @export var backgroundCloud: Sprite2D
+@onready var bg_music_1: AudioStreamPlayer2D = $"../BGMusic1"
+@onready var bg_music_2: AudioStreamPlayer2D = $"../BGMusic2"
 
 func _ready():
+	bg_music_1.play()
 	sprite1 = get_node("Cloud1")
 	sprite2=get_node("Cloud2")
 	backgroundCloud.visible = true
@@ -15,8 +18,10 @@ func _ready():
 func _on_area_2d_body_entered(body: Node2D) -> void:
 		if body.is_in_group("player"):
 			await get_tree().create_timer(0.5).timeout
+			bg_music_1.stop()
 			body.disable_control()
 			await get_tree().create_timer(1.5).timeout
+			bg_music_2.play()
 			sprite1.texture = preload("res://cloudy skies/19Grey.png")
 			sprite2.texture = preload("res://cloudy skies/19Grey.png")
 			background_node.texture=preload("res://cloudy skies/newgreybackground.png")

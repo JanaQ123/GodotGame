@@ -1,10 +1,17 @@
-res://scenes/CloudLevel3.tscn
+res://scenes/level_1.tscn
+res://Scripts/pixel_house.gd
 res://scenes/level3player.tscn
 res://Scripts/Level3playerScript.gd
+res://scenes/Level1bg_music.gd
+res://scenes/killzone.tscn
+res://Scripts/killzone.gd
+res://scenes/spikes.tscn
+res://Scripts/killzoneLevel1.gd
+res://scenes/CloudLevel3.tscn
+res://Scripts/Level3Cutscene.gd
 res://scenes/level3.tscn
-res://scenes/lucy.tscn
-res://clouds/Clouds/Clouds 2/lucywalk.gd
-res://rainbow.tscn
-res://scenes/level1killzone.tscn
-res://scenes/Level2StartCutscene.gd
-res://scenes/level_1.tscn
+res://mushrromenemyjymp.tscn
+res://scenes/dangerZone.gd
+res://scenes/button.tscn
+res://Scripts/collaspe.gd
+res://scenes/collaspe.tscn

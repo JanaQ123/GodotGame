@@ -1,9 +1,10 @@
-[gd_scene load_steps=29 format=3 uid="uid://dbs6cnfeycn8b"]
+[gd_scene load_steps=30 format=3 uid="uid://dbs6cnfeycn8b"]
 
 [ext_resource type="Script" uid="uid://dqk6i7wmgni3c" path="res://Scripts/enemymushroom.gd" id="1_5alal"]
 [ext_resource type="Texture2D" uid="uid://gg0viitfn3dk" path="res://Brackey's Assets (from video)/sprites/Mushroom-Run.png" id="2_sd0rx"]
 [ext_resource type="Texture2D" uid="uid://c3ukteiuml5co" path="res://Traps/Mushroom-Die.png" id="3_reo03"]
 [ext_resource type="PackedScene" uid="uid://c5s36wo1eaon8" path="res://scenes/killzone.tscn" id="4_5mcd4"]
+[ext_resource type="AudioStream" uid="uid://csib1aha25wy3" path="res://Music/game-over-417465.mp3" id="5_sd0rx"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5alal"]
 size = Vector2(34.44501, 24.887949)
@@ -192,3 +193,7 @@ collision_mask = 3
 [node name="i kill u" type="CollisionShape2D" parent="killzone"]
 position = Vector2(0.5, -12.75)
 shape = SubResource("RectangleShape2D_mif2c")
+
+[node name="gameOverSound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("5_sd0rx")
+volume_db = 5.0

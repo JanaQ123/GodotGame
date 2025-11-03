@@ -20,9 +20,12 @@ var jump_buffer_time = 0.15
 var jump_buffer = 0.0
 var last_wall_dir = 0
 var health: int = 100  # Player's health
+@onready var clover_collect: AudioStreamPlayer2D = $"clover collect"
+@onready var rainbow_parent = $rainbowparent
+@onready var jump_sound: AudioStreamPlayer2D = $JumpSound
 
 func _ready() -> void:
-	$rainbowparent.visible = false   
+	rainbow_parent.visible = false
 
 func take_knockback(direction: Vector2, force: float):
 	knockback_velocity = direction * force
@@ -42,6 +45,7 @@ func free_fall():
 	velocity.y += 2
 
 func power_up():
+	clover_collect.play()
 	powerup=true
 	$rainbowparent.visible = true
 	$rainbowparent/AnimationPlayer.play("rainbowgrow")
@@ -112,6 +116,7 @@ func _physics_process(delta: float) -> void:
 			if powerup:
 				velocity.y = JUMP_VELOCITY * 1.8
 			else:
+				#jump_sound.play()
 				velocity.y = JUMP_VELOCITY
 				is_jumping = true
 		# Gravity

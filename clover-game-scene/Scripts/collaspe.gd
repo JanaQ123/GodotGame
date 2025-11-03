@@ -27,8 +27,7 @@ func _process(delta):
 
 func _on_area_2d_body_entered(body):
 	print("Body entered: ", body.name)
-	if body.name == "lucy":
-		print("Lucy triggered collapse!")
+	if body.is_in_group("player"):
 		set_process(true)
 		$Timer.start(collapse_delay)
 
