@@ -12,7 +12,7 @@ func _ready():
 	$Area2D.body_entered.connect(_on_body_entered)
 
 func _on_body_entered(body):
-	if body.is_in_group("player"):  # make sure your player is in "player" group
+	if body.is_in_group("lucy"):  # make sure your player is in "player" group
 		moving = true
 
 func _process(delta):

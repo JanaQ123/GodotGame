@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://byw0vwjqmss16"]
+[gd_scene load_steps=16 format=3 uid="uid://byw0vwjqmss16"]
 
 [ext_resource type="Texture2D" uid="uid://6hby8agr7sw7" path="res://clouds/Clouds/Clouds 6/4.png" id="1_3ustv"]
 [ext_resource type="Texture2D" uid="uid://ccnp6lnkaqd6q" path="res://clouds/Clouds/Clouds 2/4.png" id="3_00u2l"]
@@ -13,6 +13,8 @@
 [ext_resource type="Texture2D" uid="uid://0od135po663" path="res://clouds/Clouds/Clouds 7/2.png" id="11_tlsao"]
 [ext_resource type="Texture2D" uid="uid://kx7xvo1xdm8m" path="res://clouds/Clouds/Clouds 2/sky33.png" id="12_mng0x"]
 [ext_resource type="Texture2D" uid="uid://cqfodwo8pgh56" path="res://clouds/Clouds/Clouds 2/1.png" id="12_mxtae"]
+[ext_resource type="Texture2D" uid="uid://cxcu6flnrbbgs" path="res://clouds/Clouds/Clouds 5/4.png" id="13_g2g78"]
+[ext_resource type="Texture2D" uid="uid://b380kinpyyrro" path="res://clouds/Clouds/Clouds 5/5.png" id="14_tlsao"]
 
 [node name="Node2D" type="Node2D"]
 
@@ -28,22 +30,26 @@ texture = ExtResource("8_tij5r")
 
 [node name="Sky2" type="Sprite2D" parent="."]
 z_index = -7
-position = Vector2(2009, -122)
+position = Vector2(2009, -188)
+scale = Vector2(1, 1.4074074)
 texture = ExtResource("9_jytix")
 
 [node name="Sky23" type="Sprite2D" parent="."]
 z_index = -5
-position = Vector2(2487, -122)
+position = Vector2(2487, -188)
+scale = Vector2(1, 1.4074074)
 texture = ExtResource("10_vfda5")
 
 [node name="Sky3" type="Sprite2D" parent="."]
 z_index = -5
-position = Vector2(3063, -123)
+position = Vector2(3063, -189)
+scale = Vector2(1, 1.4074074)
 texture = ExtResource("11_0prda")
 
 [node name="Sky33" type="Sprite2D" parent="."]
 z_index = -6
-position = Vector2(3613, -123)
+position = Vector2(3613, -188.5)
+scale = Vector2(1, 1.404321)
 texture = ExtResource("12_mng0x")
 
 [node name="5" type="Sprite2D" parent="."]
@@ -61,45 +67,47 @@ z_index = -2
 position = Vector2(-828, 24)
 texture = ExtResource("10_g2g78")
 
+[node name="1" type="Sprite2D" parent="5"]
+z_index = -4
+position = Vector2(-829, -69)
+scale = Vector2(1, 1.4012346)
+texture = ExtResource("12_mxtae")
+
+[node name="5" type="Sprite2D" parent="5"]
+z_index = -1
+position = Vector2(-254, 4)
+texture = ExtResource("1_3ustv")
+
+[node name="6" type="Sprite2D" parent="5"]
+position = Vector2(-260, 3)
+texture = ExtResource("3_00u2l")
+
+[node name="7" type="Sprite2D" parent="5"]
+visible = false
+z_index = -2
+position = Vector2(-255, -6)
+texture = ExtResource("10_g2g78")
+
+[node name="8" type="Sprite2D" parent="5"]
+z_index = -3
+position = Vector2(-255, 5)
+texture = ExtResource("11_tlsao")
+
+[node name="9" type="Sprite2D" parent="5"]
+z_index = -4
+position = Vector2(-256, -68.99999)
+scale = Vector2(1, 1.4012345)
+texture = ExtResource("12_mxtae")
+
+[node name="1" type="Sprite2D" parent="5/9"]
+z_index = -4
+position = Vector2(573, 0)
+texture = ExtResource("12_mxtae")
+
 [node name="2" type="Sprite2D" parent="5"]
 z_index = -3
 position = Vector2(-828, -37)
 texture = ExtResource("11_tlsao")
-
-[node name="1" type="Sprite2D" parent="5"]
-z_index = -4
-position = Vector2(-829, -4)
-texture = ExtResource("12_mxtae")
-
-[node name="4" type="Sprite2D" parent="5/1"]
-z_index = -1
-position = Vector2(575, 8)
-texture = ExtResource("1_3ustv")
-
-[node name="5" type="Sprite2D" parent="5/1"]
-position = Vector2(569, 7)
-texture = ExtResource("3_00u2l")
-
-[node name="3" type="Sprite2D" parent="5/1"]
-visible = false
-z_index = -2
-position = Vector2(574, -2)
-texture = ExtResource("10_g2g78")
-
-[node name="2" type="Sprite2D" parent="5/1"]
-z_index = -3
-position = Vector2(574, 9)
-texture = ExtResource("11_tlsao")
-
-[node name="1" type="Sprite2D" parent="5/1"]
-z_index = -4
-position = Vector2(573, 0)
-texture = ExtResource("12_mxtae")
-
-[node name="1" type="Sprite2D" parent="5/1/1"]
-z_index = -4
-position = Vector2(573, 0)
-texture = ExtResource("12_mxtae")
 
 [node name="6" type="Sprite2D" parent="."]
 z_index = -5
@@ -116,6 +124,34 @@ z_index = 3
 position = Vector2(979, -20)
 texture = ExtResource("6_mxtae")
 
+[node name="4" type="Sprite2D" parent="7"]
+z_index = 2
+position = Vector2(1542, 19)
+texture = ExtResource("13_g2g78")
+
+[node name="5" type="Sprite2D" parent="7"]
+z_index = 3
+position = Vector2(1552, -4.5)
+scale = Vector2(1, 0.99691355)
+texture = ExtResource("14_tlsao")
+
+[node name="6" type="Sprite2D" parent="7"]
+z_index = 2
+position = Vector2(2108, 29)
+texture = ExtResource("13_g2g78")
+
+[node name="8" type="Sprite2D" parent="7"]
+z_index = 3
+position = Vector2(2108, -6)
+scale = Vector2(-1, 0.997)
+texture = ExtResource("14_tlsao")
+
+[node name="9" type="Sprite2D" parent="7"]
+z_index = 3
+position = Vector2(2738, -19.500004)
+scale = Vector2(1.2039931, 1.1882716)
+texture = ExtResource("14_tlsao")
+
 [node name="8" type="Sprite2D" parent="."]
 z_index = -6
 position = Vector2(1569, -186)
@@ -123,5 +159,12 @@ scale = Vector2(1.203125, 1.4012345)
 texture = ExtResource("7_hp7ek")
 
 [node name="Sky34" type="Sprite2D" parent="."]
-position = Vector2(4161, -125)
+z_index = -6
+position = Vector2(4230.5, -189.5)
+scale = Vector2(1.2413194, 1.3981482)
 texture = ExtResource("12_mng0x")
+
+[node name="4" type="Sprite2D" parent="."]
+z_index = -5
+position = Vector2(3803, -116)
+texture = ExtResource("3_00u2l")

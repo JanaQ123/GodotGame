@@ -1,0 +1,88 @@
+[gd_scene load_steps=13 format=3 uid="uid://vjetsoqv3dot"]
+
+[ext_resource type="Texture2D" uid="uid://b7q7jc0vetecn" path="res://clouds/Clouds/Clouds 2/BROWNfrog_blinking_strip10.png" id="1_whe2r"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6ekd3"]
+atlas = ExtResource("1_whe2r")
+region = Rect2(0, 0, 27, 20)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_slgur"]
+atlas = ExtResource("1_whe2r")
+region = Rect2(27, 0, 27, 20)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_byod8"]
+atlas = ExtResource("1_whe2r")
+region = Rect2(54, 0, 27, 20)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j38ec"]
+atlas = ExtResource("1_whe2r")
+region = Rect2(81, 0, 27, 20)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5cyyp"]
+atlas = ExtResource("1_whe2r")
+region = Rect2(108, 0, 27, 20)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rd326"]
+atlas = ExtResource("1_whe2r")
+region = Rect2(135, 0, 27, 20)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cvt0w"]
+atlas = ExtResource("1_whe2r")
+region = Rect2(162, 0, 27, 20)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_40hiu"]
+atlas = ExtResource("1_whe2r")
+region = Rect2(189, 0, 27, 20)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_omj1a"]
+atlas = ExtResource("1_whe2r")
+region = Rect2(216, 0, 27, 20)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8kk5g"]
+atlas = ExtResource("1_whe2r")
+region = Rect2(243, 0, 27, 20)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_aumaf"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6ekd3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_slgur")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_byod8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_j38ec")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5cyyp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rd326")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cvt0w")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_40hiu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_omj1a")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8kk5g")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_aumaf")
+autoplay = "default"
+frame_progress = 0.4423689

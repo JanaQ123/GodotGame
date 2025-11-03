@@ -1,5 +1,9 @@
-res://button.tscn
-res://buttonPress.gd
 res://level3.tscn
-res://buttonmove.tscn
-res://decayingplatform.tscn
+res://buttonPress.gd
+res://sliplatform.gd
+res://platform.tscn
+res://lotus.tscn
+res://slidingplatform2.gd
+res://lotus.gd
+res://sky.tscn
+res://enemy.tscn
