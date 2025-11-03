@@ -1,7 +1,8 @@
-[gd_scene load_steps=13 format=3 uid="uid://ugx26js2mqc4"]
+[gd_scene load_steps=14 format=3 uid="uid://ugx26js2mqc4"]
 
 [ext_resource type="Texture2D" uid="uid://yh2nraso0vt3" path="res://Brackey's Assets (from video)/sprites/world_tileset.png" id="1_3hls8"]
 [ext_resource type="PackedScene" uid="uid://dwbepxe4isg4w" path="res://scenes/player.tscn" id="1_hbghi"]
+[ext_resource type="PackedScene" uid="uid://fokypruesphx" path="res://scenes/sun.tscn" id="3_2y5yt"]
 [ext_resource type="PackedScene" uid="uid://croobmd63t5lv" path="res://scenes/killzone.tscn" id="3_rus8k"]
 [ext_resource type="PackedScene" uid="uid://27rjl3boeoex" path="res://scenes/spikes.tscn" id="4_5xbjy"]
 [ext_resource type="PackedScene" uid="uid://bv8ssxv87uw31" path="res://scenes/clover.tscn" id="5_4nkto"]
@@ -168,6 +169,56 @@ sources/0 = SubResource("TileSetAtlasSource_hbghi")
 
 [node name="Level 1" type="Node2D"]
 
+[node name="BG" type="Node" parent="."]
+
+[node name="bg1" type="Sprite2D" parent="BG"]
+z_index = -1
+position = Vector2(-11.5, -92)
+texture = ExtResource("8_e3sih")
+
+[node name="bg2" type="Sprite2D" parent="BG"]
+z_index = -1
+position = Vector2(-11.5, -480)
+rotation = -3.1415925
+texture = ExtResource("9_2y5yt")
+
+[node name="bg3" type="Sprite2D" parent="BG"]
+z_index = -1
+position = Vector2(840, -92)
+texture = ExtResource("8_e3sih")
+
+[node name="bg4" type="Sprite2D" parent="BG"]
+z_index = -1
+position = Vector2(840, -480)
+rotation = -3.1415925
+texture = ExtResource("9_2y5yt")
+
+[node name="bg5" type="Sprite2D" parent="BG"]
+z_index = -1
+position = Vector2(1691.5, -92)
+texture = ExtResource("8_e3sih")
+
+[node name="bg6" type="Sprite2D" parent="BG"]
+z_index = -1
+position = Vector2(1691.5, -480)
+rotation = -3.1415925
+texture = ExtResource("9_2y5yt")
+
+[node name="bg7" type="Sprite2D" parent="BG"]
+z_index = -1
+position = Vector2(2542.5, -92)
+texture = ExtResource("8_e3sih")
+
+[node name="bg8" type="Sprite2D" parent="BG"]
+z_index = -1
+position = Vector2(2542.5, -480)
+rotation = -3.1415925
+texture = ExtResource("9_2y5yt")
+
+[node name="sun" parent="." instance=ExtResource("3_2y5yt")]
+position = Vector2(833.00006, -119.00001)
+scale = Vector2(4.692139, 4.692139)
+
 [node name="player" parent="." instance=ExtResource("1_hbghi")]
 z_index = 5
 position = Vector2(0, -19.999998)
@@ -233,6 +284,11 @@ scale = Vector2(2, 2)
 position = Vector2(655, 0)
 scale = Vector2(2, 2)
 
+[node name="swinging ball" parent="." instance=ExtResource("5_fcfvj")]
+position = Vector2(1321, -171)
+scale = Vector2(0.25, 0.25)
+collision_mask = 3
+
 [node name="clovers" type="Node" parent="."]
 
 [node name="clover" parent="clovers" instance=ExtResource("5_4nkto")]
@@ -253,54 +309,3 @@ position = Vector2(1859, -387)
 
 [node name="grass moving platforms3" parent="circle platforms" instance=ExtResource("7_pa8r4")]
 position = Vector2(1977, -471)
-
-[node name="BG" type="Node" parent="."]
-
-[node name="bg1" type="Sprite2D" parent="BG"]
-z_index = -1
-position = Vector2(-11.5, -92)
-texture = ExtResource("8_e3sih")
-
-[node name="bg2" type="Sprite2D" parent="BG"]
-z_index = -1
-position = Vector2(-11.5, -480)
-rotation = -3.1415925
-texture = ExtResource("9_2y5yt")
-
-[node name="bg3" type="Sprite2D" parent="BG"]
-z_index = -1
-position = Vector2(840, -92)
-texture = ExtResource("8_e3sih")
-
-[node name="bg4" type="Sprite2D" parent="BG"]
-z_index = -1
-position = Vector2(840, -480)
-rotation = -3.1415925
-texture = ExtResource("9_2y5yt")
-
-[node name="bg5" type="Sprite2D" parent="BG"]
-z_index = -1
-position = Vector2(1691.5, -92)
-texture = ExtResource("8_e3sih")
-
-[node name="bg6" type="Sprite2D" parent="BG"]
-z_index = -1
-position = Vector2(1691.5, -480)
-rotation = -3.1415925
-texture = ExtResource("9_2y5yt")
-
-[node name="bg7" type="Sprite2D" parent="BG"]
-z_index = -1
-position = Vector2(2542.5, -92)
-texture = ExtResource("8_e3sih")
-
-[node name="bg8" type="Sprite2D" parent="BG"]
-z_index = -1
-position = Vector2(2542.5, -480)
-rotation = -3.1415925
-texture = ExtResource("9_2y5yt")
-
-[node name="swinging ball" parent="." instance=ExtResource("5_fcfvj")]
-position = Vector2(1321, -171)
-scale = Vector2(0.25, 0.25)
-collision_mask = 3
