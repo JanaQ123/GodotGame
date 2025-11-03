@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-const SPEED = 200.0
+const SPEED = 210.0
 const JUMP_VELOCITY = -300.0
 
 @onready var sprite = $AnimatedSprite2D
@@ -50,7 +50,6 @@ func power_up():
 	
 func _physics_process(delta: float) -> void:
 	# 1. Knockback
-	move_and_slide()
 	
 	
 	# Store jump input briefly
@@ -70,7 +69,6 @@ func _physics_process(delta: float) -> void:
 		velocity = knockback_velocity
 		knockback_velocity = knockback_velocity.move_toward(Vector2.ZERO, 3000 * delta)
 		knockback_time -= delta
-		move_and_slide()
 		return
 	# 2. Freefall (slow-motion)
 	if freefall:
@@ -103,7 +101,7 @@ func _physics_process(delta: float) -> void:
 				is_jumping = true
 		# Gravity
 		if not is_on_floor():
-			velocity += get_gravity() * delta
+			velocity += get_gravity() * delta*0.8
 			if velocity.y < 0:
 				is_jumping = true
 			else:
@@ -135,7 +133,7 @@ func _physics_process(delta: float) -> void:
 	if on_wall:
 		velocity.y = min(velocity.y, 100)
 		if Input.is_action_just_pressed("ui_accept") and wall_dir != last_wall_dir:
-			#velocity.y = min(velocity.y, 100)
+			velocity.y = min(velocity.y, 100)
 			velocity.x = wall_dir * 300
 			velocity.y = -350
 			last_wall_dir = wall_dir
