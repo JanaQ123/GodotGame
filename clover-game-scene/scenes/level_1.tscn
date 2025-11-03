@@ -16,9 +16,9 @@
 [ext_resource type="Texture2D" uid="uid://f721re2y215f" path="res://cloudy skies/Pixel Clouds/Clouds/images/2/blue_2/2.40.png" id="13_x2xxo"]
 [ext_resource type="Texture2D" uid="uid://b3vb3sg86jqy" path="res://cloudy skies/Pixel Clouds/Clouds/images/2/blue_2/2.47.png" id="14_2cbcq"]
 [ext_resource type="Texture2D" uid="uid://c4tlfce2lw3a8" path="res://cloudy skies/Pixel Clouds/Clouds/images/2/blue_2/2.55.png" id="15_isj1j"]
+[ext_resource type="PackedScene" uid="uid://d13r7k63gh0qe" path="res://scenes/pixel_house.tscn" id="16_2cbcq"]
 [ext_resource type="Texture2D" uid="uid://d1qchadnlodhy" path="res://cloudy skies/Pixel Clouds/Clouds/images/2/blue_2/2.67.png" id="16_so66j"]
 [ext_resource type="Texture2D" uid="uid://cijknbaskf7nw" path="res://Brackey's Assets (from video)/sprites/tree_b.png" id="18_x2xxo"]
-[ext_resource type="Texture2D" uid="uid://bcggfsv5v4eug" path="res://Brackey's Assets (from video)/sprites/pixelHouse.png" id="19_2cbcq"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_hbghi"]
 texture = ExtResource("1_3hls8")
@@ -430,14 +430,24 @@ texture = ExtResource("15_isj1j")
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="clouds/cloud9"]
 polygon = PackedVector2Array(0, 0, -3.1999512, -2.399994, 3.1999512, -2.399994, 3.1999512, -2.399994, 6.3999023, -3.1999817, 8.800049, -1.5999756, 12, 0, 16, 0.8000183, -16, 0, -15.199951, -1.5999756, -13.600098, -2.399994, -10.4001465, -2.399994, -8.800049, -1.5999756, -7.199951, -2.399994, -3.1999512, -2.399994)
 
+[node name="cloud10" type="StaticBody2D" parent="."]
+position = Vector2(2839, -501)
+
+[node name="2_1" type="Sprite2D" parent="cloud10"]
+position = Vector2(108.00002, -33)
+scale = Vector2(2.2727273, 2.2727273)
+texture = ExtResource("11_7nomh")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="cloud10"]
+light_mask = 3
+visibility_layer = 3
+polygon = PackedVector2Array(-1, 0, 10, -12, 19, -19, 26, -22, 29, -26, 35, -32, 43, -32, 53, -23, 61, -23, 68, -24, 74, -37, 80, -39, 90, -41, 95, -47, 100, -50, 109, -65, 118, -75, 128, -78, 141, -77, 148, -70, 155, -55, 154, -48, 170, -25, 183, -25, 198, -12, 205, -8, 212, -5, 1, 0, 0, 0, 0, 0)
+
 [node name="decor" type="Node" parent="."]
 
-[node name="PixelHouse" type="Sprite2D" parent="decor"]
-position = Vector2(-607.87506, -104.415115)
-scale = Vector2(0.51415104, 0.51415104)
-texture = ExtResource("19_2cbcq")
-region_enabled = true
-region_rect = Rect2(387, 24, 159, 168)
+[node name="PixelHouse" parent="decor" node_paths=PackedStringArray("player") instance=ExtResource("16_2cbcq")]
+position = Vector2(-610, -104)
+player = NodePath("../../player")
 
 [node name="fountain" parent="decor" instance=ExtResource("3_1s4pk")]
 z_index = -1

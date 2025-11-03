@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://d13r7k63gh0qe"]
+
+[ext_resource type="Texture2D" uid="uid://bcggfsv5v4eug" path="res://Brackey's Assets (from video)/sprites/pixelHouse.png" id="1_e206c"]
+[ext_resource type="Script" uid="uid://d1w8pcdev2v3g" path="res://Scripts/pixel_house.gd" id="2_mrcgl"]
+
+[node name="PixelHouse" type="Sprite2D"]
+scale = Vector2(0.51415104, 0.51415104)
+texture = ExtResource("1_e206c")
+region_enabled = true
+region_rect = Rect2(387, 24, 159, 168)
+script = ExtResource("2_mrcgl")
