@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://ugx26js2mqc4"]
+[gd_scene load_steps=20 format=3 uid="uid://ugx26js2mqc4"]
 
 [ext_resource type="Texture2D" uid="uid://yh2nraso0vt3" path="res://Brackey's Assets (from video)/sprites/world_tileset.png" id="1_3hls8"]
 [ext_resource type="PackedScene" uid="uid://dwbepxe4isg4w" path="res://scenes/player.tscn" id="1_hbghi"]
@@ -10,6 +10,12 @@
 [ext_resource type="PackedScene" uid="uid://cyxm6k1kfp6mo" path="res://scenes/grass_moving_platforms.tscn" id="7_pa8r4"]
 [ext_resource type="Texture2D" uid="uid://dy7md238hr6b2" path="res://cloudy skies/morning sky.jpg" id="8_e3sih"]
 [ext_resource type="Texture2D" uid="uid://bqki5anaig2mr" path="res://cloudy skies/morning sky clouds.jpg" id="9_2y5yt"]
+[ext_resource type="Texture2D" uid="uid://6bbc1hjbokl0" path="res://cloudy skies/Pixel Clouds/Clouds/images/2/blue_2/2.1.png" id="11_7nomh"]
+[ext_resource type="Texture2D" uid="uid://25vldjxe3pga" path="res://cloudy skies/Pixel Clouds/Clouds/images/2/blue_2/2.34.png" id="12_1s4pk"]
+[ext_resource type="Texture2D" uid="uid://f721re2y215f" path="res://cloudy skies/Pixel Clouds/Clouds/images/2/blue_2/2.40.png" id="13_x2xxo"]
+[ext_resource type="Texture2D" uid="uid://b3vb3sg86jqy" path="res://cloudy skies/Pixel Clouds/Clouds/images/2/blue_2/2.47.png" id="14_2cbcq"]
+[ext_resource type="Texture2D" uid="uid://c4tlfce2lw3a8" path="res://cloudy skies/Pixel Clouds/Clouds/images/2/blue_2/2.55.png" id="15_isj1j"]
+[ext_resource type="Texture2D" uid="uid://d1qchadnlodhy" path="res://cloudy skies/Pixel Clouds/Clouds/images/2/blue_2/2.67.png" id="16_so66j"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_hbghi"]
 texture = ExtResource("1_3hls8")
@@ -221,7 +227,7 @@ scale = Vector2(4.692139, 4.692139)
 
 [node name="player" parent="." instance=ExtResource("1_hbghi")]
 z_index = 5
-position = Vector2(0, -19.999998)
+position = Vector2(2077.0002, -515.00006)
 scale = Vector2(0.022, 0.022)
 
 [node name="Camera2D" type="Camera2D" parent="player"]
@@ -309,3 +315,107 @@ position = Vector2(1859, -387)
 
 [node name="grass moving platforms3" parent="circle platforms" instance=ExtResource("7_pa8r4")]
 position = Vector2(1977, -471)
+
+[node name="clouds" type="Node" parent="."]
+
+[node name="cloud1" type="StaticBody2D" parent="clouds"]
+position = Vector2(2101, -491)
+
+[node name="2_1" type="Sprite2D" parent="clouds/cloud1"]
+texture = ExtResource("11_7nomh")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="clouds/cloud1"]
+light_mask = 3
+visibility_layer = 3
+polygon = PackedVector2Array(0, -1, -6, -7, 1, -14, 6, -19, 12, -19, 18, -16, 21, -12, 23, -3, 28, 2, 34, 4, 39, 9, 45, 11, 48, 14, -49, 13, -43, 9, -40, 5, -36, 4, -33, 0, -28, 0, -23, 3, -18, 4, -15, 0, -15, 0, -6, -7)
+
+[node name="cloud2" type="StaticBody2D" parent="clouds"]
+position = Vector2(2208, -490)
+scale = Vector2(1.4499999, 1.45)
+
+[node name="2_34" type="Sprite2D" parent="clouds/cloud2"]
+position = Vector2(0, 5.5172358)
+texture = ExtResource("12_1s4pk")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="clouds/cloud2"]
+polygon = PackedVector2Array(0, 0, 0, -2.7586365, 5.517212, -2.7586365, 8.275879, 0, 8.965454, 0.68963623, 12.413818, 1.379303, 15.862061, 6.2068787, -16.551758, 6.8965454, -15.862061, 4.8275757, -13.103516, 2.0689392, -8.965576, 2.0689392, -7.5861816, 3.4482727, 0, -2.7586365)
+
+[node name="cloud3" type="StaticBody2D" parent="clouds"]
+position = Vector2(2310, -483)
+scale = Vector2(1.1, 1.1)
+
+[node name="2_41" type="Sprite2D" parent="clouds/cloud3"]
+position = Vector2(-0.9091797, 0.90908813)
+scale = Vector2(1.1623367, 1.1623368)
+texture = ExtResource("13_x2xxo")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="clouds/cloud3"]
+polygon = PackedVector2Array(0, 0, -7.272705, -10, -1.8183594, -16.363647, 4.54541, -17.272736, 10, -13.636383, 12.727295, -10, 12.727295, -3.636383, 13.63623, -0.90908813, 17.272705, -1.8182068, 20.908936, 2.7272644, 20.908936, 4.5454407, 24.54541, 4.5454407, 27.272705, 10, -28.181885, 12.727264, -27.272705, 6.363617, -22.727295, 3.6363525, -18.181885, 0.90908813, -15.45459, 0.90908813, -10, -5.4545593, -7.272705, -5.4545593, -7.272705, -10)
+
+[node name="cloud4" type="StaticBody2D" parent="clouds"]
+position = Vector2(2421, -476)
+
+[node name="2_48" type="Sprite2D" parent="clouds/cloud4"]
+position = Vector2(-1, 9)
+texture = ExtResource("14_2cbcq")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="clouds/cloud4"]
+polygon = PackedVector2Array(0, 0, -5, -5, -2, -8, 5, -8, 10, -3, 11, -1, 14, -2, 18, 0, 20, 2, 20, 5, 24, 7, 27, 10, 29, 12, -32, 12, -24, 5, -17, 4, -15, 0, -11, -2, -6, -1, -5, -5)
+
+[node name="cloud5" type="StaticBody2D" parent="clouds"]
+position = Vector2(2518.0002, -482.99997)
+scale = Vector2(1.25, 1.25)
+
+[node name="2_60" type="Sprite2D" parent="clouds/cloud5"]
+position = Vector2(-1.6002197, 0)
+scale = Vector2(0.79999995, 0.79999995)
+texture = ExtResource("15_isj1j")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="clouds/cloud5"]
+polygon = PackedVector2Array(-0.00024414063, 0, -3.2001953, -1.6000061, -0.80029297, -2.4000244, 1.5997314, -1.6000061, 3.9997559, -2.4000244, 6.3997803, -2.4000244, 7.999756, -0.8000183, 11.199707, 0, 13.599731, 0.7999878, -17.60022, 0, -16.000244, -1.6000061, -12.800293, -2.4000244, -11.200195, -1.6000061, -8.800293, -2.4000244, -4.800293, -2.4000244, -3.2001953, -1.6000061)
+
+[node name="cloud6" type="StaticBody2D" parent="clouds"]
+position = Vector2(2627, -514)
+
+[node name="2_68" type="Sprite2D" parent="clouds/cloud6"]
+position = Vector2(4, 12)
+texture = ExtResource("16_so66j")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="clouds/cloud6"]
+polygon = PackedVector2Array(0, 0, -4, -9, 3, -9, 10, -4, 11, 3, 13, 7, 18, 2, 24, 2, 27, 5, 28, 9, 36, 14, 41, 21, 42, 23, 46, 25, 51, 29, -43, 29, -41, 24, -37, 21, -35, 16, -33, 14, -29, 13, -24, 5, -20, 0, -14, -1, -10, -1, -7, -7, -4, -9)
+
+[node name="cloud7" type="StaticBody2D" parent="clouds"]
+position = Vector2(2734, -508)
+scale = Vector2(1.25, 1.25)
+
+[node name="2_55" type="Sprite2D" parent="clouds/cloud7"]
+position = Vector2(4.7683716e-05, 1.8715858e-05)
+scale = Vector2(0.79999995, 0.79999995)
+texture = ExtResource("15_isj1j")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="clouds/cloud7"]
+polygon = PackedVector2Array(0, 0, -3.1999512, -2.399994, 3.1999512, -2.399994, 3.1999512, -2.399994, 6.3999023, -3.1999817, 8.800049, -1.5999756, 12, 0, 16, 0.8000183, -16, 0, -15.199951, -1.5999756, -13.600098, -2.399994, -10.4001465, -2.399994, -8.800049, -1.5999756, -7.199951, -2.399994, -3.1999512, -2.399994)
+
+[node name="cloud8" type="StaticBody2D" parent="clouds"]
+position = Vector2(2768, -507.99997)
+scale = Vector2(1.25, 1.25)
+
+[node name="2_55" type="Sprite2D" parent="clouds/cloud8"]
+position = Vector2(4.7683716e-05, 1.8715858e-05)
+scale = Vector2(0.79999995, 0.79999995)
+texture = ExtResource("15_isj1j")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="clouds/cloud8"]
+polygon = PackedVector2Array(0, 0, -3.1999512, -2.399994, 3.1999512, -2.399994, 3.1999512, -2.399994, 6.3999023, -3.1999817, 8.800049, -1.5999756, 12, 0, 16, 0.8000183, -16, 0, -15.199951, -1.5999756, -13.600098, -2.399994, -10.4001465, -2.399994, -8.800049, -1.5999756, -7.199951, -2.399994, -3.1999512, -2.399994)
+
+[node name="cloud9" type="StaticBody2D" parent="clouds"]
+position = Vector2(2803, -506.99997)
+scale = Vector2(1.25, 1.25)
+
+[node name="2_55" type="Sprite2D" parent="clouds/cloud9"]
+position = Vector2(4.7683716e-05, 1.8715858e-05)
+scale = Vector2(0.79999995, 0.79999995)
+texture = ExtResource("15_isj1j")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="clouds/cloud9"]
+polygon = PackedVector2Array(0, 0, -3.1999512, -2.399994, 3.1999512, -2.399994, 3.1999512, -2.399994, 6.3999023, -3.1999817, 8.800049, -1.5999756, 12, 0, 16, 0.8000183, -16, 0, -15.199951, -1.5999756, -13.600098, -2.399994, -10.4001465, -2.399994, -8.800049, -1.5999756, -7.199951, -2.399994, -3.1999512, -2.399994)
