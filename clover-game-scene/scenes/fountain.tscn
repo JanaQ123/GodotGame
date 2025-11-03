@@ -1,0 +1,44 @@
+[gd_scene load_steps=7 format=3 uid="uid://djvraijuf2mm5"]
+
+[ext_resource type="Texture2D" uid="uid://cr104uegx231r" path="res://Brackey's Assets (from video)/sprites/Fountain.png" id="1_50hkb"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m72p2"]
+atlas = ExtResource("1_50hkb")
+region = Rect2(0, 0, 72, 72)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lfgns"]
+atlas = ExtResource("1_50hkb")
+region = Rect2(72, 0, 72, 72)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uterx"]
+atlas = ExtResource("1_50hkb")
+region = Rect2(144, 0, 72, 72)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xo7qt"]
+atlas = ExtResource("1_50hkb")
+region = Rect2(216, 0, 72, 72)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ifxtb"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_m72p2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lfgns")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uterx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xo7qt")
+}],
+"loop": true,
+"name": &"fountain",
+"speed": 6.0
+}]
+
+[node name="fountain" type="AnimatedSprite2D"]
+sprite_frames = SubResource("SpriteFrames_ifxtb")
+animation = &"fountain"
+autoplay = "fountain"
