@@ -1,4 +1,4 @@
-[gd_scene load_steps=75 format=3 uid="uid://devvds4wk8a0j"]
+[gd_scene load_steps=76 format=3 uid="uid://devvds4wk8a0j"]
 
 [ext_resource type="PackedScene" uid="uid://dewcgc53l1qn1" path="res://scenes/lucy.tscn" id="2_8vbrh"]
 [ext_resource type="Texture2D" uid="uid://c58xjnpkgvjmd" path="res://Brackey's Assets (from video)/sprites/platforms.png" id="2_qrujo"]
@@ -1188,11 +1188,14 @@ size = Vector2(9.90212, 17.07122)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_qyu38"]
 size = Vector2(5.8679247, 11.242023)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7hs6g"]
+size = Vector2(87, 306.75)
+
 [node name="level3" type="Node2D"]
 
 [node name="player" parent="." groups=["player"] instance=ExtResource("2_8vbrh")]
 z_index = 2
-position = Vector2(1477.0001, -134)
+position = Vector2(42.999992, -3.8146973e-06)
 scale = Vector2(0.015, 0.015)
 
 [node name="Camera2D" type="Camera2D" parent="player"]
@@ -1200,6 +1203,8 @@ position = Vector2(22.03711, 14.044754)
 rotation = 0.0074459864
 scale = Vector2(0.9999999, 0.9999999)
 zoom = Vector2(7, 7)
+limit_left = -10000001
+limit_right = 9999999
 limit_bottom = 94
 position_smoothing_enabled = true
 
@@ -1649,15 +1654,25 @@ autoplay = true
 max_distance = 4096.0
 attenuation = 0.088388406
 
+[node name="Boundary Left" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Boundary Left"]
+position = Vector2(-96, -57.25)
+shape = SubResource("RectangleShape2D_7hs6g")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Boundary Left"]
+position = Vector2(4064.5, -132.625)
+shape = SubResource("RectangleShape2D_7hs6g")
+
 [node name="Labels" type="Node" parent="."]
 
 [node name="Label3" type="Label" parent="Labels"]
-offset_left = -30.0
-offset_top = -62.0
-offset_right = 123.0
-offset_bottom = -19.0
+offset_left = -22.0
+offset_top = -66.0
+offset_right = 131.0
+offset_bottom = -21.0
 theme_override_fonts/font = ExtResource("24_8vbrh")
-theme_override_font_sizes/font_size = 9
+theme_override_font_sizes/font_size = 10
 text = "Beware—not everything in your path wants you to succeed."
 horizontal_alignment = 1
 autowrap_mode = 3

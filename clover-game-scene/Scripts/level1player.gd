@@ -7,6 +7,7 @@ const JUMP_VELOCITY = -300.0
 
 var facing_right := true
 var is_jumping := false
+var powerup=false;
 
 # Knockback vars
 var knockback_velocity := Vector2.ZERO
@@ -28,6 +29,15 @@ func free_fall():
 	$CollisionShape2D.set_deferred("disabled", true)  # remove support
 	velocity.y += 50
 
+func power_up():
+	clover_collect.play()
+	powerup=true
+	$rainbowparent.visible = true
+	$rainbowparent/AnimationPlayer.play("rainbowgrow")
+	#if(is_jumping): velocity.y -= 500
+	await get_tree().create_timer(1.5).timeout
+	$rainbowparent.visible = false
+	powerup=false
 	
 func _physics_process(delta: float) -> void:
 	# 1. Knockback
@@ -61,17 +71,25 @@ func _physics_process(delta: float) -> void:
 
 		# Jump input
 		if Input.is_action_just_pressed("ui_accept") and is_on_floor():
-			velocity.y = JUMP_VELOCITY
-			is_jumping = true
+			if powerup:
+				velocity.y = JUMP_VELOCITY * 1.8
+			else:
+				#jump_sound.play()
+				velocity.y = JUMP_VELOCITY
+				is_jumping = true
 
 		# Gravity
 		if not is_on_floor():
-			velocity += get_gravity() * delta
+			velocity += get_gravity() * delta*0.8
 			if velocity.y < 0:
 				is_jumping = true
-			elif is_jumping and is_on_floor():
+			else:
 				is_jumping = false
-
+			if not powerup:
+				if velocity.y < 0:
+					is_jumping = true
+				elif is_jumping and is_on_floor():
+					is_jumping = false
 		# Animation
 		if is_jumping:
 			sprite.play("jump")

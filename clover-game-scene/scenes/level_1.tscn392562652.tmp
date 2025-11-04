@@ -5,7 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://fokypruesphx" path="res://scenes/sun.tscn" id="3_2y5yt"]
 [ext_resource type="PackedScene" uid="uid://croobmd63t5lv" path="res://scenes/level1killzone.tscn" id="3_rus8k"]
 [ext_resource type="PackedScene" uid="uid://27rjl3boeoex" path="res://scenes/spikes.tscn" id="4_5xbjy"]
-[ext_resource type="PackedScene" uid="uid://dwbepxe4isg4w" path="res://scenes/player.tscn" id="4_tr1x6"]
+[ext_resource type="PackedScene" uid="uid://dwbepxe4isg4w" path="res://scenes/level3player.tscn" id="4_tr1x6"]
 [ext_resource type="PackedScene" uid="uid://bv8ssxv87uw31" path="res://scenes/clover.tscn" id="5_4nkto"]
 [ext_resource type="PackedScene" uid="uid://lypk2sd3uj7j" path="res://scenes/swinging_ball.tscn" id="5_fcfvj"]
 [ext_resource type="PackedScene" uid="uid://cyxm6k1kfp6mo" path="res://scenes/grass_moving_platforms.tscn" id="7_pa8r4"]
@@ -227,28 +227,6 @@ texture = ExtResource("8_e3sih")
 [node name="bg8" type="Sprite2D" parent="BG"]
 z_index = -1
 position = Vector2(2542.5, -480)
-rotation = -3.1415925
-texture = ExtResource("9_2y5yt")
-
-[node name="bg11" type="Sprite2D" parent="BG"]
-z_index = -1
-position = Vector2(3397.5, -91.99994)
-texture = ExtResource("8_e3sih")
-
-[node name="bg12" type="Sprite2D" parent="BG"]
-z_index = -1
-position = Vector2(3397.5, -479.99994)
-rotation = -3.1415925
-texture = ExtResource("9_2y5yt")
-
-[node name="bg13" type="Sprite2D" parent="BG"]
-z_index = -1
-position = Vector2(-1708.5, -91.99994)
-texture = ExtResource("8_e3sih")
-
-[node name="bg14" type="Sprite2D" parent="BG"]
-z_index = -1
-position = Vector2(-1708.5, -479.99994)
 rotation = -3.1415925
 texture = ExtResource("9_2y5yt")
 
@@ -489,7 +467,7 @@ shape = SubResource("RectangleShape2D_2cbcq")
 
 [node name="PixelHouse" parent="decor" node_paths=PackedStringArray("player") instance=ExtResource("16_2cbcq")]
 position = Vector2(-610, -104)
-player = NodePath("../../Level3player")
+player = NodePath("")
 
 [node name="fountain" parent="decor" instance=ExtResource("3_1s4pk")]
 z_index = -1
@@ -544,20 +522,20 @@ horizontal_alignment = 1
 autowrap_mode = 3
 
 [node name="Label" type="Label" parent="Labels"]
-offset_left = -405.0
-offset_top = -146.0
-offset_right = -299.0
-offset_bottom = -103.0
+offset_left = -400.0
+offset_top = -156.0
+offset_right = -294.0
+offset_bottom = -113.0
 theme_override_fonts/font = ExtResource("22_tr1x6")
 text = "Press Space to JUMP"
 horizontal_alignment = 1
 autowrap_mode = 3
 
 [node name="Label2" type="Label" parent="Labels"]
-offset_left = -518.0
-offset_top = -139.0
-offset_right = -412.0
-offset_bottom = -92.0
+offset_left = -532.0
+offset_top = -150.0
+offset_right = -426.0
+offset_bottom = -103.0
 theme_override_fonts/font = ExtResource("22_tr1x6")
 text = "Arrow  Keys to move"
 horizontal_alignment = 1
