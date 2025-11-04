@@ -278,7 +278,7 @@ scale = Vector2(0.022, 0.022)
 position = Vector2(276.7168, 175.68164)
 rotation = -0.022337956
 scale = Vector2(1.0000002, 0.9670002)
-zoom = Vector2(5.5, 5.5)
+zoom = Vector2(4.5, 4.5)
 limit_bottom = 110
 
 [node name="killzone" parent="." instance=ExtResource("3_rus8k")]
@@ -534,12 +534,23 @@ parameters/looping = false
 [node name="Labels" type="Node" parent="."]
 
 [node name="Label3" type="Label" parent="Labels"]
-offset_left = -15.0
-offset_top = -55.0
-offset_right = 120.0
-offset_bottom = -12.0
+offset_left = -22.0
+offset_top = -90.0
+offset_right = 113.0
+offset_bottom = -24.0
 theme_override_fonts/font = ExtResource("22_tr1x6")
-text = "Fortune favors the bold."
+text = "Fortune favors the bold. Jump to use it"
+horizontal_alignment = 1
+autowrap_mode = 3
+
+[node name="Label4" type="Label" parent="Labels"]
+offset_left = 2006.0
+offset_top = -562.0
+offset_right = 2193.0
+offset_bottom = -496.0
+theme_override_colors/font_color = Color(3.5857408e-06, 0.14164215, 0.4351076, 1)
+theme_override_fonts/font = ExtResource("22_tr1x6")
+text = "Clouds will continue your journey"
 horizontal_alignment = 1
 autowrap_mode = 3
 
@@ -554,10 +565,10 @@ horizontal_alignment = 1
 autowrap_mode = 3
 
 [node name="Label2" type="Label" parent="Labels"]
-offset_left = -518.0
-offset_top = -139.0
-offset_right = -412.0
-offset_bottom = -92.0
+offset_left = -555.0
+offset_top = -150.0
+offset_right = -449.0
+offset_bottom = -103.0
 theme_override_fonts/font = ExtResource("22_tr1x6")
 text = "Arrow  Keys to move"
 horizontal_alignment = 1

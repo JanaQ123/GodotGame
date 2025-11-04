@@ -1192,6 +1192,7 @@ size = Vector2(5.8679247, 11.242023)
 size = Vector2(87, 306.75)
 
 [node name="level3" type="Node2D"]
+position = Vector2(609, 6)
 
 [node name="player" parent="." groups=["player"] instance=ExtResource("2_8vbrh")]
 z_index = 2
@@ -1202,7 +1203,7 @@ scale = Vector2(0.015, 0.015)
 position = Vector2(22.03711, 14.044754)
 rotation = 0.0074459864
 scale = Vector2(0.9999999, 0.9999999)
-zoom = Vector2(7, 7)
+zoom = Vector2(5, 5)
 limit_left = -10000001
 limit_right = 9999999
 limit_bottom = 94
