@@ -1196,7 +1196,7 @@ position = Vector2(609, 6)
 
 [node name="player" parent="." groups=["player"] instance=ExtResource("2_8vbrh")]
 z_index = 2
-position = Vector2(42.999992, -3.8146973e-06)
+position = Vector2(18.999996, -34)
 scale = Vector2(0.015, 0.015)
 
 [node name="Camera2D" type="Camera2D" parent="player"]
