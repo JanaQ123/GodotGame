@@ -8,18 +8,22 @@ var start_x: float
 var target_x: float
 var moving_left := true
 var oscillate := false   # true when Lucy is on the button
+@onready var push_sound: AudioStreamPlayer2D = $PushSound
 
 func _ready():
 	start_x = position.x
 	target_x = start_x
 	set_process(true)
+	
 
 func start_moving():
+	push_sound.play()
 	oscillate = true
 	target_x = start_x - move_distance
 	moving_left = true
 
 func return_to_start():
+	push_sound.stop
 	oscillate = false
 	target_x = start_x
 

@@ -1,10 +1,9 @@
-[gd_scene load_steps=23 format=3 uid="uid://dwbepxe4isg4w"]
+[gd_scene load_steps=18 format=3 uid="uid://dwbepxe4isg4w"]
 
 [ext_resource type="Texture2D" uid="uid://c8lk8fjkbo63e" path="res://character/pose17gg.png" id="1_ivps1"]
-[ext_resource type="Script" uid="uid://btgbebxoyso1a" path="res://Scripts/Level3playerScript.gd" id="1_qfm1y"]
+[ext_resource type="Script" uid="uid://cftjf6hcjsaif" path="res://Scripts/level1player.gd" id="1_jej6c"]
 [ext_resource type="Texture2D" uid="uid://b853b6xbf11hb" path="res://character/pose11gg.png" id="2_urp6f"]
 [ext_resource type="Texture2D" uid="uid://lhyprt3gwf8v" path="res://character/pose9gg.png" id="3_bwjto"]
-[ext_resource type="Texture2D" uid="uid://bbe3wocu5w2sa" path="res://character/lucyfalling.png" id="3_fulsm"]
 [ext_resource type="Texture2D" uid="uid://n87mjlg1dy3u" path="res://character/pose10gg.png" id="4_606se"]
 [ext_resource type="Texture2D" uid="uid://hls0omk88ndc" path="res://character/pose1gg.png" id="5_u1c27"]
 [ext_resource type="Texture2D" uid="uid://b3ipni2rrfhkq" path="res://character/pose2gg.png" id="6_op7ga"]
@@ -15,59 +14,9 @@
 [ext_resource type="Texture2D" uid="uid://r8e1lc0g86cf" path="res://character/pose6gg.png" id="11_7ahtn"]
 [ext_resource type="Texture2D" uid="uid://dkls5npmkouqt" path="res://character/pose7gg.png" id="12_7lmhl"]
 [ext_resource type="AudioStream" uid="uid://dlbx8n6gba46i" path="res://Music/CloverSoundEffect.mp3" id="14_f1ej7"]
-[ext_resource type="Texture2D" uid="uid://dmqr2lmrjacgt" path="res://SVG/rainbowcircle.svg" id="15_oprun"]
-[ext_resource type="AudioStream" uid="uid://bupd7ad6ca1b8" path="res://Music/jumpSound.mp3" id="17_4r5pv"]
-
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ivps1"]
-radius = 279.99997
-height = 1039.9999
-
-[sub_resource type="Animation" id="Animation_a8ls1"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("raiinbow:scale")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(1, 1)]
-}
-
-[sub_resource type="Animation" id="Animation_oprun"]
-resource_name = "rainbowgrow"
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("raiinbow:scale")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.13333334),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(1, 1), Vector2(4, 4.5)]
-}
-
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_qfm1y"]
-_data = {
-&"RESET": SubResource("Animation_a8ls1"),
-&"rainbowgrow": SubResource("Animation_oprun")
-}
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_au0nh"]
 animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("3_fulsm")
-}],
-"loop": true,
-"name": &"falling",
-"speed": 5.0
-}, {
 "frames": [{
 "duration": 1.0,
 "texture": ExtResource("5_u1c27")
@@ -138,44 +87,37 @@ animations = [{
 "speed": 4.0
 }]
 
-[node name="Level3player" type="CharacterBody2D" groups=["player"]]
-rotation = 0.0074459864
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ivps1"]
+radius = 279.99997
+height = 1039.9999
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_v677x"]
+radius = 148.0
+height = 398.0
+
+[node name="player" type="CharacterBody2D" groups=["player"]]
 collision_layer = 3
 collision_mask = 3
-script = ExtResource("1_qfm1y")
-metadata/_edit_group_ = true
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-light_mask = 2
-position = Vector2(-6.1286316, 117.04886)
-rotation = -0.01783861
-shape = SubResource("CapsuleShape2D_ivps1")
-
-[node name="rainbowparent" type="AnimatableBody2D" parent="."]
-position = Vector2(-15, 133)
-
-[node name="AnimationPlayer" type="AnimationPlayer" parent="rainbowparent"]
-root_motion_local = true
-libraries = {
-&"": SubResource("AnimationLibrary_qfm1y")
-}
-
-[node name="raiinbow" type="Sprite2D" parent="rainbowparent"]
-texture = ExtResource("15_oprun")
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-light_mask = 3
-visibility_layer = 3
-position = Vector2(0, 14)
-scale = Vector2(0.8014129, 0.7909222)
-sprite_frames = SubResource("SpriteFrames_au0nh")
-animation = &"falling"
-autoplay = "idle"
+script = ExtResource("1_jej6c")
 
 [node name="clover collect" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("14_f1ej7")
 volume_db = 24.0
 
-[node name="JumpSound" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource("17_4r5pv")
-volume_db = 10.0
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, 14)
+scale = Vector2(1, 0.9846994)
+sprite_frames = SubResource("SpriteFrames_au0nh")
+animation = &"idle"
+autoplay = "idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-59.999992, 379.99875)
+shape = SubResource("CapsuleShape2D_ivps1")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+scale = Vector2(1.7394272, -3.52972)
+shape = SubResource("CapsuleShape2D_v677x")
+debug_color = Color(0.8627451, 0.23529412, 0.3764706, 0.49411765)

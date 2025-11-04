@@ -1661,7 +1661,7 @@ position = Vector2(-96, -57.25)
 shape = SubResource("RectangleShape2D_7hs6g")
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="Boundary Left"]
-position = Vector2(4064.5, -132.625)
+position = Vector2(4020, -135)
 shape = SubResource("RectangleShape2D_7hs6g")
 
 [node name="Labels" type="Node" parent="."]
