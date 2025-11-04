@@ -1680,10 +1680,10 @@ autowrap_mode = 3
 
 [node name="Label3" type="Label" parent="Labels/Label3"]
 layout_mode = 0
-offset_left = 3218.0
-offset_top = 5.0
-offset_right = 3371.0
-offset_bottom = 48.0
+offset_left = 3803.0
+offset_top = 27.0
+offset_right = 3956.0
+offset_bottom = 70.0
 theme_override_fonts/font = ExtResource("24_8vbrh")
 theme_override_font_sizes/font_size = 16
 text = "Lead your own path  to success"

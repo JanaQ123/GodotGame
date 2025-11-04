@@ -36,7 +36,7 @@ func disable_control():
 	velocity = Vector2.ZERO
 	sprite.play("idle")
 	set_physics_process(false)
-	await get_tree().create_timer(5).timeout
+	await get_tree().create_timer(2).timeout
 	set_physics_process(true)
 
 func free_fall():
