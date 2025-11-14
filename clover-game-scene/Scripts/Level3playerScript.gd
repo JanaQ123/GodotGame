@@ -27,8 +27,8 @@ var health: int = 100  # Player's health
 func _ready() -> void:
 	rainbow_parent.visible = false
 	
-func is_near_floor() -> bool:
-	return is_on_floor() or $RayCast2D.is_colliding()
+#func is_near_floor() -> bool:
+	#return is_on_floor() or $RayCast2D.is_colliding()
 	
 func take_knockback(direction: Vector2, force: float):
 	knockback_velocity = direction * force
@@ -88,7 +88,7 @@ func _physics_process(delta: float) -> void:
 		jump_buffer -= delta
 
 	# Jump if buffered input and grounded
-	if jump_buffer > 0 and is_near_floor():
+	if jump_buffer > 0 and is_on_floor():
 		velocity.y = JUMP_VELOCITY
 		jump_buffer = 0.0
 
@@ -120,7 +120,7 @@ func _physics_process(delta: float) -> void:
 			sprite.flip_h = false
 			facing_right = false
 		# Jump input
-		if Input.is_action_just_pressed("ui_accept") and is_near_floor():
+		if Input.is_action_just_pressed("ui_accept") and is_on_floor():
 			if powerup:
 				velocity.y = JUMP_VELOCITY * 1.8
 			else:
