@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://uw301h814ps0"]
 
 [ext_resource type="Texture2D" uid="uid://c58xjnpkgvjmd" path="res://Brackey's Assets (from video)/sprites/platforms.png" id="1_mi635"]
-[ext_resource type="AudioStream" uid="uid://kd8dcmuqikvd" path="res://Music/draggingstone-85793 (1).mp3" id="2_nlgqw"]
+[ext_resource type="AudioStream" uid="uid://cfrx6odsdhwl7" path="res://Brackey's Assets (from video)/music/platformSound.mp3" id="2_nlgqw"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_s8bxr"]
 size = Vector2(30, 8)
@@ -19,6 +19,6 @@ one_way_collision = true
 
 [node name="PushSound" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("2_nlgqw")
-volume_db = 24.0
+volume_db = 5.0
 attenuation = 0.21763752
 max_polyphony = 2

@@ -17,13 +17,14 @@ func _ready():
 	
 
 func start_moving():
-	push_sound.play()
+	if not push_sound.playing:
+		push_sound.play()
 	oscillate = true
 	target_x = start_x - move_distance
 	moving_left = true
 
 func return_to_start():
-	push_sound.stop
+	
 	oscillate = false
 	target_x = start_x
 

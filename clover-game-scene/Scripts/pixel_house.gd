@@ -4,6 +4,7 @@ extends Sprite2D
 
 func _ready() -> void:
 	player.visible = false
+	player.can_move = false
 	#player.disable_control()
 	await get_tree().create_timer(0.8).timeout
 	player.visible = true

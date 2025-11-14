@@ -1,7 +1,8 @@
 res://scenes/CloudLevel3.tscn
-res://scenes/platformnoncol.tscn
-res://scenes/level3.tscn
-res://mushrromenemyjymp.tscn
-res://Scripts/enemymushroom.gd
-res://scenes/enemymushroom.tscn
 res://Scripts/Level3playerScript.gd
+res://scenes/platform.tscn
+res://Scripts/slidingplatform2.gd
+res://scenes/level3.tscn
+res://Scripts/sliplatform.gd
+res://scenes/level_1.tscn
+res://Scripts/pixel_house.gd

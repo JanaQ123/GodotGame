@@ -1660,7 +1660,7 @@ position = Vector2(609, 6)
 
 [node name="player" parent="." groups=["player"] instance=ExtResource("2_8vbrh")]
 z_index = 2
-position = Vector2(973.00024, -125)
+position = Vector2(20, -21.000002)
 scale = Vector2(0.015, 0.015)
 
 [node name="Camera2D" type="Camera2D" parent="player"]
@@ -1732,6 +1732,7 @@ layer_2/name = "Layer2"
 [node name="mushrooms" type="TileMap" parent="TileMap"]
 tile_set = SubResource("TileSet_7oc4e")
 format = 2
+layer_0/tile_data = PackedInt32Array(-458662, 458752, 7)
 layer_1/name = "Layer1"
 layer_1/tile_data = PackedInt32Array(131111, 524288, 5, 131110, 458752, 6, -458662, 458752, 6, 102, 458752, 5, -589716, 458752, 7, -851825, 524288, 7)
 
@@ -2164,24 +2165,23 @@ text = "Beware—not everything in your path wants you to succeed."
 horizontal_alignment = 1
 autowrap_mode = 3
 
-[node name="Label3" type="Label" parent="Labels/Label3"]
-layout_mode = 0
-offset_left = 3803.0
-offset_top = 27.0
-offset_right = 3956.0
-offset_bottom = 70.0
+[node name="Label4" type="Label" parent="Labels"]
+offset_left = 3947.0
+offset_top = -58.0
+offset_right = 4100.0
+offset_bottom = -15.0
+theme_override_colors/font_color = Color(0.015322353, 0.260217, 0.3615753, 1)
 theme_override_fonts/font = ExtResource("24_8vbrh")
 theme_override_font_sizes/font_size = 16
 text = "Lead your own path  to success"
 horizontal_alignment = 1
 autowrap_mode = 3
 
-[node name="Label4" type="Label" parent="Labels/Label3"]
-layout_mode = 0
-offset_left = 3033.0
-offset_top = -200.0
-offset_right = 3220.0
-offset_bottom = -157.0
+[node name="Label5" type="Label" parent="Labels"]
+offset_left = 3028.0
+offset_top = -266.0
+offset_right = 3215.0
+offset_bottom = -223.0
 theme_override_fonts/font = ExtResource("24_8vbrh")
 theme_override_font_sizes/font_size = 16
 text = "Take the leap of faith"

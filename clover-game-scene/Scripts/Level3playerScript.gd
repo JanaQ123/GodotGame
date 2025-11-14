@@ -72,7 +72,12 @@ func die() -> void:
 	
 func _physics_process(delta: float) -> void:
 	# 1. Knockback
-	
+	if knockback_time > 0:
+		velocity = knockback_velocity
+		knockback_velocity = knockback_velocity.move_toward(Vector2.ZERO, 3000 * delta)
+		knockback_time -= delta
+		move_and_slide()
+		return
 	
 	# Store jump input briefly
 	if Input.is_action_just_pressed("ui_accept"):
