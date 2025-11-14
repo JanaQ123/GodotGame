@@ -1,2 +1,2 @@
-res://Scripts/Level3playerScript.gd
-res://scenes/level_1.tscn
+res://scenes/BubblePop.tscn
+res://scenes/level3.tscn

@@ -1,0 +1,91 @@
+[gd_scene load_steps=11 format=3 uid="uid://g54q6mvfyvcn"]
+
+[ext_resource type="Texture2D" uid="uid://c2j4lhseccehh" path="res://bubble.png" id="1_3i2mb"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pi3qk"]
+atlas = ExtResource("1_3i2mb")
+region = Rect2(682, 0, 682, 682)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_87r73"]
+atlas = ExtResource("1_3i2mb")
+region = Rect2(0, 682, 682, 682)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pk1bh"]
+atlas = ExtResource("1_3i2mb")
+region = Rect2(682, 682, 682, 682)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_votbj"]
+atlas = ExtResource("1_3i2mb")
+region = Rect2(1364, 682, 682, 682)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u1ood"]
+atlas = ExtResource("1_3i2mb")
+region = Rect2(0, 1364, 682, 682)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_o6jfa"]
+atlas = ExtResource("1_3i2mb")
+region = Rect2(682, 1364, 682, 682)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gvjuw"]
+atlas = ExtResource("1_3i2mb")
+region = Rect2(1364, 1364, 682, 682)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lc4to"]
+atlas = ExtResource("1_3i2mb")
+region = Rect2(1364, 0, 682, 682)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_1uly1"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pi3qk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_87r73")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pk1bh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_votbj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_u1ood")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_o6jfa")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gvjuw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lc4to")
+}],
+"loop": true,
+"name": &"pop",
+"speed": 5.0
+}]
+
+[node name="BubblePop" type="Node2D"]
+
+[node name="Bubble1" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_1uly1")
+animation = &"pop"
+autoplay = "pop"
+frame_progress = 0.6489686
+
+[node name="Bubble2" type="AnimatedSprite2D" parent="."]
+position = Vector2(495, -356)
+scale = Vector2(0.87999845, 0.87999845)
+sprite_frames = SubResource("SpriteFrames_1uly1")
+animation = &"pop"
+autoplay = "pop"
+frame_progress = 0.6262394
+
+[node name="Bubble3" type="AnimatedSprite2D" parent="."]
+position = Vector2(-105, -534)
+scale = Vector2(0.7146999, 0.7146999)
+sprite_frames = SubResource("SpriteFrames_1uly1")
+animation = &"pop"
+autoplay = "pop"
+frame_progress = 0.6262394
