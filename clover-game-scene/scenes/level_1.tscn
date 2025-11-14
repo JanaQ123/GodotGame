@@ -275,10 +275,10 @@ position = Vector2(-608.99994, -78.000015)
 scale = Vector2(0.022, 0.022)
 
 [node name="Camera2D" type="Camera2D" parent="Level3player"]
-position = Vector2(276.7168, 175.68164)
+position = Vector2(40.711517, -636.68365)
 rotation = -0.022337956
 scale = Vector2(1.0000002, 0.9670002)
-zoom = Vector2(4.5, 4.5)
+zoom = Vector2(6, 6)
 limit_bottom = 110
 
 [node name="killzone" parent="." instance=ExtResource("3_rus8k")]
