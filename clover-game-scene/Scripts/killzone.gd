@@ -1,11 +1,14 @@
 extends Area2D
 
 @onready var timer = $Timer
+@onready var game_over_sound: AudioStreamPlayer2D = $"../gameOverSound"
 
 func _on_body_entered(body: Node2D) -> void:
 	if(body.is_in_group("player")):
-		Engine.time_scale=0.7
-		body.get_node("CollisionShape2D").queue_free()
+		game_over_sound.play()
+		Engine.time_scale=0.5
+		body.rotation = deg_to_rad(90)
+		#body.get_node("CollisionShape2D").queue_free()
 		timer.start()
 
 

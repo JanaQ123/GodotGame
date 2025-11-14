@@ -5,7 +5,12 @@ extends Area2D
 func _on_body_entered(body: Node2D) -> void:
 	if(body.is_in_group("player")):
 		Engine.time_scale=0.7
-		await get_tree().create_timer(0.1).timeout
-		body.get_node("CollisionShape2D").queue_free()
-		await get_tree().create_timer(0.5).timeout
+		body.rotation = deg_to_rad(90)
+		if self.is_in_group("water"):
+			var water=get_node("WaterSplash");
+			water.play()
+		var deathSound=get_node("GameOver");
+		if deathSound:
+			deathSound.play()
+		await get_tree().create_timer(0.8).timeout
 		get_tree().reload_current_scene()

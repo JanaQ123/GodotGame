@@ -1,8 +1,9 @@
-[gd_scene load_steps=9 format=3 uid="uid://bhhikdvbxeox0"]
+[gd_scene load_steps=10 format=3 uid="uid://bhhikdvbxeox0"]
 
 [ext_resource type="Texture2D" uid="uid://c58xjnpkgvjmd" path="res://Brackey's Assets (from video)/sprites/platforms.png" id="1_n4tde"]
 [ext_resource type="Script" uid="uid://d3syarcoi2kea" path="res://Scripts/buttonPress.gd" id="1_vxja4"]
 [ext_resource type="Texture2D" uid="uid://dst5t13y2l6li" path="res://Traps/1.png" id="2_vxja4"]
+[ext_resource type="AudioStream" uid="uid://qlfyhhuyovn1" path="res://Music/Button Clicked.mp3" id="4_i7y4x"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_vxja4"]
 atlas = ExtResource("2_vxja4")
@@ -69,6 +70,10 @@ light_mask = 3
 visibility_layer = 3
 position = Vector2(0, -9.25)
 shape = SubResource("RectangleShape2D_4sa2v")
+
+[node name="ButtonClicked" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_i7y4x")
+volume_db = 5.0
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
 [connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]

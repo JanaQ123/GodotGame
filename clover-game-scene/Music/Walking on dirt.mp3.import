@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dg6fdhf7aj3iv"
+path="res://.godot/imported/Walking on dirt.mp3-9d7c313b55bdcc34a69bf5100dc099cf.mp3str"
+
+[deps]
+
+source_file="res://Music/Walking on dirt.mp3"
+dest_files=["res://.godot/imported/Walking on dirt.mp3-9d7c313b55bdcc34a69bf5100dc099cf.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

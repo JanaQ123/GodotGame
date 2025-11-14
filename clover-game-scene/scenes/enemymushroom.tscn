@@ -2,11 +2,8 @@
 
 [ext_resource type="Script" uid="uid://dqk6i7wmgni3c" path="res://Scripts/enemymushroom.gd" id="1_rbqso"]
 [ext_resource type="Texture2D" uid="uid://gg0viitfn3dk" path="res://Brackey's Assets (from video)/sprites/Mushroom-Run.png" id="1_wagxn"]
-[ext_resource type="PackedScene" uid="uid://c5s36wo1eaon8" path="res://scenes/killzone.tscn" id="2_gmn8u"]
 [ext_resource type="Texture2D" uid="uid://c3ukteiuml5co" path="res://Traps/Mushroom-Die.png" id="3_wqfn5"]
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_mif2c"]
-size = Vector2(40.25, 27.75)
+[ext_resource type="AudioStream" uid="uid://csib1aha25wy3" path="res://Music/game-over-417465.mp3" id="5_efjfk"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_efjfk"]
 atlas = ExtResource("3_wqfn5")
@@ -168,15 +165,14 @@ animations = [{
 "speed": 10.0
 }]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mif2c"]
+size = Vector2(29, 25.375)
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_wqfn5"]
-size = Vector2(30.124985, 5.499999)
+size = Vector2(59.239773, 21.17625)
 
 [node name="mushrromenemy" type="Node2D"]
 script = ExtResource("1_rbqso")
-
-[node name="ikilluzone" type="CollisionShape2D" parent="."]
-position = Vector2(0.25, -25.5)
-shape = SubResource("RectangleShape2D_mif2c")
 
 [node name="mushi" type="AnimatedSprite2D" parent="."]
 position = Vector2(1, -28)
@@ -184,14 +180,24 @@ sprite_frames = SubResource("SpriteFrames_fjbdl")
 autoplay = "death"
 frame_progress = 0.8598973
 
-[node name="killzone" parent="." instance=ExtResource("2_gmn8u")]
-position = Vector2(-4, 21)
-collision_mask = 3
-script = null
+[node name="gameOverSound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("5_efjfk")
+volume_db = 10.0
 
-[node name="ukillmezone" type="CollisionShape2D" parent="killzone"]
-position = Vector2(3.9499974, -28.200003)
-scale = Vector2(0.8000006, 0.8000006)
+[node name="killMushroom" type="Area2D" parent="."]
+position = Vector2(-4, 21)
+
+[node name="ikilluzone" type="CollisionShape2D" parent="killMushroom"]
+position = Vector2(4.5, -47.6875)
+shape = SubResource("RectangleShape2D_mif2c")
+
+[node name="killPlayer" type="Area2D" parent="."]
+position = Vector2(-4, 21)
+
+[node name="ukillmezone" type="CollisionShape2D" parent="killPlayer"]
+position = Vector2(5.0000005, -25.480705)
+scale = Vector2(0.8102664, 0.7615518)
 shape = SubResource("RectangleShape2D_wqfn5")
 
-[connection signal="body_entered" from="killzone" to="." method="_on_killzone_body_entered"]
+[connection signal="body_entered" from="killMushroom" to="." method="_on_kill_mushroom_body_entered"]
+[connection signal="body_entered" from="killPlayer" to="." method="_on_kill_player_body_entered"]

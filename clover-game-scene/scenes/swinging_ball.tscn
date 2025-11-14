@@ -1,10 +1,26 @@
-[gd_scene load_steps=7 format=3 uid="uid://lypk2sd3uj7j"]
+[gd_scene load_steps=8 format=3 uid="uid://lypk2sd3uj7j"]
 
 [ext_resource type="Texture2D" uid="uid://daxbyn8pk1byu" path="res://Brackey's Assets (from video)/sprites/swingingball.png" id="1_vtpe6"]
 [ext_resource type="Script" uid="uid://cp4d228dplamj" path="res://Scripts/swinging_ball.gd" id="1_wtk7i"]
+[ext_resource type="AudioStream" uid="uid://csib1aha25wy3" path="res://Music/game-over-417465.mp3" id="3_6aoug"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_6aoug"]
 radius = 75.00667
+
+[sub_resource type="Animation" id="Animation_6aoug"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [1.0471976]
+}
 
 [sub_resource type="Animation" id="Animation_wtk7i"]
 resource_name = "ball swing2"
@@ -21,21 +37,6 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
 "values": [1.0471976, 0.0, -1.0471976]
-}
-
-[sub_resource type="Animation" id="Animation_6aoug"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:rotation")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [1.0471976]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_6aoug"]
@@ -69,6 +70,11 @@ autoplay = "ball swing2"
 
 [node name="Timer" type="Timer" parent="."]
 wait_time = 0.6
+
+[node name="gameOverSound" type="AudioStreamPlayer2D" parent="."]
+position = Vector2(0, 3)
+stream = ExtResource("3_6aoug")
+volume_db = 3.0
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

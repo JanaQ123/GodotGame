@@ -3,6 +3,7 @@ extends AnimatableBody2D
 @export var platform_path: NodePath
 var platform: Node
 var pressed = false
+@onready var button_clicked: AudioStreamPlayer = $ButtonClicked
 
 func _ready():
 	if platform_path:
@@ -13,6 +14,7 @@ func _ready():
 func _on_area_2d_body_entered(body: Node2D) -> void:
 	if body.is_in_group("player"):
 		pressed = true
+		button_clicked.play()
 
 func _on_area_2d_body_exited(body: Node2D) -> void:
 	if body.is_in_group("player"):

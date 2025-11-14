@@ -303,6 +303,11 @@ rotation = -0.0074459845
 scale = Vector2(1.0063931, 0.97326493)
 zoom = Vector2(5.5, 5.5)
 
+[node name="RayCast2D" type="RayCast2D" parent="Level3player"]
+z_index = 2
+position = Vector2(4.4110107, 590.8927)
+target_position = Vector2(2.7077637, 363.62695)
+
 [node name="CloudsBottom" type="Node" parent="."]
 
 [node name="2_2" type="Sprite2D" parent="CloudsBottom"]
@@ -1124,10 +1129,10 @@ horizontal_alignment = 1
 autowrap_mode = 3
 
 [node name="Label4" type="Label" parent="Labels"]
-offset_left = 556.0
-offset_top = 47.0
-offset_right = 780.0
-offset_bottom = 67.0
+offset_left = 803.0
+offset_top = 11.0
+offset_right = 1027.0
+offset_bottom = 31.0
 theme_override_fonts/font = ExtResource("38_6kktu")
 text = "The bigger the climb...."
 horizontal_alignment = 1
@@ -1145,10 +1150,10 @@ horizontal_alignment = 1
 autowrap_mode = 3
 
 [node name="Label7" type="Label" parent="Labels"]
-offset_left = 840.0
-offset_top = 1381.0
-offset_right = 975.0
-offset_bottom = 1447.0
+offset_left = 912.0
+offset_top = 1409.0
+offset_right = 1047.0
+offset_bottom = 1475.0
 theme_override_fonts/font = ExtResource("38_6kktu")
 text = "Luck will only take you so far..."
 autowrap_mode = 3

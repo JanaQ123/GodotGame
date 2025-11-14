@@ -85,6 +85,7 @@ position = Vector2(0, -3)
 scale = Vector2(0.2, 0.25)
 shape = SubResource("WorldBoundaryShape2D_bflj7")
 
-[node name="gameOverSound" type="AudioStreamPlayer2D" parent="."]
+[node name="gameOverSound" type="AudioStreamPlayer2D" parent="killzone"]
+position = Vector2(0, 3)
 stream = ExtResource("3_bflj7")
-volume_db = 5.0
+volume_db = 3.0
