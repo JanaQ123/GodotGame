@@ -9,6 +9,10 @@ var is_jumping = false
 var health: int = 100  # Player's health
 var on_wall=false
 var wall_dir=0;
+
+func _ready():
+	Engine.time_scale=1
+	
 func _physics_process(delta: float) -> void:
 	# Horizontal movement
 	var direction := Input.get_axis("ui_left", "ui_right")
@@ -61,10 +65,10 @@ func _physics_process(delta: float) -> void:
 			velocity.y = min(velocity.y, 100)
 			velocity.x = wall_dir * 300
 			velocity.y = -350
+
 # 🧱 Damage Function
 func take_damage(amount: int) -> void:
 	health -= amount
-	print("Player took ", amount, " damage! Health: ", health)
 
 	if health <= 0:
 		die()
@@ -72,5 +76,4 @@ func take_damage(amount: int) -> void:
 
 # 💀 Optional: What happens when health reaches zero
 func die() -> void:
-	print("Player died!")
 	queue_free()  # remove player from scene (you can replace with respawn later)

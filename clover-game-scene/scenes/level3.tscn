@@ -18,14 +18,14 @@
 [ext_resource type="PackedScene" uid="uid://c5s36wo1eaon8" path="res://scenes/killzone.tscn" id="18_s4dsi"]
 [ext_resource type="PackedScene" uid="uid://cofws8lrbp2er" path="res://scenes/enemymushroom.tscn" id="19_07lh1"]
 [ext_resource type="PackedScene" uid="uid://dbs6cnfeycn8b" path="res://scenes/mushrromenemyjymp.tscn" id="20_6uuvf"]
-[ext_resource type="Script" uid="uid://bn23ilco62y42" path="res://Scripts/dangerZone.gd" id="21_x008a"]
+[ext_resource type="Script" path="res://Scripts/dangerZone.gd" id="21_x008a"]
 [ext_resource type="AudioStream" uid="uid://csib1aha25wy3" path="res://Music/game-over-417465.mp3" id="22_88b2t"]
 [ext_resource type="PackedScene" uid="uid://b8riim2fnxnkf" path="res://scenes/rainbow.tscn" id="22_atr84"]
 [ext_resource type="AudioStream" uid="uid://dkfnpeflsvu45" path="res://Music/Water Splash 1.mp3" id="22_invaa"]
 [ext_resource type="AudioStream" uid="uid://c4y6qxau3601q" path="res://Music/Level3BGMusic.mp3" id="23_qyu38"]
 [ext_resource type="PackedScene" uid="uid://g54q6mvfyvcn" path="res://scenes/BubblePop.tscn" id="24_0ydwj"]
 [ext_resource type="FontFile" uid="uid://cmen5lb4k51oi" path="res://PixelifySans-VariableFont_wght.ttf" id="24_8vbrh"]
-[ext_resource type="Script" uid="uid://blleyd52xxmxb" path="res://Scripts/Win.gd" id="25_7hs6g"]
+[ext_resource type="Script" path="res://Scripts/Win.gd" id="25_7hs6g"]
 [ext_resource type="PackedScene" uid="uid://byw0vwjqmss16" path="res://scenes/sky.tscn" id="25_tqa8r"]
 [ext_resource type="Texture2D" uid="uid://c3fynlpls2hao" path="res://Confetti.png" id="26_7hs6g"]
 [ext_resource type="PackedScene" uid="uid://5ecpkao4jmi3" path="res://scenes/lotus.tscn" id="26_kgaxw"]
@@ -1736,7 +1736,7 @@ tile_set = SubResource("TileSet_7oc4e")
 format = 2
 layer_0/tile_data = PackedInt32Array(-458662, 458752, 7)
 layer_1/name = "Layer1"
-layer_1/tile_data = PackedInt32Array(131111, 524288, 5, 131110, 458752, 6, -458662, 458752, 6, 102, 458752, 5, -589716, 458752, 7, -851825, 524288, 7)
+layer_1/tile_data = PackedInt32Array(131111, 524288, 5, 131110, 458752, 6, 102, 458752, 5, -589716, 458752, 7, -851825, 524288, 7, -458662, 458752, 7)
 
 [node name="platform2" parent="." instance=ExtResource("4_5lcx6")]
 position = Vector2(423, -107)
@@ -2197,12 +2197,12 @@ shape = SubResource("RectangleShape2D_7hs6g")
 [node name="Labels" type="Node" parent="."]
 
 [node name="Label3" type="Label" parent="Labels"]
-offset_left = 730.0
-offset_top = -122.0
-offset_right = 881.0
-offset_bottom = -77.0
+offset_left = 729.0
+offset_top = -124.0
+offset_right = 880.0
+offset_bottom = -70.0
 theme_override_fonts/font = ExtResource("24_8vbrh")
-theme_override_font_sizes/font_size = 10
+theme_override_font_sizes/font_size = 12
 text = "Beware—not everything in your path wants you to succeed."
 horizontal_alignment = 1
 autowrap_mode = 3
@@ -2277,10 +2277,11 @@ attenuation = 0.088388406
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="Restart Menu" parent="CanvasLayer" instance=ExtResource("31_612gg")]
-offset_left = 548.0
-offset_top = 162.0
-offset_right = 548.0
-offset_bottom = 162.0
+z_index = 10
+offset_left = 3.0
+offset_top = 1.0
+offset_right = 3.0
+offset_bottom = 1.0
 
 [connection signal="body_entered" from="Node2D/DangerZone1" to="Node2D/DangerZone1" method="_on_body_entered"]
 [connection signal="body_entered" from="Node2D2/DangerZone1" to="Node2D2/DangerZone1" method="_on_body_entered"]

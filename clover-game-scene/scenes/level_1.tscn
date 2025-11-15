@@ -1,4 +1,4 @@
-[gd_scene load_steps=27 format=3 uid="uid://ugx26js2mqc4"]
+[gd_scene load_steps=31 format=3 uid="uid://ugx26js2mqc4"]
 
 [ext_resource type="Texture2D" uid="uid://yh2nraso0vt3" path="res://Brackey's Assets (from video)/sprites/world_tileset.png" id="1_3hls8"]
 [ext_resource type="PackedScene" uid="uid://djvraijuf2mm5" path="res://scenes/fountain.tscn" id="3_1s4pk"]
@@ -17,11 +17,12 @@
 [ext_resource type="Texture2D" uid="uid://b3vb3sg86jqy" path="res://cloudy skies/Pixel Clouds/Clouds/images/2/blue_2/2.47.png" id="14_2cbcq"]
 [ext_resource type="Texture2D" uid="uid://c4tlfce2lw3a8" path="res://cloudy skies/Pixel Clouds/Clouds/images/2/blue_2/2.55.png" id="15_isj1j"]
 [ext_resource type="PackedScene" uid="uid://d13r7k63gh0qe" path="res://scenes/pixel_house.tscn" id="16_2cbcq"]
-[ext_resource type="Script" uid="uid://ch1ce50mni0f4" path="res://Scripts/TransitionOneToTwo.gd" id="16_isj1j"]
+[ext_resource type="Script" path="res://Scripts/TransitionOneToTwo.gd" id="16_isj1j"]
 [ext_resource type="Texture2D" uid="uid://d1qchadnlodhy" path="res://cloudy skies/Pixel Clouds/Clouds/images/2/blue_2/2.67.png" id="16_so66j"]
 [ext_resource type="Texture2D" uid="uid://cijknbaskf7nw" path="res://Brackey's Assets (from video)/sprites/tree_b.png" id="18_x2xxo"]
 [ext_resource type="AudioStream" uid="uid://b6koy4axt5xn3" path="res://Music/Level1BGMusoc.mp3" id="21_tr1x6"]
 [ext_resource type="FontFile" uid="uid://cmen5lb4k51oi" path="res://PixelifySans-VariableFont_wght.ttf" id="22_tr1x6"]
+[ext_resource type="PackedScene" uid="uid://cpoqi6pcwspk1" path="res://scenes/restart_menu.tscn" id="23_d5akn"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_hbghi"]
 texture = ExtResource("1_3hls8")
@@ -180,6 +181,44 @@ sources/0 = SubResource("TileSetAtlasSource_hbghi")
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_5xbjy"]
 
+[sub_resource type="Animation" id="Animation_d5akn"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(2101, -491)]
+}
+
+[sub_resource type="Animation" id="Animation_tr1x6"]
+resource_name = "cloudFloat"
+length = 4.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1, 2, 3.0333333, 3.9666667),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(2101, -491), Vector2(2101, -482.87), Vector2(2101, -491), Vector2(2101, -500), Vector2(2101, -491)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_wbtxt"]
+_data = {
+&"RESET": SubResource("Animation_d5akn"),
+&"cloudFloat": SubResource("Animation_tr1x6")
+}
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_2cbcq"]
 size = Vector2(48.01709, 226.67023)
 
@@ -194,8 +233,9 @@ texture = ExtResource("8_e3sih")
 
 [node name="bg2" type="Sprite2D" parent="BG"]
 z_index = -1
-position = Vector2(-11.5, -480)
+position = Vector2(16.320068, -565.9998)
 rotation = -3.1415925
+scale = Vector2(2.04, 1.8000003)
 texture = ExtResource("9_2y5yt")
 
 [node name="bg3" type="Sprite2D" parent="BG"]
@@ -205,8 +245,9 @@ texture = ExtResource("8_e3sih")
 
 [node name="bg4" type="Sprite2D" parent="BG"]
 z_index = -1
-position = Vector2(840, -480)
+position = Vector2(867.82007, -565.9998)
 rotation = -3.1415925
+scale = Vector2(2.04, 1.8000003)
 texture = ExtResource("9_2y5yt")
 
 [node name="bg5" type="Sprite2D" parent="BG"]
@@ -216,8 +257,9 @@ texture = ExtResource("8_e3sih")
 
 [node name="bg6" type="Sprite2D" parent="BG"]
 z_index = -1
-position = Vector2(1691.5, -480)
+position = Vector2(1719.3201, -565.9998)
 rotation = -3.1415925
+scale = Vector2(2.04, 1.8000003)
 texture = ExtResource("9_2y5yt")
 
 [node name="bg7" type="Sprite2D" parent="BG"]
@@ -227,20 +269,15 @@ texture = ExtResource("8_e3sih")
 
 [node name="bg8" type="Sprite2D" parent="BG"]
 z_index = -1
-position = Vector2(2542.5, -480)
+position = Vector2(3457.0002, -566)
 rotation = -3.1415925
+scale = Vector2(2.04, 1.8000003)
 texture = ExtResource("9_2y5yt")
 
 [node name="bg11" type="Sprite2D" parent="BG"]
 z_index = -1
 position = Vector2(3397.5, -91.99994)
 texture = ExtResource("8_e3sih")
-
-[node name="bg12" type="Sprite2D" parent="BG"]
-z_index = -1
-position = Vector2(3397.5, -479.99994)
-rotation = -3.1415925
-texture = ExtResource("9_2y5yt")
 
 [node name="bg13" type="Sprite2D" parent="BG"]
 z_index = -1
@@ -249,8 +286,9 @@ texture = ExtResource("8_e3sih")
 
 [node name="bg14" type="Sprite2D" parent="BG"]
 z_index = -1
-position = Vector2(-1708.5, -479.99994)
+position = Vector2(-1680.6799, -565.99976)
 rotation = -3.1415925
+scale = Vector2(2.04, 1.8000003)
 texture = ExtResource("9_2y5yt")
 
 [node name="bg9" type="Sprite2D" parent="BG"]
@@ -260,8 +298,9 @@ texture = ExtResource("8_e3sih")
 
 [node name="bg10" type="Sprite2D" parent="BG"]
 z_index = -2
-position = Vector2(-861.5, -480)
+position = Vector2(-833.67993, -565.9998)
 rotation = -3.1415925
+scale = Vector2(2.04, 1.8000003)
 texture = ExtResource("9_2y5yt")
 
 [node name="TileMap" type="TileMap" parent="."]
@@ -276,10 +315,10 @@ position = Vector2(-608.99994, -78.000015)
 scale = Vector2(0.022, 0.022)
 
 [node name="Camera2D" type="Camera2D" parent="Level3player"]
-position = Vector2(40.711517, -636.68365)
+position = Vector2(87.18016, -500.66232)
 rotation = -0.022337956
 scale = Vector2(1.0000002, 0.9670002)
-zoom = Vector2(6, 6)
+zoom = Vector2(5, 5)
 limit_bottom = 110
 
 [node name="killzone" parent="." instance=ExtResource("3_rus8k")]
@@ -362,7 +401,7 @@ position = Vector2(1977, -471)
 
 [node name="clouds" type="Node" parent="."]
 
-[node name="cloud1" type="StaticBody2D" parent="clouds"]
+[node name="cloud1" type="AnimatableBody2D" parent="clouds"]
 position = Vector2(2101, -491)
 
 [node name="2_1" type="Sprite2D" parent="clouds/cloud1"]
@@ -372,6 +411,12 @@ texture = ExtResource("11_7nomh")
 light_mask = 3
 visibility_layer = 3
 polygon = PackedVector2Array(0, -1, -6, -7, 1, -14, 6, -19, 12, -19, 18, -16, 21, -12, 23, -3, 28, 2, 34, 4, 39, 9, 45, 11, 48, 14, -49, 13, -43, 9, -40, 5, -36, 4, -33, 0, -28, 0, -23, 3, -18, 4, -15, 0, -15, 0, -6, -7)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="clouds/cloud1"]
+libraries = {
+&"": SubResource("AnimationLibrary_wbtxt")
+}
+autoplay = "cloudFloat"
 
 [node name="cloud2" type="StaticBody2D" parent="clouds"]
 position = Vector2(2208, -490)
@@ -551,6 +596,7 @@ offset_right = 2193.0
 offset_bottom = -496.0
 theme_override_colors/font_color = Color(3.5857408e-06, 0.14164215, 0.4351076, 1)
 theme_override_fonts/font = ExtResource("22_tr1x6")
+theme_override_font_sizes/font_size = 16
 text = "Clouds will continue your journey"
 horizontal_alignment = 1
 autowrap_mode = 3
@@ -565,14 +611,35 @@ text = "SPACE or W to jump"
 horizontal_alignment = 1
 autowrap_mode = 3
 
+[node name="Label" type="Label" parent="Labels/Label"]
+layout_mode = 0
+offset_left = 1129.0
+offset_top = 91.0
+offset_right = 1235.0
+offset_bottom = 134.0
+theme_override_fonts/font = ExtResource("22_tr1x6")
+text = "Press Esc to Pause"
+horizontal_alignment = 1
+autowrap_mode = 3
+
 [node name="Label2" type="Label" parent="Labels"]
 offset_left = -561.0
 offset_top = -160.0
 offset_right = -437.0
 offset_bottom = -113.0
 theme_override_fonts/font = ExtResource("22_tr1x6")
+theme_override_font_sizes/font_size = 16
 text = "ARROWS or A/D to move"
 horizontal_alignment = 1
 autowrap_mode = 3
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Restart Menu" parent="CanvasLayer" instance=ExtResource("23_d5akn")]
+z_index = 10
+offset_left = 3.0
+offset_top = 1.0
+offset_right = 3.0
+offset_bottom = 1.0
 
 [connection signal="body_entered" from="cloud10/Area2D" to="cloud10" method="_on_area_2d_body_entered"]

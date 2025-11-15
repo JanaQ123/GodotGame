@@ -66,12 +66,13 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -75.0
-offset_top = -50.5
-offset_right = 116.0
-offset_bottom = 50.5
+offset_left = -236.99997
+offset_top = -122.999985
+offset_right = 28.653198
+offset_bottom = 17.476257
 grow_horizontal = 2
 grow_vertical = 2
+scale = Vector2(1.6799988, 1.6799988)
 theme_override_styles/panel = SubResource("StyleBoxFlat_jsjm1")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer"]

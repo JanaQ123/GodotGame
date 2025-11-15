@@ -1,4 +1,4 @@
-[gd_scene load_steps=61 format=3 uid="uid://badtgob5db5fo"]
+[gd_scene load_steps=62 format=3 uid="uid://badtgob5db5fo"]
 
 [ext_resource type="Texture2D" uid="uid://cgv3wq4w5g2ek" path="res://cloudy skies/SVG/blueBg.svg" id="1_cpi7p"]
 [ext_resource type="PackedScene" uid="uid://dwbepxe4isg4w" path="res://scenes/player.tscn" id="2_2c7y1"]
@@ -33,11 +33,12 @@
 [ext_resource type="Texture2D" uid="uid://na43lpwc4t6d" path="res://cloudy skies/night bg (1).png" id="30_41588"]
 [ext_resource type="Texture2D" uid="uid://i3uo8j4kt1fj" path="res://cloudy skies/purpleOnly.jpg" id="30_qr5ir"]
 [ext_resource type="Texture2D" uid="uid://cfxlo7gddr0su" path="res://cloudy skies/Pixel Clouds/Clouds/images/2/blue_2/2.9.png" id="31_76nwu"]
-[ext_resource type="Script" uid="uid://xgalhsqlqwjb" path="res://Scripts/Level2StartCutscene.gd" id="34_2c7y1"]
+[ext_resource type="Script" path="res://Scripts/Level2StartCutscene.gd" id="34_2c7y1"]
 [ext_resource type="Texture2D" uid="uid://c6e7rkfrl5twl" path="res://cloudy skies/Pixel Clouds/Clouds/images/1/fiiolet/fiolet_6.png" id="34_qr5ir"]
 [ext_resource type="AudioStream" uid="uid://dhbwvv8byi5w3" path="res://Music/Level2P1BGMusic.mp3" id="36_sh2qq"]
 [ext_resource type="AudioStream" uid="uid://creirw8jr5c4l" path="res://Music/Level2P2BGMusic.mp3" id="37_xpsa7"]
 [ext_resource type="FontFile" uid="uid://cmen5lb4k51oi" path="res://PixelifySans-VariableFont_wght.ttf" id="38_6kktu"]
+[ext_resource type="PackedScene" uid="uid://cpoqi6pcwspk1" path="res://scenes/restart_menu.tscn" id="39_bvfvd"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ewulq"]
 texture = ExtResource("13_ho7ld")
@@ -1105,13 +1106,13 @@ parameters/looping = false
 [node name="Labels" type="Node" parent="."]
 
 [node name="Label5" type="Label" parent="Labels"]
-offset_left = 843.0
-offset_top = 311.0
-offset_right = 1018.0
-offset_bottom = 560.0
+offset_left = 870.0
+offset_top = 404.0
+offset_right = 1045.0
+offset_bottom = 781.0
 theme_override_constants/line_spacing = 100
 theme_override_fonts/font = ExtResource("38_6kktu")
-theme_override_font_sizes/font_size = 50
+theme_override_font_sizes/font_size = 48
 text = "The bigger the fall"
 horizontal_alignment = 1
 autowrap_mode = 3
@@ -1127,12 +1128,12 @@ horizontal_alignment = 1
 autowrap_mode = 3
 
 [node name="Label6" type="Label" parent="Labels"]
-offset_left = 2534.0
+offset_left = 2456.0
 offset_top = 770.0
 offset_right = 2830.0
 offset_bottom = 807.0
 theme_override_fonts/font = ExtResource("38_6kktu")
-theme_override_font_sizes/font_size = 20
+theme_override_font_sizes/font_size = 24
 text = "Resilience beats everything. "
 horizontal_alignment = 1
 autowrap_mode = 3
@@ -1174,6 +1175,16 @@ theme_override_fonts/font = ExtResource("38_6kktu")
 text = "Climb up to new heights"
 horizontal_alignment = 1
 autowrap_mode = 3
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+visible = false
+
+[node name="Restart Menu" parent="CanvasLayer" instance=ExtResource("39_bvfvd")]
+z_index = 10
+offset_left = -1.0
+offset_top = -1.0
+offset_right = -1.0
+offset_bottom = -1.0
 
 [connection signal="body_entered" from="Bird/Area2D" to="Bird" method="_on_area_2d_body_entered"]
 [connection signal="body_entered" from="GreyCloud/Area2D" to="GreyCloud" method="_on_area_2d_body_entered"]
