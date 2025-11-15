@@ -17,7 +17,7 @@
 [ext_resource type="Texture2D" uid="uid://b3vb3sg86jqy" path="res://cloudy skies/Pixel Clouds/Clouds/images/2/blue_2/2.47.png" id="14_2cbcq"]
 [ext_resource type="Texture2D" uid="uid://c4tlfce2lw3a8" path="res://cloudy skies/Pixel Clouds/Clouds/images/2/blue_2/2.55.png" id="15_isj1j"]
 [ext_resource type="PackedScene" uid="uid://d13r7k63gh0qe" path="res://scenes/pixel_house.tscn" id="16_2cbcq"]
-[ext_resource type="Script" uid="uid://ch1ce50mni0f4" path="res://scenes/TransitionOneToTwo.gd" id="16_isj1j"]
+[ext_resource type="Script" uid="uid://ch1ce50mni0f4" path="res://Scripts/TransitionOneToTwo.gd" id="16_isj1j"]
 [ext_resource type="Texture2D" uid="uid://d1qchadnlodhy" path="res://cloudy skies/Pixel Clouds/Clouds/images/2/blue_2/2.67.png" id="16_so66j"]
 [ext_resource type="Texture2D" uid="uid://cijknbaskf7nw" path="res://Brackey's Assets (from video)/sprites/tree_b.png" id="18_x2xxo"]
 [ext_resource type="AudioStream" uid="uid://b6koy4axt5xn3" path="res://Music/Level1BGMusoc.mp3" id="21_tr1x6"]

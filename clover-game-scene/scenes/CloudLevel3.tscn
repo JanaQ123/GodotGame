@@ -33,7 +33,7 @@
 [ext_resource type="Texture2D" uid="uid://na43lpwc4t6d" path="res://cloudy skies/night bg (1).png" id="30_41588"]
 [ext_resource type="Texture2D" uid="uid://i3uo8j4kt1fj" path="res://cloudy skies/purpleOnly.jpg" id="30_qr5ir"]
 [ext_resource type="Texture2D" uid="uid://cfxlo7gddr0su" path="res://cloudy skies/Pixel Clouds/Clouds/images/2/blue_2/2.9.png" id="31_76nwu"]
-[ext_resource type="Script" uid="uid://xgalhsqlqwjb" path="res://scenes/Level2StartCutscene.gd" id="34_2c7y1"]
+[ext_resource type="Script" uid="uid://xgalhsqlqwjb" path="res://Scripts/Level2StartCutscene.gd" id="34_2c7y1"]
 [ext_resource type="Texture2D" uid="uid://c6e7rkfrl5twl" path="res://cloudy skies/Pixel Clouds/Clouds/images/1/fiiolet/fiolet_6.png" id="34_qr5ir"]
 [ext_resource type="AudioStream" uid="uid://dhbwvv8byi5w3" path="res://Music/Level2P1BGMusic.mp3" id="36_sh2qq"]
 [ext_resource type="AudioStream" uid="uid://creirw8jr5c4l" path="res://Music/Level2P2BGMusic.mp3" id="37_xpsa7"]

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://daw0163j50mwe"
-path="res://.godot/imported/Mushroom-Runyellow.png-f03bb06ac76487697e3fd8c9e7b1ff5b.ctex"
+uid="uid://bl0re5q0cksyp"
+path="res://.godot/imported/menu bg.jpg-117a37dd5c36a07292692d375b32e69a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Brackey's Assets (from video)/Mushroom-Runyellow.png"
-dest_files=["res://.godot/imported/Mushroom-Runyellow.png-f03bb06ac76487697e3fd8c9e7b1ff5b.ctex"]
+source_file="res://Brackey's Assets (from video)/sprites/menu bg.jpg"
+dest_files=["res://.godot/imported/menu bg.jpg-117a37dd5c36a07292692d375b32e69a.ctex"]
 
 [params]
 

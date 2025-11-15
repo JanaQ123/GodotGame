@@ -1,4 +1,4 @@
-[gd_scene load_steps=148 format=3 uid="uid://devvds4wk8a0j"]
+[gd_scene load_steps=149 format=3 uid="uid://devvds4wk8a0j"]
 
 [ext_resource type="PackedScene" uid="uid://dewcgc53l1qn1" path="res://scenes/lucy.tscn" id="2_8vbrh"]
 [ext_resource type="Texture2D" uid="uid://c58xjnpkgvjmd" path="res://Brackey's Assets (from video)/sprites/platforms.png" id="2_qrujo"]
@@ -17,19 +17,20 @@
 [ext_resource type="PackedScene" uid="uid://bhhikdvbxeox0" path="res://scenes/button.tscn" id="18_l2pgs"]
 [ext_resource type="PackedScene" uid="uid://c5s36wo1eaon8" path="res://scenes/killzone.tscn" id="18_s4dsi"]
 [ext_resource type="PackedScene" uid="uid://cofws8lrbp2er" path="res://scenes/enemymushroom.tscn" id="19_07lh1"]
-[ext_resource type="PackedScene" uid="uid://dbs6cnfeycn8b" path="res://mushrromenemyjymp.tscn" id="20_6uuvf"]
-[ext_resource type="Script" uid="uid://bn23ilco62y42" path="res://scenes/dangerZone.gd" id="21_x008a"]
+[ext_resource type="PackedScene" uid="uid://dbs6cnfeycn8b" path="res://scenes/mushrromenemyjymp.tscn" id="20_6uuvf"]
+[ext_resource type="Script" uid="uid://bn23ilco62y42" path="res://Scripts/dangerZone.gd" id="21_x008a"]
 [ext_resource type="AudioStream" uid="uid://csib1aha25wy3" path="res://Music/game-over-417465.mp3" id="22_88b2t"]
-[ext_resource type="PackedScene" uid="uid://b8riim2fnxnkf" path="res://rainbow.tscn" id="22_atr84"]
+[ext_resource type="PackedScene" uid="uid://b8riim2fnxnkf" path="res://scenes/rainbow.tscn" id="22_atr84"]
 [ext_resource type="AudioStream" uid="uid://dkfnpeflsvu45" path="res://Music/Water Splash 1.mp3" id="22_invaa"]
 [ext_resource type="AudioStream" uid="uid://c4y6qxau3601q" path="res://Music/Level3BGMusic.mp3" id="23_qyu38"]
 [ext_resource type="PackedScene" uid="uid://g54q6mvfyvcn" path="res://scenes/BubblePop.tscn" id="24_0ydwj"]
 [ext_resource type="FontFile" uid="uid://cmen5lb4k51oi" path="res://PixelifySans-VariableFont_wght.ttf" id="24_8vbrh"]
-[ext_resource type="Script" uid="uid://blleyd52xxmxb" path="res://scenes/Win.gd" id="25_7hs6g"]
+[ext_resource type="Script" uid="uid://blleyd52xxmxb" path="res://Scripts/Win.gd" id="25_7hs6g"]
 [ext_resource type="PackedScene" uid="uid://byw0vwjqmss16" path="res://scenes/sky.tscn" id="25_tqa8r"]
 [ext_resource type="Texture2D" uid="uid://c3fynlpls2hao" path="res://Confetti.png" id="26_7hs6g"]
 [ext_resource type="PackedScene" uid="uid://5ecpkao4jmi3" path="res://scenes/lotus.tscn" id="26_kgaxw"]
 [ext_resource type="AudioStream" uid="uid://ttlds1qy78vp" path="res://Music/Win 2.mp3" id="27_yeq8b"]
+[ext_resource type="PackedScene" uid="uid://cpoqi6pcwspk1" path="res://scenes/restart_menu.tscn" id="31_612gg"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_epypp"]
 size = Vector2(30.47619, 7.92381)
@@ -2272,6 +2273,14 @@ volume_db = 5.0
 autoplay = true
 max_distance = 4096.0
 attenuation = 0.088388406
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Restart Menu" parent="CanvasLayer" instance=ExtResource("31_612gg")]
+offset_left = 548.0
+offset_top = 162.0
+offset_right = 548.0
+offset_bottom = 162.0
 
 [connection signal="body_entered" from="Node2D/DangerZone1" to="Node2D/DangerZone1" method="_on_body_entered"]
 [connection signal="body_entered" from="Node2D2/DangerZone1" to="Node2D2/DangerZone1" method="_on_body_entered"]
